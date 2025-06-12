@@ -1083,6 +1083,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/lucide@npm:^1.2.48":
+  version: 1.2.48
+  resolution: "@iconify-json/lucide@npm:1.2.48"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/c392dd3a8f2196fe32e0438255400d4897ef968a3da5efd7f461f5271a21d212495eac10115b70e3ad680f5c1c5269395899517d2cbe6e89b0f037a00e192571
+  languageName: node
+  linkType: hard
+
 "@iconify/collections@npm:^1.0.548":
   version: 1.0.558
   resolution: "@iconify/collections@npm:1.0.558"
@@ -1692,7 +1701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.17.5, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.0, @nuxt/kit@npm:^3.16.2, @nuxt/kit@npm:^3.17.3, @nuxt/kit@npm:^3.17.4, @nuxt/kit@npm:^3.9.0":
+"@nuxt/kit@npm:3.17.5, @nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.0, @nuxt/kit@npm:^3.16.2, @nuxt/kit@npm:^3.17.3, @nuxt/kit@npm:^3.17.4, @nuxt/kit@npm:^3.9.0":
   version: 3.17.5
   resolution: "@nuxt/kit@npm:3.17.5"
   dependencies:
@@ -1857,6 +1866,17 @@ __metadata:
     pkg-types: "npm:^1.2.1"
     semver: "npm:^7.6.3"
   checksum: 10c0/81b19c3ab82b9eeb8909666ba9c0ce714a51e481515269e71efe000e915b07ab228c989b045b889a925a63b5ad696a53f13ac9f676a76c58df85177fa1321aca
+  languageName: node
+  linkType: hard
+
+"@nuxtjs/google-fonts@npm:3.2.0":
+  version: 3.2.0
+  resolution: "@nuxtjs/google-fonts@npm:3.2.0"
+  dependencies:
+    "@nuxt/kit": "npm:^3.10.3"
+    google-fonts-helper: "npm:^3.5.0"
+    pathe: "npm:^1.1.2"
+  checksum: 10c0/bdd4dc825452f9b640da150fb1334e1dd78988b15f565e2bdcb402b5f0565ef9edb0091f0d41f69b32775c621491607efdd80e1911557bf77718f763031d8eb2
   languageName: node
   linkType: hard
 
@@ -2596,6 +2616,13 @@ __metadata:
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: 10c0/f9fde5c554455019f33af6c8215f1a1435028803dc2a2825b077d812bed4209a1a64444a4ca0ce2ea7e1175c8d88e2f9173a36a33c199e8a5c671aa31de8242d
+  languageName: node
+  linkType: hard
+
+"@types/add@npm:^2":
+  version: 2.0.3
+  resolution: "@types/add@npm:2.0.3"
+  checksum: 10c0/d18841b43d3799f69db0bdae380d19d05f43b716315c5bfd4d6c1b3467bada2644eab8c04bb5afdb94bba87604da06d466f22fe30df6bcf0518c373593bb474a
   languageName: node
   linkType: hard
 
@@ -3520,6 +3547,13 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 10c0/dec73ff59b7d6628a01eebaece7f2bdb8bb62b9b5926dcad0f8931f2b8b79c2be21f6c68ac095592adb5adb15831a3635d9343e6a91d028bbe85d564875ec3ec
+  languageName: node
+  linkType: hard
+
+"add@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "add@npm:2.0.6"
+  checksum: 10c0/6b21d5f2e58cf5e15d56cc6f9ebce04f04f4c33ae25f09d600ddacf8df00036ba521f17feb1b3f81307b7c6d2ef0bed8b511a0f86f062eb90c2f909b48b588ae
   languageName: node
   linkType: hard
 
@@ -4859,7 +4893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge@npm:^4.2.2":
+"deepmerge@npm:^4.2.2, deepmerge@npm:^4.3.1":
   version: 4.3.1
   resolution: "deepmerge@npm:4.3.1"
   checksum: 10c0/e53481aaf1aa2c4082b5342be6b6d8ad9dfe387bc92ce197a66dea08bd4265904a087e75e464f14d1347cf2ac8afe1e4c16b266e0561cc5df29382d3c5f80044
@@ -6428,6 +6462,18 @@ __metadata:
   bin:
     gonzales: bin/gonzales.js
   checksum: 10c0/b99a6ef4bf28ca0b0adcc0b42fd0179676ee8bfe1d3e3c0025d7d38ba35a3f2d5b1d4beb16101a7fc7cb2dbda1ec045bbce0932697095df41d729bac1703476f
+  languageName: node
+  linkType: hard
+
+"google-fonts-helper@npm:^3.5.0":
+  version: 3.7.3
+  resolution: "google-fonts-helper@npm:3.7.3"
+  dependencies:
+    deepmerge: "npm:^4.3.1"
+    hookable: "npm:^5.5.3"
+    ofetch: "npm:^1.4.1"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/3449f0bd2fcd132da5eb9e5cd515a85c02e10e32888a3d35e3c716b0149ed2aa7164ec553c9cb76c98d41b55fe805c88f313d3eab2cf61c8f2a1a8df0c8b5353
   languageName: node
   linkType: hard
 
@@ -8492,11 +8538,15 @@ __metadata:
   dependencies:
     "@commitlint/cli": "npm:^19.8.1"
     "@commitlint/config-conventional": "npm:^19.8.1"
+    "@iconify-json/lucide": "npm:^1.2.48"
     "@nuxt/eslint": "npm:^1.4.1"
     "@nuxt/ui": "npm:2"
+    "@nuxtjs/google-fonts": "npm:3.2.0"
     "@pinia/nuxt": "npm:^0.11.1"
+    "@types/add": "npm:^2"
     "@types/eslint": "npm:^9.6.1"
     "@vueuse/nuxt": "npm:^13.3.0"
+    add: "npm:^2.0.6"
     date-fns: "npm:^4.1.0"
     eslint: "npm:^9.28.0"
     husky: "npm:^9.1.7"
@@ -8512,6 +8562,7 @@ __metadata:
     vue: "npm:^3.5.16"
     vue-router: "npm:^4.5.1"
     vue-tsc: "npm:^2.2.10"
+    yarn: "npm:^1.22.22"
     yup: "npm:^1.6.1"
   languageName: unknown
   linkType: soft
@@ -12227,6 +12278,16 @@ __metadata:
     y18n: "npm:^5.0.5"
     yargs-parser: "npm:^21.1.1"
   checksum: 10c0/ccd7e723e61ad5965fffbb791366db689572b80cca80e0f96aad968dfff4156cd7cd1ad18607afe1046d8241e6fb2d6c08bf7fa7bfb5eaec818735d8feac8f05
+  languageName: node
+  linkType: hard
+
+"yarn@npm:^1.22.22":
+  version: 1.22.22
+  resolution: "yarn@npm:1.22.22"
+  bin:
+    yarn: bin/yarn.js
+    yarnpkg: bin/yarn.js
+  checksum: 10c0/8c77198c93d7542e7f4e131c63b66de357b7076ecfbcfe709ec0d674115c2dd9edaa45196e5510e6e9366d368707a802579e3402071002e1c9d9a99d491478de
   languageName: node
   linkType: hard
 
