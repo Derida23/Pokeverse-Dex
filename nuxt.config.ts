@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@nuxt/eslint',
+    '@nuxtjs/google-fonts',
   ],
   imports: {
     dirs: ['composables/api'],
