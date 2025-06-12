@@ -9,6 +9,21 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
   modules: [
+    '@nuxt/ui',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
     '@nuxt/eslint',
   ],
+  imports: {
+    dirs: ['composables/api'],
+  },
+  postcss: {
+    plugins: {
+      'postcss-hexrgba': {},
+      'tailwindcss/nesting': {},
+      'tailwindcss': {},
+      'postcss-lighten-darken': {},
+      'autoprefixer': {},
+    },
+  },
 })
