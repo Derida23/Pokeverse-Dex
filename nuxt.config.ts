@@ -18,6 +18,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables/api'],
   },
+  css: ['@/assets/css/tailwind.css'],
   postcss: {
     plugins: {
       'postcss-hexrgba': {},
@@ -25,6 +26,16 @@ export default defineNuxtConfig({
       'tailwindcss': {},
       'postcss-lighten-darken': {},
       'autoprefixer': {},
+    },
+  },
+  googleFonts: {
+    preload: true,
+    display: 'swap',
+    families: {
+      'Noto+Sans': {
+        wght: '200..900',
+        ital: '200..700',
+      }
     },
   },
 })
