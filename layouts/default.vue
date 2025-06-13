@@ -1,7 +1,10 @@
 <script lang="ts" setup></script>
 
 <template>
-  <main>
-    <slot />
-  </main>  
+  <div>
+    <LayoutNavbar />
+    <LayoutSidebar >
+      <slot />
+    </LayoutSidebar>
+  </div>
 </template>
