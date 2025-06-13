@@ -1,7 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
-  devtools: { enabled: true, 
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+    },
+  },
+  devtools: { enabled: false, 
     timeline: {
       enabled: true,
     }, },
@@ -17,6 +24,9 @@ export default defineNuxtConfig({
   ],
   imports: {
     dirs: ['composables/api'],
+  },
+  colorMode: {
+    preference: 'light',
   },
   css: ['@/assets/css/tailwind.css'],
   postcss: {
