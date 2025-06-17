@@ -15,6 +15,12 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
+  runtimeConfig: {
+    apiUrl: process.env.NUXT_API_URL,
+    public: {
+      siteTitle: 'Pokeverse',
+    },
+  },
   modules: [
     '@nuxt/ui',
     '@pinia/nuxt',
