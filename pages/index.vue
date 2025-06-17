@@ -2,9 +2,9 @@
   <div class="homepage">
     <p class="text-sorry">SORRY</p>
     <div class="text-wrapper">
-      <h1 class="font-bold text-slate-800 text-[14rem]">4</h1>
-      <img src="/assets/images/pokeball.webp" class="w-48" >
-      <h1 class="font-bold text-slate-800 text-[14rem]">4</h1>
+      <h1 class="font-bold text-slate-800 text-[10rem] md:text-[14rem]">4</h1>
+      <img src="/assets/images/pokeball.webp" class="w-40 md:w-48" >
+      <h1 class="font-bold text-slate-800 text-[10rem] md:text-[14rem]">4</h1>
     </div>
     <p class="text-not-found">Pokémon not found</p>
     <p class="text-explore">Let’s explore further and catch one!</p>
@@ -34,11 +34,11 @@
   }
 
   &-wrapper {
-    @apply flex items-center justify-center -mt-[2rem];
+    @apply flex items-center justify-center md:-mt-[2rem];
   }
 
   &-not-found {
-    @apply font-semibold tracking-widest text-slate-800 -mt-[1rem] text-center text-xl;
+    @apply font-semibold tracking-widest text-slate-800 md:-mt-[1rem] text-center text-xl;
   }
 
   &-explore {
