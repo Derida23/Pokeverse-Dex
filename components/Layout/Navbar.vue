@@ -7,12 +7,10 @@
   <header class="header">
     <div class="header-wrapper">
       <div class="header-title">
-        <p class="text-4xl">
-          🤾🏼‍♂️
-        </p>
-        <div class="italic">
+        <img src="/assets/images/gengar.png" class="w-14" >
+        <div class="italic ml-[-0.4rem]">
           <p class="header-description">Pokémon</p>
-          <p class="header-description__sub">Verse</p>
+          <p class="header-description__sub">ポケモン</p>
         </div>
       </div>
       <div class="flex items-center gap-x-4">
