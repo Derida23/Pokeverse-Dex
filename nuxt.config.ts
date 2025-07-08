@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiUrl: process.env.NUXT_API_URL,
     public: {
-      siteTitle: 'Pokeverse',
+      siteTitle: 'Pokéverse',
     },
   },
   modules: [
@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/eslint',
     '@nuxtjs/google-fonts',
+    'nuxt-svgo'
   ],
   imports: {
     dirs: ['composables/api'],
