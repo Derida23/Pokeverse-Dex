@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div class="homepage">
     <p class="text-sorry">SORRY</p>

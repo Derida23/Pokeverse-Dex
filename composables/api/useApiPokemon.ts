@@ -1,39 +1,40 @@
-import { japanesePokemonNames } from "~/constants/name"
-import type { PokemonsType } from "~/types/responses/PokemonsType"
+import { japanesePokemonNames } from "~/constants/names"
+import type { Pokemons } from "@/types/responses/Pokemons"
+import type { FilterKey, FilterValue } from "~/types/components/Pokemons"
 
 export function useApiPokemon(){
-  interface Pokemons {
-    count: number
-    next: string
-    previous?: string
-    results: Result[]
-  }
-
-  interface Result {
-    name: string
-    url: string
-  }
-  
   const nameMap = useState('japaneseNames', () => new Map<number, string>())
 
   function getStableRandomName(id: number): string {
-  if (!nameMap.value.has(id)) {
-    const index = Math.floor(Math.random() * japanesePokemonNames.length)
-    nameMap.value.set(id, japanesePokemonNames[index])
-  }
-  return nameMap.value.get(id)!
-}
+    if (!nameMap.value.has(id)) {
+      const index = Math.floor(Math.random() * japanesePokemonNames.length)
+      nameMap.value.set(id, japanesePokemonNames[index])
+    }
 
-  const getAll = async (offset=0, limit=21) => {
+    return nameMap.value.get(id)!
+  }
+
+
+  const getPokemons = async (offset=0, limit=21, filter: Record<FilterKey, FilterValue>) => {
+    return await $fetch(`/api/pokemons?offset=${offset}&limit=${limit}`, 
+      { method: 'GET', query: filter }
+    )
+  }
+
+  const getAll = async (offset=0, limit=21, filter: Record<FilterKey, FilterValue>) => {
+
     const apiUrl  = 'https://pokeapi.co/api/v2'
-    const data = await $fetch<Pokemons>(`${apiUrl}/pokemon?limit=${limit}&offset=${offset}`)
-    const pokemons: string[] = data?.results?.map(item => item.name) || []
+    const { data } = await getPokemons(offset, limit, filter)
 
     const pokemon = await Promise.all(
-      pokemons.map(name => $fetch(`${apiUrl}/pokemon/${name}`))
-    ) as PokemonsType[]
+      data.map(name => $fetch(`${apiUrl}/pokemon/${name.name}`))
+    ) as Pokemons[]
 
     for (const item of pokemon) {
+      const formPokemon = data.find(p => p.id === item.id)
+      item['form'] = formPokemon?.form || []
+      item['title'] = formPokemon?.title || []
+
       delete item.abilities
       delete item.base_experience
       delete item.cries
@@ -50,16 +51,17 @@ export function useApiPokemon(){
       delete item.species
       delete item.stats
       delete item.weight
+      delete item.sprites
 
       item.japanese_name = getStableRandomName(item.id)
     }
 
-    console.log('Pokemons fetched:', pokemon)
-
     return pokemon
   }
+  
 
   return {
-    getAll
+    getAll,
+    getPokemons
   }
 }
