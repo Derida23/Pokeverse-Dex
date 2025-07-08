@@ -2,7 +2,7 @@ export const menus = [
   {
     title: 'Main Menu',
     menu: [
-      { name: 'Pokemons', icon: 'i-lucide-atom', slug: 'pokemons' },
+      { name: 'Pokémons', icon: 'i-lucide-atom', slug: 'pokemons' },
       { name: 'Compares', icon: 'i-lucide-git-compare-arrows', slug: 'compares' },
       { name: 'Statistics', icon: 'i-lucide-chart-pie', slug: 'statistics' },
       { name: 'Bookmarks', icon: 'i-lucide-bookmark-plus', slug: 'bookmarks' }
