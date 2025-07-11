@@ -134,3 +134,12 @@ export const types = [
     },
   ]
 ]
+
+export const forms = 
+[
+  { label: 'Baby', value: 'is_baby', id: 1 },
+  { label: 'Legendary', value: 'is_legendary', id: 2 },
+  { label: 'Mythical', value: 'is_mythical', id: 3 },
+  { label: 'Mega Form', value: 'is_mega', id: 4 },
+  { label: 'GMax Form', value: 'is_gmax', id: 5 },
+]
