@@ -1,6 +1,5 @@
 import { pokemons } from '@/constants/pokemons'
-import { EXCLUDE_KEYWORDS } from '~/constants/names'
-import { groupPokemonForms } from '~/utils/transform'
+import { types } from '~/constants/types'
 
 export default defineEventHandler(async (event) => {
   try {
@@ -15,30 +14,35 @@ export default defineEventHandler(async (event) => {
       })
     }
 
-    // Apply filters
-    const exFiltered = pokemons.filter(p =>
-      !EXCLUDE_KEYWORDS.some(kw => p.name.includes(kw))
-    )
-    let filtered = groupPokemonForms(exFiltered)
-    
-    // if (query.gen) {
-      // const pokemonGen = await $fetch(`/api/generation?id=${query.gen}`)
-      // filtered = pokemonGen.data
-      // filtered = filtered.filter(p => p.generation == query.gen)
-    // }
+    let filtered = [...pokemons]
 
-    // if (query.type) {
-    //   filtered = filtered.filter(p => p.types.includes(query.type as string))
-    // }
+    if (query.gen) {
+      const gen = Number(query.gen)
+      filtered = filtered.filter(p => p.generation === gen)
+    }
+
+    if (query.type) {
+      const type = types.find(t => t.name === query.type)?.id
+
+      filtered = filtered.filter(pokemon =>
+        pokemon.types.some(typeGroup =>
+          typeGroup.includes(Number(type))
+        )
+      )
+    }
 
     if (query.q) {
       const q = (query.q as string).toLowerCase()
       filtered = filtered.filter(p => p.name.toLowerCase().includes(q))
     }
 
-    // if (query.attr) {
-    //   filtered = filtered.filter(p => p.attribute === query.attr)
-    // }
+    if (query.attr) {
+      const attrs = query.attr.toString().split('.')
+
+      filtered = filtered.filter(pokemon =>
+        attrs.some(key => pokemon.attr?.[key as keyof typeof pokemon.attr])
+      )
+    }
 
     const results = filtered.slice(offset, offset + limit)
 
@@ -46,6 +50,12 @@ export default defineEventHandler(async (event) => {
       success: true,
       message: 'Fetched successfully',
       data: results,
+      pagination: {
+        total: filtered.length,
+        limit: limit,
+        offset: offset,
+        hasMore: offset + limit < filtered.length,
+      }
     }
   } catch (error) {
     const err = error as { statusCode?: number; statusMessage?: string }
