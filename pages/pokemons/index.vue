@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Pokemons } from '@/types/responses/Pokemons'
-import { generations, types } from '~/constants/filter'
-import type { FilterKey, FilterValue } from '~/types/components/Pokemons'
+import { generations, types, forms } from '@/constants/filter'
+import type { FilterKey, FilterValue } from '@/types/components/Pokemons'
 
 const router = useRouter()
 const route = useRoute()
@@ -14,7 +14,7 @@ const filter = ref<Record<FilterKey, FilterValue>>({
   attr: null
 })
 
-const open = reactive({ generations: false, types: false })
+const open = reactive({ generations: false, types: false, attr: false })
 const pokemons = ref<Pokemons[]>([])
 const isLoading = ref(false)
 const isLastPage = ref(false)
@@ -32,19 +32,15 @@ const fetchMore = async (isQuery = false) => {
   if (!isQuery) page.value++
   
   const offset = page.value * limit
-  const data = await getAll(offset, limit, filter.value)
-  
-  // Mark as last page if fewer items than limit
-  if (data.length < limit) {
-    isLastPage.value = true
-  }
+  const response = await getAll(offset, limit, filter.value)
 
   if (!isQuery) {
-    pokemons.value.push(...data)
+    pokemons.value.push(...response.data)
   } else {
-    pokemons.value = data
+    pokemons.value = response.data
   }
 
+  isLastPage.value = !response.pagination.hasMore
   isLoading.value = false
 }
 
@@ -90,10 +86,33 @@ const applyQueryFilter = useDebounceFn((q: FilterValue) => {
 function handleFilter(type: FilterKey, value: FilterValue) {
   if (type === 'q') {
     applyQueryFilter(value)
-  } else {
-    filter.value[type] = value ?? null
-    updateQuery(type, value)
+    return
   }
+
+  if (type === 'attr') {
+    if (value === 'all') {
+      filter.value.attr = null
+      updateQuery('attr', null)
+      return
+    }
+
+    const routeAttr = route.query.attr as string | undefined
+    const current = routeAttr?.split('.') || []
+    const exists = typeof value === 'string' && current.includes(value)
+
+    const updated = exists
+      ? current.filter((item) => item !== value)
+      : [...current, value as string]
+
+    const result = updated.length > 0 ? updated.join('.') : null
+    filter.value.attr = result
+    updateQuery('attr', result)
+    return
+  }
+
+  // Default filter handler
+  filter.value[type] = value ?? null
+  updateQuery(type, value)
 }
 
 // Update router query helper
@@ -106,6 +125,26 @@ function updateQuery(type: FilterKey, value: FilterValue) {
   })
 }
 
+function handleReset(value: string | null = null) {
+  const keys = ['q', 'gen', 'attr', 'type']
+  const newQuery = { ...route.query }
+
+  if (value) {
+    if (keys.includes(value)) {
+      filter.value[value as FilterKey] = null
+      delete newQuery[value]
+    }
+  } else {
+    for (const key of keys) {
+      filter.value[value as FilterKey] = null
+      delete newQuery[key]
+    }
+  }
+
+  router.replace({ query: newQuery })
+}
+
+
 // Label getters
 const selectedGenLabel = computed(() =>
   generations[0].find(({ id }) => id == filter.value.gen)?.label ?? 'Unknown'
@@ -115,156 +154,259 @@ const selectedTypeLabel = computed(() =>
   types[0].find(({ name }) => name == filter.value.type)?.label ?? 'Unknown'
 )
 
+function selectedAttrLabel (value: string) {
+  const attrStr = String(filter.value.attr ?? '')
+  const isAttr = attrStr.split('.').includes(value)
+  
+  return isAttr
+}
 </script>
 
 <template>
   <div class="m-auto ">
-    <p class="mb-6 text-3xl font-bold">Pokémon Species</p>
+    <p class="mb-6 text-2xl font-bold">Pokémon Species</p>
     <!-- Filter Section -->
-     <section>
-       <div class="grid grid-cols-4 mb-4 gap-x-2">
-   
-         <UInput
-           v-model="filter.q as string"
-           icon="i-lucide-search"
-           size="md"
-           color="white"
-           :trailing="false"
-           placeholder="Search..."
-           @update:model-value="handleFilter('q', $event)"
-         />
-   
-         <UDropdown 
-           v-model:open="open.generations" 
-           :items="generations" 
-           :popper="{ placement: 'bottom-start' }"
-           :ui="{
-             base: 'max-h-96 overflow-auto',
-             item: {
-               padding: 'px-0 py-0',
-             }
-           }"
-         >
-           <template #item="{ item }">
-             <div class="w-full px-3 py-2 text-left" @click="handleFilter('gen', item.id)">
-               <p :class="selectedGenLabel === item.label ? 'text-sky-500 font-semibold' : ''">
-                 {{ item.label }}
-               </p>
-             </div>
-           </template>
-           <UButton block color="white"  >
-             <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
-               <div>
-                 <p v-if="!filter.gen">Any generations</p>
-                 <p v-else class="font-semibold">{{ selectedGenLabel }}</p>
-               </div>
-               <div class="flex items-center">
-                 <UIcon v-if="!open.generations" name="i-lucide-chevron-down" class="text-lg"/>
-                 <UIcon v-else name="i-lucide-chevron-up" class="text-lg"/>
-               </div>
-             </div>
-           </UButton>
-         </UDropdown>
-   
-         <UDropdown 
-           v-model:open="open.types" 
-           :items="types" 
-           :popper="{ placement: 'bottom-start' }"
-           :ui="{
-             base: 'max-h-96 overflow-auto',
-             item: {
-               padding: 'px-0 py-0',
-             }
-           }"
-         >
-           <template #item="{ item }">
-             <div 
-               class="flex items-center justify-between w-full px-3 py-2"  
-               :class="selectedTypeLabel === item.label ? 'text-sky-500 font-semibold' : ''"
-               @click="handleFilter('type', item.name)"
-             >
-               <p>{{ item.label }}</p>
-               <component 
-                 :is="`svgo-types-${item.name}`" 
-                 class="w-4 h-4"
-               />
-             </div>
-           </template>
-           <UButton block color="white"  >
-             <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
-               <div>
-                 <p v-if="!filter.type">Any types</p>
-                 <p v-else class="font-semibold">{{ selectedTypeLabel }}</p>
-               </div>
-               <div class="flex items-center">
-                 <UIcon v-if="!open.types" name="i-lucide-chevron-down" class="text-lg"/>
-                 <UIcon v-else name="i-lucide-chevron-up" class="text-lg"/>
-               </div>
-             </div>
-           </UButton>
-         </UDropdown>
-       </div>
-       <UDivider class="mb-6"/>
-     </section>
-    
-     <!-- Content Section -->
-     <section>
-       <div class="pokemon">
-         <div 
-           v-for="(data, index) in pokemons" 
-           :key="index"
-           class="pokemon-card"
-           :class="`bg-type-${data.types[0].type.name}`" 
-         >
-           <div class="pokemon-content">
-             <section>
-              <div class="w-[150px] ">
-                <p class="truncate pokemon-name">{{ data?.title ?? '' }}</p>
+    <section>
+      <div class="grid grid-cols-4 mb-4 gap-x-2">
+        
+        <div class="relative">
+          <UInput
+            v-model="filter.q as string"
+            icon="i-lucide-search"
+            size="md"
+            color="white"
+            :trailing="false"
+            placeholder="Search..."
+            maxlength="10"
+            @update:model-value="handleFilter('q', $event)"
+          />
+          <div v-if="filter.q" class="absolute top-0 right-0  pr-2 h-9 flex items-center">
+            <UButton
+              icon="i-lucide-circle-x"
+              size="xs"
+              color="red"
+              square
+              variant="soft"
+              @click="handleReset('q')"
+            />
+          </div>
+        </div>
+
+        <div class="relative">
+          <UDropdown 
+            v-model:open="open.generations" 
+            :items="generations" 
+            :popper="{ placement: 'bottom-start' }"
+            :ui="{
+              base: 'max-h-96 overflow-auto',
+              item: {
+                padding: 'px-0 py-0',
+              }
+            }"
+          >
+            <template #item="{ item }">
+              <div class="w-full px-3 py-2 text-left" @click="handleFilter('gen', item.id)">
+                <p :class="{  'text-sky-500 font-medium': selectedGenLabel === item.label}">
+                  {{ item.label }}
+                </p>
               </div>
-               <p class="pokemon-id">{{ String(data.id).padStart(4, '0') }}</p>
-               <div class="pokemon-types">
-                 <p v-for="type, id in data.types" :key="id" class="first-letter:uppercase">
-                   {{ type.type.name }}
-                   <span v-if="Number(id+1) < data.types.length" class="ml-[-2px]">,</span>
-                 </p>
-               </div>
-   
-               <div class="flex items-center mt-1">
-                 <div class="flex items-end ">
-                   <div
-                     class="pokemon-types-circle" 
-                     :class="`bg-skill-${data.types[0].type.name}`" 
-                   />
-                   <div
-                     v-if="data.types.length > 1" 
-                     class="pokemon-types-circle-option"
-                     :class="`bg-skill-${data.types[1].type.name}`" 
-                   />
-                 </div>
-                 <p
-                    v-if="(data.form?.length ?? 0) > 1"
-                    class="ml-1 text-xs font-semibold text-slate-500"> 
-                    — {{ data.form?.length }} Forms</p>
-               </div>
-             </section>
-             <img
-               class="pokemon-artwork" 
-               :src="`https://pokemon-img.pages.dev/192x192/${data.id}.webp`"
-               >
-           </div>
-   
-           <p class="pokemon-name-alternative">
-             {{ data.japanese_name }}
-           </p>
-         </div>
-       </div>
-     </section>
+            </template>
+  
+            <UButton block color="white" class="w-[202px] h-9">
+              <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
+                <div>
+                  <p v-if="!filter.gen">Any generations</p>
+                  <p v-else class="font-medium">{{ selectedGenLabel }}</p>
+                </div>
+                <div class="flex items-center">
+                  <UIcon v-if="!open.generations" name="i-lucide-chevron-down" class="text-lg"/>
+                  <UIcon v-else name="i-lucide-chevron-up" class="text-lg"/>
+                </div>
+              </div>
+            </UButton>
+          </UDropdown>
+  
+          <div v-if="filter.gen" class="absolute top-0 right-0 pr-2 h-9 flex items-center">
+            <UButton
+              icon="i-lucide-circle-x"
+              size="xs"
+              color="red"
+              square
+              variant="soft"
+              @click="handleReset('gen')"
+            />
+          </div>
+        </div>
+  
+
+        <div class="relative">
+          <UDropdown 
+            v-model:open="open.types" 
+            :items="types" 
+            :popper="{ placement: 'bottom-start' }"
+            :ui="{
+              base: 'max-h-96 overflow-auto',
+              item: {
+                padding: 'px-0 py-0',
+              }
+            }"
+          >
+            <template #item="{ item }">
+              <div 
+                class="flex items-center justify-between w-full px-3 py-2"  
+                :class="{'text-sky-500 font-medium': selectedTypeLabel === item.label}"
+                @click="handleFilter('type', item.name)"
+              >
+                <p>{{ item.label }}</p>
+                <component 
+                  :is="`svgo-types-${item.name}`" 
+                  class="w-4 h-4"
+                />
+              </div>
+            </template>
+
+            <UButton block color="white" class="w-[202px] h-9" >
+              <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
+                <div>
+                  <p v-if="!filter.type">Any types</p>
+                  <p v-else class="font-medium">{{ selectedTypeLabel }}</p>
+                </div>
+                <div class="flex items-center">
+                  <UIcon v-if="!open.types" name="i-lucide-chevron-down" class="text-lg"/>
+                  <UIcon v-else name="i-lucide-chevron-up" class="text-lg"/>
+                </div>
+              </div>
+            </UButton>
+          </UDropdown>
+
+          <div v-if="filter.type" class="absolute top-0 right-0 pr-2 h-9 flex items-center">
+            <UButton
+              icon="i-lucide-circle-x"
+              size="xs"
+              color="red"
+              square
+              variant="soft"
+              @click="handleReset('type')"
+            />
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between gap-x-2">
+
+          <UPopover v-model:open="open.attr" :ui="{ placement: 'bottom-start' }">
+            <UChip :show="filter.attr !== null" class="w-full" size="lg">
+              <UButton color="white" size="lg" class="w-10 h-9 w- p-0">
+                <div class="flex items-center justify-center w-full">
+                  <UIcon name="i-lucide-filter" class="text-lg text-gray-500 " />
+                </div>
+              </UButton>
+            </UChip>
+            
+            <template #panel>
+              <div class="w-[192px] p-1">
+                <div
+                  class="button-attr"
+                  :class="{'text-sky-500 font-medium': !filter.attr}"
+                  @click="handleFilter('attr', 'all')">All</div>
+                <UDivider class="py-1"/>
+                <div 
+                  v-for="attr in forms" :key="attr.id" 
+                  class="button-attr" 
+                  @click="handleFilter('attr', attr.value)">
+                  <div>
+                    <p :class="{'text-sky-500 font-medium': selectedAttrLabel(attr.value)}">
+                      {{ attr.label }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </template>
+            
+          </UPopover>
+  
+          <UButton variant="link" @click="handleReset">Reset</UButton>
+        </div>
+      </div>
+      <UDivider class="mb-6"/>
+    </section>
+
+    <!-- Content Section -->
+    <section>
+      <div class="pokemon">
+        <div 
+          v-for="(data, index) in pokemons" 
+          :key="index"
+          class="pokemon-card"
+          :class="`bg-type-${getNameTypes(data.types[0][0])}`" 
+        >
+          <div class="pokemon-content">
+            <section>
+            <div class="w-[150px] ">
+              <p class="truncate pokemon-name">{{ getName(data.name) }}</p>
+            </div>
+            <div class="flex items-center mt-1 mb-3 gap-x-1">
+              <p class="pokemon-id">{{ String(data.id).padStart(4, '0') }}</p>
+              <div class="pt-0.5 text-xs text-slate-600">
+                <UIcon
+                  v-if="data.attr.is_baby" 
+                  name="i-lucide-egg"
+                  class="animate-bounce" />
+                <UIcon
+                  v-if="data.attr.is_legendary"
+                  name="i-lucide-star"
+                  class="animate-spin" />
+                <UIcon
+                  v-if="data.attr.is_mythical"
+                  name="i-lucide-circle-dot-dashed"
+                  class="animate-pulse" />
+                <UIcon
+                  v-if="data.attr.is_mega && !data.attr.is_legendary"
+                  name="i-lucide-circle-small"
+                  class="text-[8px] mb-[1px] animate-ping" />
+              </div>
+            </div>
+              <div class="pokemon-types">
+                <p v-for="type, id in data.types[0]" :key="id" class="first-letter:uppercase">
+                  {{ getNameTypes(type) }}
+                  <span v-if="Number(id+1) < data.types[0].length" class="ml-[-2px]">,</span>
+                </p>
+              </div>
+  
+              <div class="flex items-center mt-1">
+                <div v-for="type, id in data.types" :key="id" class="flex items-end mr-1">
+                  <div
+                    class="pokemon-types-circle" 
+                    :class="`bg-skill-${getNameTypes(type[0])}`" 
+                  />
+                  <div
+                    v-if="type.length > 1" 
+                    class="pokemon-types-circle-option"
+                    :class="`bg-skill-${getNameTypes(type[1])}`" 
+                  />
+                </div>
+                <p
+                  v-if="data.forms > 1"
+                  class="text-xs font-medium text-slate-500"> 
+                  — {{ data.forms }} Forms</p>
+              </div>
+            </section>
+            <img
+              class="pokemon-artwork" 
+              :src="`https://pokemon-img.pages.dev/192x192/${data.id}.webp`" >
+          </div>
+  
+          <p class="pokemon-name-alternative">
+            {{ data.japanese_name }}
+          </p>
+        </div>
+      </div>
+    </section>
 
     <div v-if="isLoading">
       <LoadingSkeleton />
     </div>
     
-    <div ref="infiniteScrollTrigger" class="h-6"/>
+    <div ref="infiniteScrollTrigger" class="h-6 -mt-10"/>
 
   </div>
 </template>
@@ -294,23 +436,28 @@ const selectedTypeLabel = computed(() =>
   }
 
   &-id {
-    @apply mt-1 mb-3 text-xs text-slate-600;
+    @apply text-xs text-slate-600;
   }
 
   &-types {
     @apply flex items-center text-xs gap-x-1;
 
     &-circle {
-      @apply w-4 h-4 border rounded-full border-slate-300;
+      @apply w-4 h-4 border rounded-full border-black/20;
     }
 
     &-circle-option {
-      @apply w-3.5 h-3.5 ml-[-4px] rounded-full border border-slate-300;
+      @apply w-3.5 h-3.5 ml-[-4px] rounded-full border border-black/20;
     }
   }
 
   &-artwork {
     @apply absolute right-0 z-10 w-32 top-2;
   }
+}
+
+.button-attr {
+  @apply flex items-center justify-between w-full px-3 py-2 text-sm;
+  @apply text-gray-600 rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-700;
 }
 </style>
