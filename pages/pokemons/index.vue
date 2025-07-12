@@ -334,72 +334,7 @@ function selectedAttrLabel (value: string) {
     <!-- Content Section -->
     <section>
       <div class="pokemon">
-        <div 
-          v-for="(data, index) in pokemons" 
-          :key="index"
-          class="pokemon-card"
-          :class="`bg-type-${getNameTypes(data.types[0][0])}`" 
-        >
-          <div class="pokemon-content">
-            <section>
-            <div class="w-[150px] ">
-              <p class="truncate pokemon-name">{{ getName(data.name) }}</p>
-            </div>
-            <div class="flex items-center mt-1 mb-3 gap-x-1">
-              <p class="pokemon-id">{{ String(data.id).padStart(4, '0') }}</p>
-              <div class="pt-0.5 text-xs text-slate-600">
-                <UIcon
-                  v-if="data.attr.is_baby" 
-                  name="i-lucide-egg"
-                  class="animate-bounce" />
-                <UIcon
-                  v-if="data.attr.is_legendary"
-                  name="i-lucide-star"
-                  class="animate-spin" />
-                <UIcon
-                  v-if="data.attr.is_mythical"
-                  name="i-lucide-circle-dot-dashed"
-                  class="animate-pulse" />
-                <UIcon
-                  v-if="data.attr.is_mega && !data.attr.is_legendary"
-                  name="i-lucide-circle-small"
-                  class="text-[8px] mb-[1px] animate-ping" />
-              </div>
-            </div>
-              <div class="pokemon-types">
-                <p v-for="type, id in data.types[0]" :key="id" class="first-letter:uppercase">
-                  {{ getNameTypes(type) }}
-                  <span v-if="Number(id+1) < data.types[0].length" class="ml-[-2px]">,</span>
-                </p>
-              </div>
-  
-              <div class="flex items-center mt-1">
-                <div v-for="type, id in data.types" :key="id" class="flex items-end mr-1">
-                  <div
-                    class="pokemon-types-circle" 
-                    :class="`bg-skill-${getNameTypes(type[0])}`" 
-                  />
-                  <div
-                    v-if="type.length > 1" 
-                    class="pokemon-types-circle-option"
-                    :class="`bg-skill-${getNameTypes(type[1])}`" 
-                  />
-                </div>
-                <p
-                  v-if="data.forms > 1"
-                  class="text-xs font-medium text-slate-500"> 
-                  — {{ data.forms }} Forms</p>
-              </div>
-            </section>
-            <img
-              class="pokemon-artwork" 
-              :src="`https://pokemon-img.pages.dev/192x192/${data.id}.webp`" >
-          </div>
-  
-          <p class="pokemon-name-alternative">
-            {{ data.japanese_name }}
-          </p>
-        </div>
+        <Card :pokemons />
       </div>
     </section>
 
