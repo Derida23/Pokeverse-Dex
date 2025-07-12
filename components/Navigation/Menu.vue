@@ -15,13 +15,13 @@ const isOpen = useVModel(props, 'modelValue', emit)
 
 function handleMenuClick(slug: string) {
   isOpen.value = false;
-  router.push({ name: slug });
+  router.push(`/${slug}`)
 }
 
 const getMenuItemClass = computed (() => {
   return (slug: string) => [
     'menu-content',
-    router.currentRoute.value.name === slug && 'menu-content__active' 
+    router.currentRoute.value.path === `/${slug}` && 'menu-content__active' 
   ];
 })
 </script>
