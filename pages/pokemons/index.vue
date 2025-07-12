@@ -1,3 +1,4 @@
+<!-- eslint-disable @typescript-eslint/no-dynamic-delete -->
 <script setup lang="ts">
 import type { Pokemons } from '@/types/responses/Pokemons'
 import { generations, types, forms } from '@/constants/filter'
@@ -324,7 +325,7 @@ function selectedAttrLabel (value: string) {
             
           </UPopover>
   
-          <UButton variant="link" @click="handleReset">Reset</UButton>
+          <UButton variant="link" @click="handleReset()">Reset</UButton>
         </div>
       </div>
       <UDivider class="mb-6"/>
