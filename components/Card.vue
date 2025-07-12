@@ -10,66 +10,58 @@ const props = defineProps({
 </script>
 
 <template>
-  <div 
+  <div
     v-for="(data, index) in props.pokemons" 
-    :key="index"
+    :key="index" 
     class="pokemon-card"
-    :class="`bg-type-${getNameTypes(data.types[0][0])}`" 
-  >
+    :class="`bg-type-${getNameTypes(data.types[0][0])}`">
+
     <div class="pokemon-content">
       <section>
-      <div class="pokemon-name-wrapper">
-        <p class="pokemon-name">{{ getName(data.name) }}</p>
-      </div>
-      <div class="pokemon-id-wrapper">
-        <p class="pokemon-id">{{ String(data.id).padStart(4, '0') }}</p>
-        <div class="pokemon-types-icons">
-          <UIcon
-            v-if="data.attr.is_baby" 
-            name="i-lucide-egg"
-            class="animate-bounce" />
-          <UIcon
-            v-if="data.attr.is_legendary"
-            name="i-lucide-star"
-            class="animate-spin" />
-          <UIcon
-            v-if="data.attr.is_mythical"
-            name="i-lucide-circle-dot-dashed"
-            class="animate-pulse" />
-          <UIcon
-            v-if="data.attr.is_mega && !data.attr.is_legendary"
-            name="i-lucide-circle-small"
-            class="text-[8px] mb-[1px] animate-ping" />
+        <div class="pokemon-name-wrapper">
+          <p class="pokemon-name">{{ getName(data.name) }}</p>
         </div>
-      </div>
+
+        <div class="pokemon-id-wrapper">
+          <p class="pokemon-id">{{ String(data.id).padStart(4, '0') }}</p>
+          <div class="pokemon-types-icons">
+            <UIcon v-if="data.attr.is_baby" name="i-lucide-egg" class="animate-bounce" />
+            <UIcon v-if="data.attr.is_legendary" name="i-lucide-star" class="animate-spin" />
+            <UIcon
+              v-if="data.attr.is_mythical"
+              name="i-lucide-circle-dot-dashed"
+              class="animate-pulse"
+            />
+            <UIcon
+              v-if="data.attr.is_mega && !data.attr.is_legendary"
+              name="i-lucide-circle-small"
+              class="text-[8px] mb-[1px] animate-ping" />
+          </div>
+        </div>
+
         <div class="pokemon-types">
           <p v-for="type, id in data.types[0]" :key="id" class="first-letter:uppercase">
             {{ getNameTypes(type) }}
-            <span v-if="Number(id+1) < data.types[0].length" class="ml-[-2px]">,</span>
+            <span v-if="Number(id + 1) < data.types[0].length" class="ml-[-2px]">,</span>
           </p>
         </div>
 
-        <div class="flex items-center mt-1">
+        <div class="pokemon-types-color">
           <div v-for="type, id in data.types" :key="id" class="flex items-end mr-1">
+            <div class="pokemon-types-circle" :class="`bg-skill-${getNameTypes(type[0])}`" />
             <div
-              class="pokemon-types-circle" 
-              :class="`bg-skill-${getNameTypes(type[0])}`" 
-            />
-            <div
-              v-if="type.length > 1" 
+              v-if="type.length > 1"
               class="pokemon-types-circle-option"
-              :class="`bg-skill-${getNameTypes(type[1])}`" 
-            />
+              :class="`bg-skill-${getNameTypes(type[1])}`" />
           </div>
-          <p
-            v-if="data.forms > 1"
-            class="pokemon-text-forms"> 
-            — {{ data.forms }} Forms</p>
+          
+          <p v-if="data.forms > 1" class="pokemon-text-forms">
+            — {{ data.forms }} Forms
+          </p>
         </div>
       </section>
-      <img
-        class="pokemon-artwork" 
-        :src="`https://pokemon-img.pages.dev/192x192/${data.id}.webp`" >
+      
+      <img class="pokemon-artwork" :src="`https://pokemon-img.pages.dev/192x192/${data.id}.webp`">
     </div>
 
     <p class="pokemon-name-alternative">
@@ -79,18 +71,17 @@ const props = defineProps({
 </template>
 
 <style lang="postcss" scoped>
-
 .pokemon {
   &-card {
     @apply py-3 pl-3 border shadow-sm;
     @apply cursor-pointer;
     @apply border-slate-200 hover:border-slate-300 h-36 rounded-xl;
-    @apply relative overflow-hidden ;
+    @apply relative overflow-hidden;
   }
 
   &-content {
     @apply z-10 h-full;
-    @apply flex items-center justify-between ;
+    @apply flex items-center justify-between;
   }
 
   &-name {
@@ -126,6 +117,10 @@ const props = defineProps({
 
     &-icons {
       @apply pt-0.5 text-xs text-slate-600;
+    }
+
+    &-color {
+      @apply flex items-center mt-1;
     }
   }
 
