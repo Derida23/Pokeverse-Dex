@@ -5,7 +5,7 @@ export default withNuxt(
     rules: {
       'max-len': [
         'error',
-        { code: 100, tabWidth: 2, comments: 100 },
+        { code: 100, tabWidth: 2, comments: 150 },
       ],
       'vue/multi-word-component-names': 'off',
     },
