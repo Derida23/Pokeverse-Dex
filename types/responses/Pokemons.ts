@@ -6,6 +6,7 @@ export interface Pokemons {
   forms: number
   generation: number
   attr: Attr
+  form_variants: Variants[] | []
 }
 
 export interface Attr {
@@ -14,4 +15,11 @@ export interface Attr {
   is_mega: boolean
   is_gmax: boolean
   is_baby: boolean
+}
+
+export interface Variants {
+  form_id: number
+  form_name: string
+  types: number[]
+  japanese_name: string
 }
