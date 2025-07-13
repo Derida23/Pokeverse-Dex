@@ -5,6 +5,10 @@ const props = defineProps({
   pokemons: {
     type: Array as () => Pokemons[],
     required: true
+  },
+  variants: {
+    type: String,
+    default: ''
   }
 })
 </script>
