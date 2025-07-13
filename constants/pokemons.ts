@@ -18,7 +18,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 2,
@@ -38,7 +39,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 3,
@@ -58,7 +60,27 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10033,
+        "form_name": "venusaur-mega",
+        "japanese_name": "フシギバナ",
+        "types": [
+          12,
+          4
+        ]
+      },
+      {
+        "form_id": 10195,
+        "form_name": "venusaur-gmax",
+        "japanese_name": "フシギバナ",
+        "types": [
+          12,
+          4
+        ]
+      }
+    ]
   },
   {
     "id": 4,
@@ -77,7 +99,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 5,
@@ -96,7 +119,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 6,
@@ -120,7 +144,36 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10034,
+        "form_name": "charizard-mega-x",
+        "japanese_name": "リザードン",
+        "types": [
+          10,
+          16
+        ]
+      },
+      {
+        "form_id": 10035,
+        "form_name": "charizard-mega-y",
+        "japanese_name": "リザードン",
+        "types": [
+          10,
+          3
+        ]
+      },
+      {
+        "form_id": 10196,
+        "form_name": "charizard-gmax",
+        "japanese_name": "リザードン",
+        "types": [
+          10,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 7,
@@ -139,7 +192,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 8,
@@ -158,7 +212,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 9,
@@ -177,7 +232,25 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10036,
+        "form_name": "blastoise-mega",
+        "japanese_name": "カメックス",
+        "types": [
+          11
+        ]
+      },
+      {
+        "form_id": 10197,
+        "form_name": "blastoise-gmax",
+        "japanese_name": "カメックス",
+        "types": [
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 10,
@@ -196,7 +269,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 11,
@@ -215,7 +289,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 12,
@@ -235,7 +310,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10198,
+        "form_name": "butterfree-gmax",
+        "japanese_name": "バタフリー",
+        "types": [
+          7,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 13,
@@ -255,7 +341,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 14,
@@ -275,7 +362,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 15,
@@ -295,7 +383,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10090,
+        "form_name": "beedrill-mega",
+        "japanese_name": "スピアー",
+        "types": [
+          7,
+          4
+        ]
+      }
+    ]
   },
   {
     "id": 16,
@@ -315,7 +414,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 17,
@@ -335,7 +435,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 18,
@@ -355,7 +456,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10073,
+        "form_name": "pidgeot-mega",
+        "japanese_name": "ピジョット",
+        "types": [
+          1,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 19,
@@ -378,7 +490,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10091,
+        "form_name": "rattata-alola",
+        "japanese_name": "コラッタ",
+        "types": [
+          17,
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 20,
@@ -401,7 +524,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10092,
+        "form_name": "raticate-alola",
+        "japanese_name": "ラッタ",
+        "types": [
+          17,
+          1
+        ]
+      },
+      {
+        "form_id": 10093,
+        "form_name": "raticate-totem-alola",
+        "japanese_name": "ラッタ",
+        "types": [
+          17,
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 21,
@@ -421,7 +564,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 22,
@@ -441,7 +585,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 23,
@@ -460,7 +605,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 24,
@@ -479,7 +625,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 25,
@@ -498,7 +645,137 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10080,
+        "form_name": "pikachu-rock-star",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10081,
+        "form_name": "pikachu-belle",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10082,
+        "form_name": "pikachu-pop-star",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10083,
+        "form_name": "pikachu-phd",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10084,
+        "form_name": "pikachu-libre",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10085,
+        "form_name": "pikachu-cosplay",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10094,
+        "form_name": "pikachu-original-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10095,
+        "form_name": "pikachu-hoenn-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10096,
+        "form_name": "pikachu-sinnoh-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10097,
+        "form_name": "pikachu-unova-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10098,
+        "form_name": "pikachu-kalos-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10099,
+        "form_name": "pikachu-alola-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10148,
+        "form_name": "pikachu-partner-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10158,
+        "form_name": "pikachu-starter",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10160,
+        "form_name": "pikachu-world-cap",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      },
+      {
+        "form_id": 10199,
+        "form_name": "pikachu-gmax",
+        "japanese_name": "ピカチュウ",
+        "types": [
+          13
+        ]
+      }
+    ]
   },
   {
     "id": 26,
@@ -521,7 +798,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10100,
+        "form_name": "raichu-alola",
+        "japanese_name": "ライチュウ",
+        "types": [
+          13,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 27,
@@ -544,7 +832,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10101,
+        "form_name": "sandshrew-alola",
+        "japanese_name": "サンド",
+        "types": [
+          15,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 28,
@@ -567,7 +866,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10102,
+        "form_name": "sandslash-alola",
+        "japanese_name": "サンドパン",
+        "types": [
+          15,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 29,
@@ -586,7 +896,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 30,
@@ -605,7 +916,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 31,
@@ -625,7 +937,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 32,
@@ -644,7 +957,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 33,
@@ -663,7 +977,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 34,
@@ -683,7 +998,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 35,
@@ -702,7 +1018,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 36,
@@ -721,7 +1038,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 37,
@@ -743,7 +1061,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10103,
+        "form_name": "vulpix-alola",
+        "japanese_name": "ロコン",
+        "types": [
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 38,
@@ -766,7 +1094,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10104,
+        "form_name": "ninetales-alola",
+        "japanese_name": "キュウコン",
+        "types": [
+          15,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 39,
@@ -786,7 +1125,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 40,
@@ -806,7 +1146,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 41,
@@ -826,7 +1167,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 42,
@@ -846,7 +1188,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 43,
@@ -866,7 +1209,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 44,
@@ -886,7 +1230,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 45,
@@ -906,7 +1251,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 46,
@@ -926,7 +1272,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 47,
@@ -946,7 +1293,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 48,
@@ -966,7 +1314,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 49,
@@ -986,7 +1335,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 50,
@@ -1009,7 +1359,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10105,
+        "form_name": "diglett-alola",
+        "japanese_name": "ディグダ",
+        "types": [
+          5,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 51,
@@ -1032,7 +1393,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10106,
+        "form_name": "dugtrio-alola",
+        "japanese_name": "ダグトリオ",
+        "types": [
+          5,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 52,
@@ -1057,7 +1429,33 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10107,
+        "form_name": "meowth-alola",
+        "japanese_name": "ニャース",
+        "types": [
+          17
+        ]
+      },
+      {
+        "form_id": 10161,
+        "form_name": "meowth-galar",
+        "japanese_name": "ニャース",
+        "types": [
+          9
+        ]
+      },
+      {
+        "form_id": 10200,
+        "form_name": "meowth-gmax",
+        "japanese_name": "ニャース",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 53,
@@ -1079,7 +1477,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10108,
+        "form_name": "persian-alola",
+        "japanese_name": "ペルシアン",
+        "types": [
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 54,
@@ -1098,7 +1506,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 55,
@@ -1117,7 +1526,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 56,
@@ -1136,7 +1546,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 57,
@@ -1155,7 +1566,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 58,
@@ -1178,7 +1590,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10229,
+        "form_name": "growlithe-hisui",
+        "japanese_name": "ガーディ",
+        "types": [
+          10,
+          6
+        ]
+      }
+    ]
   },
   {
     "id": 59,
@@ -1201,7 +1624,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10230,
+        "form_name": "arcanine-hisui",
+        "japanese_name": "ウインディ",
+        "types": [
+          10,
+          6
+        ]
+      }
+    ]
   },
   {
     "id": 60,
@@ -1220,7 +1654,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 61,
@@ -1239,7 +1674,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 62,
@@ -1259,7 +1695,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 63,
@@ -1278,7 +1715,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 64,
@@ -1297,7 +1735,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 65,
@@ -1316,7 +1755,17 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10037,
+        "form_name": "alakazam-mega",
+        "japanese_name": "フーディン",
+        "types": [
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 66,
@@ -1335,7 +1784,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 67,
@@ -1354,7 +1804,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 68,
@@ -1373,7 +1824,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10201,
+        "form_name": "machamp-gmax",
+        "japanese_name": "カイリキー",
+        "types": [
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 69,
@@ -1393,7 +1854,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 70,
@@ -1413,7 +1875,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 71,
@@ -1433,7 +1896,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 72,
@@ -1453,7 +1917,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 73,
@@ -1473,7 +1938,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 74,
@@ -1497,7 +1963,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10109,
+        "form_name": "geodude-alola",
+        "japanese_name": "イシツブテ",
+        "types": [
+          6,
+          13
+        ]
+      }
+    ]
   },
   {
     "id": 75,
@@ -1521,7 +1998,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10110,
+        "form_name": "graveler-alola",
+        "japanese_name": "ゴローン",
+        "types": [
+          6,
+          13
+        ]
+      }
+    ]
   },
   {
     "id": 76,
@@ -1545,7 +2033,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10111,
+        "form_name": "golem-alola",
+        "japanese_name": "ゴローニャ",
+        "types": [
+          6,
+          13
+        ]
+      }
+    ]
   },
   {
     "id": 77,
@@ -1567,7 +2066,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10162,
+        "form_name": "ponyta-galar",
+        "japanese_name": "ポニータ",
+        "types": [
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 78,
@@ -1590,7 +2099,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10163,
+        "form_name": "rapidash-galar",
+        "japanese_name": "ギャロップ",
+        "types": [
+          14,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 79,
@@ -1613,7 +2133,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10164,
+        "form_name": "slowpoke-galar",
+        "japanese_name": "ヤドン",
+        "types": [
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 80,
@@ -1637,7 +2167,27 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10071,
+        "form_name": "slowbro-mega",
+        "japanese_name": "ヤドラン",
+        "types": [
+          11,
+          14
+        ]
+      },
+      {
+        "form_id": 10165,
+        "form_name": "slowbro-galar",
+        "japanese_name": "ヤドラン",
+        "types": [
+          4,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 81,
@@ -1657,7 +2207,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 82,
@@ -1677,7 +2228,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 83,
@@ -1700,7 +2252,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10166,
+        "form_name": "farfetchd-galar",
+        "japanese_name": "カモネギ",
+        "types": [
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 84,
@@ -1720,7 +2282,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 85,
@@ -1740,7 +2303,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 86,
@@ -1759,7 +2323,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 87,
@@ -1779,7 +2344,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 88,
@@ -1802,7 +2368,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10112,
+        "form_name": "grimer-alola",
+        "japanese_name": "ベトベター",
+        "types": [
+          4,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 89,
@@ -1825,7 +2402,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10113,
+        "form_name": "muk-alola",
+        "japanese_name": "ベトベトン",
+        "types": [
+          4,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 90,
@@ -1844,7 +2432,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 91,
@@ -1864,7 +2453,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 92,
@@ -1884,7 +2474,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 93,
@@ -1904,7 +2495,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 94,
@@ -1924,7 +2516,27 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10038,
+        "form_name": "gengar-mega",
+        "japanese_name": "ゲンガー",
+        "types": [
+          8,
+          4
+        ]
+      },
+      {
+        "form_id": 10202,
+        "form_name": "gengar-gmax",
+        "japanese_name": "ゲンガー",
+        "types": [
+          8,
+          4
+        ]
+      }
+    ]
   },
   {
     "id": 95,
@@ -1944,7 +2556,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 96,
@@ -1963,7 +2576,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 97,
@@ -1982,7 +2596,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 98,
@@ -2001,7 +2616,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 99,
@@ -2020,7 +2636,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10203,
+        "form_name": "kingler-gmax",
+        "japanese_name": "キングラー",
+        "types": [
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 100,
@@ -2043,7 +2669,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10231,
+        "form_name": "voltorb-hisui",
+        "japanese_name": "ビリリダマ",
+        "types": [
+          13,
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 101,
@@ -2066,7 +2703,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10232,
+        "form_name": "electrode-hisui",
+        "japanese_name": "マルマイン",
+        "types": [
+          13,
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 102,
@@ -2086,7 +2734,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 103,
@@ -2110,7 +2759,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10114,
+        "form_name": "exeggutor-alola",
+        "japanese_name": "ナッシー",
+        "types": [
+          12,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 104,
@@ -2129,7 +2789,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 105,
@@ -2152,7 +2813,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10115,
+        "form_name": "marowak-alola",
+        "japanese_name": "ガラガラ",
+        "types": [
+          10,
+          8
+        ]
+      },
+      {
+        "form_id": 10149,
+        "form_name": "marowak-totem",
+        "japanese_name": "ガラガラ",
+        "types": [
+          10,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 106,
@@ -2171,7 +2852,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 107,
@@ -2190,7 +2872,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 108,
@@ -2209,7 +2892,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 109,
@@ -2228,7 +2912,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 110,
@@ -2251,7 +2936,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10167,
+        "form_name": "weezing-galar",
+        "japanese_name": "マタドガス",
+        "types": [
+          4,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 111,
@@ -2271,7 +2967,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 112,
@@ -2291,7 +2988,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 113,
@@ -2310,7 +3008,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 114,
@@ -2329,7 +3028,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 115,
@@ -2348,7 +3048,17 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10039,
+        "form_name": "kangaskhan-mega",
+        "japanese_name": "ガルーラ",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 116,
@@ -2367,7 +3077,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 117,
@@ -2386,7 +3097,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 118,
@@ -2405,7 +3117,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 119,
@@ -2424,7 +3137,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 120,
@@ -2443,7 +3157,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 121,
@@ -2463,7 +3178,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 122,
@@ -2487,7 +3203,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10168,
+        "form_name": "mr-mime-galar",
+        "japanese_name": "バリヤード",
+        "types": [
+          15,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 123,
@@ -2507,7 +3234,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 124,
@@ -2527,7 +3255,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 125,
@@ -2546,7 +3275,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 126,
@@ -2565,7 +3295,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 127,
@@ -2588,7 +3319,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10040,
+        "form_name": "pinsir-mega",
+        "japanese_name": "カイロス",
+        "types": [
+          7,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 128,
@@ -2618,7 +3360,35 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10250,
+        "form_name": "tauros-paldea-combat-breed",
+        "japanese_name": "ケンタロス",
+        "types": [
+          2
+        ]
+      },
+      {
+        "form_id": 10251,
+        "form_name": "tauros-paldea-blaze-breed",
+        "japanese_name": "ケンタロス",
+        "types": [
+          2,
+          10
+        ]
+      },
+      {
+        "form_id": 10252,
+        "form_name": "tauros-paldea-aqua-breed",
+        "japanese_name": "ケンタロス",
+        "types": [
+          2,
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 129,
@@ -2637,7 +3407,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 130,
@@ -2661,7 +3432,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10041,
+        "form_name": "gyarados-mega",
+        "japanese_name": "ギャラドス",
+        "types": [
+          11,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 131,
@@ -2681,7 +3463,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10204,
+        "form_name": "lapras-gmax",
+        "japanese_name": "ラプラス",
+        "types": [
+          11,
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 132,
@@ -2700,7 +3493,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 133,
@@ -2719,7 +3513,25 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10159,
+        "form_name": "eevee-starter",
+        "japanese_name": "イーブイ",
+        "types": [
+          1
+        ]
+      },
+      {
+        "form_id": 10205,
+        "form_name": "eevee-gmax",
+        "japanese_name": "イーブイ",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 134,
@@ -2738,7 +3550,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 135,
@@ -2757,7 +3570,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 136,
@@ -2776,7 +3590,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 137,
@@ -2795,7 +3610,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 138,
@@ -2815,7 +3631,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 139,
@@ -2835,7 +3652,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 140,
@@ -2855,7 +3673,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 141,
@@ -2875,7 +3694,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 142,
@@ -2895,7 +3715,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10042,
+        "form_name": "aerodactyl-mega",
+        "japanese_name": "プテラ",
+        "types": [
+          6,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 143,
@@ -2914,7 +3745,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10206,
+        "form_name": "snorlax-gmax",
+        "japanese_name": "カビゴン",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 144,
@@ -2938,7 +3779,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10169,
+        "form_name": "articuno-galar",
+        "japanese_name": "フリーザー",
+        "types": [
+          14,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 145,
@@ -2962,7 +3814,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10170,
+        "form_name": "zapdos-galar",
+        "japanese_name": "サンダー",
+        "types": [
+          2,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 146,
@@ -2986,7 +3849,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10171,
+        "form_name": "moltres-galar",
+        "japanese_name": "ファイヤー",
+        "types": [
+          17,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 147,
@@ -3005,7 +3879,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 148,
@@ -3024,7 +3899,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 149,
@@ -3044,7 +3920,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 150,
@@ -3067,7 +3944,26 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10043,
+        "form_name": "mewtwo-mega-x",
+        "japanese_name": "ミュウツー",
+        "types": [
+          14,
+          2
+        ]
+      },
+      {
+        "form_id": 10044,
+        "form_name": "mewtwo-mega-y",
+        "japanese_name": "ミュウツー",
+        "types": [
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 151,
@@ -3086,7 +3982,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 152,
@@ -3105,7 +4002,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 153,
@@ -3124,7 +4022,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 154,
@@ -3143,7 +4042,8 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 155,
@@ -3162,7 +4062,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 156,
@@ -3181,7 +4082,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 157,
@@ -3204,7 +4106,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10233,
+        "form_name": "typhlosion-hisui",
+        "japanese_name": "バクフーン",
+        "types": [
+          10,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 158,
@@ -3223,7 +4136,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 159,
@@ -3242,7 +4156,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 160,
@@ -3261,7 +4176,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 161,
@@ -3280,7 +4196,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 162,
@@ -3299,7 +4216,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 163,
@@ -3319,7 +4237,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 164,
@@ -3339,7 +4258,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 165,
@@ -3359,7 +4279,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 166,
@@ -3379,7 +4300,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 167,
@@ -3399,7 +4321,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 168,
@@ -3419,7 +4342,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 169,
@@ -3439,7 +4363,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 170,
@@ -3459,7 +4384,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 171,
@@ -3479,7 +4405,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 172,
@@ -3498,7 +4425,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 173,
@@ -3517,7 +4445,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 174,
@@ -3537,7 +4466,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 175,
@@ -3556,7 +4486,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 176,
@@ -3576,7 +4507,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 177,
@@ -3596,7 +4528,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 178,
@@ -3616,7 +4549,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 179,
@@ -3635,7 +4569,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 180,
@@ -3654,7 +4589,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 181,
@@ -3677,7 +4613,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10045,
+        "form_name": "ampharos-mega",
+        "japanese_name": "デンリュウ",
+        "types": [
+          13,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 182,
@@ -3696,7 +4643,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 183,
@@ -3716,7 +4664,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 184,
@@ -3736,7 +4685,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 185,
@@ -3755,7 +4705,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 186,
@@ -3774,7 +4725,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 187,
@@ -3794,7 +4746,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 188,
@@ -3814,7 +4767,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 189,
@@ -3834,7 +4788,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 190,
@@ -3853,7 +4808,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 191,
@@ -3872,7 +4828,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 192,
@@ -3891,7 +4848,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 193,
@@ -3911,7 +4869,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 194,
@@ -3935,7 +4894,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10253,
+        "form_name": "wooper-paldea",
+        "japanese_name": "ウパー",
+        "types": [
+          4,
+          5
+        ]
+      }
+    ]
   },
   {
     "id": 195,
@@ -3955,7 +4925,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 196,
@@ -3974,7 +4945,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 197,
@@ -3993,7 +4965,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 198,
@@ -4013,7 +4986,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 199,
@@ -4037,7 +5011,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10172,
+        "form_name": "slowking-galar",
+        "japanese_name": "ヤドキング",
+        "types": [
+          4,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 200,
@@ -4056,7 +5041,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 201,
@@ -4075,7 +5061,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 202,
@@ -4094,7 +5081,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 203,
@@ -4114,7 +5102,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 204,
@@ -4133,7 +5122,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 205,
@@ -4153,7 +5143,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 206,
@@ -4172,7 +5163,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 207,
@@ -4192,7 +5184,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 208,
@@ -4212,7 +5205,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10072,
+        "form_name": "steelix-mega",
+        "japanese_name": "ハガネール",
+        "types": [
+          9,
+          5
+        ]
+      }
+    ]
   },
   {
     "id": 209,
@@ -4231,7 +5235,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 210,
@@ -4250,7 +5255,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 211,
@@ -4274,7 +5280,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10234,
+        "form_name": "qwilfish-hisui",
+        "japanese_name": "ハリーセン",
+        "types": [
+          17,
+          4
+        ]
+      }
+    ]
   },
   {
     "id": 212,
@@ -4294,7 +5311,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10046,
+        "form_name": "scizor-mega",
+        "japanese_name": "ハッサム",
+        "types": [
+          7,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 213,
@@ -4314,7 +5342,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 214,
@@ -4334,7 +5363,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10047,
+        "form_name": "heracross-mega",
+        "japanese_name": "ヘラクロス",
+        "types": [
+          7,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 215,
@@ -4358,7 +5398,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10235,
+        "form_name": "sneasel-hisui",
+        "japanese_name": "ニューラ",
+        "types": [
+          2,
+          4
+        ]
+      }
+    ]
   },
   {
     "id": 216,
@@ -4377,7 +5428,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 217,
@@ -4396,7 +5448,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 218,
@@ -4415,7 +5468,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 219,
@@ -4435,7 +5489,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 220,
@@ -4455,7 +5510,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 221,
@@ -4475,7 +5531,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 222,
@@ -4498,7 +5555,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10173,
+        "form_name": "corsola-galar",
+        "japanese_name": "サニーゴ",
+        "types": [
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 223,
@@ -4517,7 +5584,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 224,
@@ -4536,7 +5604,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 225,
@@ -4556,7 +5625,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 226,
@@ -4576,7 +5646,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 227,
@@ -4596,7 +5667,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 228,
@@ -4616,7 +5688,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 229,
@@ -4636,7 +5709,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10048,
+        "form_name": "houndoom-mega",
+        "japanese_name": "ヘルガー",
+        "types": [
+          17,
+          10
+        ]
+      }
+    ]
   },
   {
     "id": 230,
@@ -4656,7 +5740,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 231,
@@ -4675,7 +5760,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 232,
@@ -4694,7 +5780,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 233,
@@ -4713,7 +5800,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 234,
@@ -4732,7 +5820,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 235,
@@ -4751,7 +5840,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 236,
@@ -4770,7 +5860,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 237,
@@ -4789,7 +5880,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 238,
@@ -4809,7 +5901,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 239,
@@ -4828,7 +5921,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 240,
@@ -4847,7 +5941,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 241,
@@ -4866,7 +5961,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 242,
@@ -4885,7 +5981,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 243,
@@ -4904,7 +6001,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 244,
@@ -4923,7 +6021,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 245,
@@ -4942,7 +6041,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 246,
@@ -4962,7 +6062,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 247,
@@ -4982,7 +6083,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 248,
@@ -5002,7 +6104,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10049,
+        "form_name": "tyranitar-mega",
+        "japanese_name": "バンギラス",
+        "types": [
+          6,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 249,
@@ -5022,7 +6135,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 250,
@@ -5042,7 +6156,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 251,
@@ -5062,7 +6177,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 252,
@@ -5081,7 +6197,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 253,
@@ -5100,7 +6217,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 254,
@@ -5123,7 +6241,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10065,
+        "form_name": "sceptile-mega",
+        "japanese_name": "ジュカイン",
+        "types": [
+          12,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 255,
@@ -5142,7 +6271,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 256,
@@ -5162,7 +6292,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 257,
@@ -5182,7 +6313,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10050,
+        "form_name": "blaziken-mega",
+        "japanese_name": "バシャーモ",
+        "types": [
+          10,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 258,
@@ -5201,7 +6343,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 259,
@@ -5221,7 +6364,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 260,
@@ -5241,7 +6385,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10064,
+        "form_name": "swampert-mega",
+        "japanese_name": "ラグラージ",
+        "types": [
+          11,
+          5
+        ]
+      }
+    ]
   },
   {
     "id": 261,
@@ -5260,7 +6415,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 262,
@@ -5279,7 +6435,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 263,
@@ -5302,7 +6459,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10174,
+        "form_name": "zigzagoon-galar",
+        "japanese_name": "ジグザグマ",
+        "types": [
+          17,
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 264,
@@ -5325,7 +6493,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10175,
+        "form_name": "linoone-galar",
+        "japanese_name": "マッスグマ",
+        "types": [
+          17,
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 265,
@@ -5344,7 +6523,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 266,
@@ -5363,7 +6543,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 267,
@@ -5383,7 +6564,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 268,
@@ -5402,7 +6584,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 269,
@@ -5422,7 +6605,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 270,
@@ -5442,7 +6626,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 271,
@@ -5462,7 +6647,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 272,
@@ -5482,7 +6668,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 273,
@@ -5501,7 +6688,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 274,
@@ -5521,7 +6709,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 275,
@@ -5541,7 +6730,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 276,
@@ -5561,7 +6751,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 277,
@@ -5581,7 +6772,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 278,
@@ -5601,7 +6793,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 279,
@@ -5621,7 +6814,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 280,
@@ -5641,7 +6835,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 281,
@@ -5661,7 +6856,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 282,
@@ -5681,7 +6877,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10051,
+        "form_name": "gardevoir-mega",
+        "japanese_name": "サーナイト",
+        "types": [
+          14,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 283,
@@ -5701,7 +6908,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 284,
@@ -5721,7 +6929,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 285,
@@ -5740,7 +6949,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 286,
@@ -5760,7 +6970,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 287,
@@ -5779,7 +6990,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 288,
@@ -5798,7 +7010,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 289,
@@ -5817,7 +7030,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 290,
@@ -5837,7 +7051,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 291,
@@ -5857,7 +7072,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 292,
@@ -5877,7 +7093,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 293,
@@ -5896,7 +7113,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 294,
@@ -5915,7 +7133,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 295,
@@ -5934,7 +7153,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 296,
@@ -5953,7 +7173,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 297,
@@ -5972,7 +7193,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 298,
@@ -5992,7 +7214,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 299,
@@ -6011,7 +7234,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 300,
@@ -6030,7 +7254,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 301,
@@ -6049,7 +7274,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 302,
@@ -6069,7 +7295,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10066,
+        "form_name": "sableye-mega",
+        "japanese_name": "ヤミラミ",
+        "types": [
+          17,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 303,
@@ -6089,7 +7326,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10052,
+        "form_name": "mawile-mega",
+        "japanese_name": "クチート",
+        "types": [
+          9,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 304,
@@ -6109,7 +7357,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 305,
@@ -6129,7 +7378,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 306,
@@ -6152,7 +7402,17 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10053,
+        "form_name": "aggron-mega",
+        "japanese_name": "ボスゴドラ",
+        "types": [
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 307,
@@ -6172,7 +7432,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 308,
@@ -6192,7 +7453,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10054,
+        "form_name": "medicham-mega",
+        "japanese_name": "チャーレム",
+        "types": [
+          2,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 309,
@@ -6211,7 +7483,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 310,
@@ -6230,7 +7503,17 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10055,
+        "form_name": "manectric-mega",
+        "japanese_name": "ライボルト",
+        "types": [
+          13
+        ]
+      }
+    ]
   },
   {
     "id": 311,
@@ -6249,7 +7532,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 312,
@@ -6268,7 +7552,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 313,
@@ -6287,7 +7572,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 314,
@@ -6306,7 +7592,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 315,
@@ -6326,7 +7613,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 316,
@@ -6345,7 +7633,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 317,
@@ -6364,7 +7653,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 318,
@@ -6384,7 +7674,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 319,
@@ -6404,7 +7695,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10070,
+        "form_name": "sharpedo-mega",
+        "japanese_name": "サメハダー",
+        "types": [
+          11,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 320,
@@ -6423,7 +7725,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 321,
@@ -6442,7 +7745,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 322,
@@ -6462,7 +7766,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 323,
@@ -6482,7 +7787,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10087,
+        "form_name": "camerupt-mega",
+        "japanese_name": "バクーダ",
+        "types": [
+          10,
+          5
+        ]
+      }
+    ]
   },
   {
     "id": 324,
@@ -6501,7 +7817,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 325,
@@ -6520,7 +7837,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 326,
@@ -6539,7 +7857,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 327,
@@ -6558,7 +7877,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 328,
@@ -6577,7 +7897,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 329,
@@ -6597,7 +7918,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 330,
@@ -6617,7 +7939,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 331,
@@ -6636,7 +7959,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 332,
@@ -6656,7 +7980,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 333,
@@ -6676,7 +8001,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 334,
@@ -6700,7 +8026,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10067,
+        "form_name": "altaria-mega",
+        "japanese_name": "チルタリス",
+        "types": [
+          16,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 335,
@@ -6719,7 +8056,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 336,
@@ -6738,7 +8076,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 337,
@@ -6758,7 +8097,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 338,
@@ -6778,7 +8118,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 339,
@@ -6798,7 +8139,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 340,
@@ -6818,7 +8160,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 341,
@@ -6837,7 +8180,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 342,
@@ -6857,7 +8201,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 343,
@@ -6877,7 +8222,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 344,
@@ -6897,7 +8243,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 345,
@@ -6917,7 +8264,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 346,
@@ -6937,7 +8285,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 347,
@@ -6957,7 +8306,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 348,
@@ -6977,7 +8327,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 349,
@@ -6996,7 +8347,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 350,
@@ -7015,7 +8367,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 351,
@@ -7043,7 +8396,33 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10013,
+        "form_name": "castform-sunny",
+        "japanese_name": "ポワルン",
+        "types": [
+          10
+        ]
+      },
+      {
+        "form_id": 10014,
+        "form_name": "castform-rainy",
+        "japanese_name": "ポワルン",
+        "types": [
+          11
+        ]
+      },
+      {
+        "form_id": 10015,
+        "form_name": "castform-snowy",
+        "japanese_name": "ポワルン",
+        "types": [
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 352,
@@ -7062,7 +8441,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 353,
@@ -7081,7 +8461,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 354,
@@ -7100,7 +8481,17 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10056,
+        "form_name": "banette-mega",
+        "japanese_name": "ジュペッタ",
+        "types": [
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 355,
@@ -7119,7 +8510,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 356,
@@ -7138,7 +8530,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 357,
@@ -7158,7 +8551,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 358,
@@ -7177,7 +8571,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 359,
@@ -7196,7 +8591,17 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10057,
+        "form_name": "absol-mega",
+        "japanese_name": "アブソル",
+        "types": [
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 360,
@@ -7215,7 +8620,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 361,
@@ -7234,7 +8640,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 362,
@@ -7253,7 +8660,17 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10074,
+        "form_name": "glalie-mega",
+        "japanese_name": "オニゴーリ",
+        "types": [
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 363,
@@ -7273,7 +8690,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 364,
@@ -7293,7 +8711,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 365,
@@ -7313,7 +8732,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 366,
@@ -7332,7 +8752,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 367,
@@ -7351,7 +8772,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 368,
@@ -7370,7 +8792,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 369,
@@ -7390,7 +8813,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 370,
@@ -7409,7 +8833,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 371,
@@ -7428,7 +8853,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 372,
@@ -7447,7 +8873,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 373,
@@ -7467,7 +8894,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10089,
+        "form_name": "salamence-mega",
+        "japanese_name": "ボーマンダ",
+        "types": [
+          16,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 374,
@@ -7487,7 +8925,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 375,
@@ -7507,7 +8946,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 376,
@@ -7527,7 +8967,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10076,
+        "form_name": "metagross-mega",
+        "japanese_name": "メタグロス",
+        "types": [
+          9,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 377,
@@ -7546,7 +8997,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 378,
@@ -7565,7 +9017,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 379,
@@ -7584,7 +9037,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 380,
@@ -7604,7 +9058,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10062,
+        "form_name": "latias-mega",
+        "japanese_name": "ラティアス",
+        "types": [
+          16,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 381,
@@ -7624,7 +9089,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10063,
+        "form_name": "latios-mega",
+        "japanese_name": "ラティオス",
+        "types": [
+          16,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 382,
@@ -7643,7 +9119,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10077,
+        "form_name": "kyogre-primal",
+        "japanese_name": "カイオーガ",
+        "types": [
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 383,
@@ -7666,7 +9152,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10078,
+        "form_name": "groudon-primal",
+        "japanese_name": "グラードン",
+        "types": [
+          5,
+          10
+        ]
+      }
+    ]
   },
   {
     "id": 384,
@@ -7686,7 +9183,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10079,
+        "form_name": "rayquaza-mega",
+        "japanese_name": "レックウザ",
+        "types": [
+          16,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 385,
@@ -7706,7 +9214,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 386,
@@ -7725,7 +9234,33 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10001,
+        "form_name": "deoxys-attack",
+        "japanese_name": "デオキシス",
+        "types": [
+          14
+        ]
+      },
+      {
+        "form_id": 10002,
+        "form_name": "deoxys-defense",
+        "japanese_name": "デオキシス",
+        "types": [
+          14
+        ]
+      },
+      {
+        "form_id": 10003,
+        "form_name": "deoxys-speed",
+        "japanese_name": "デオキシス",
+        "types": [
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 387,
@@ -7744,7 +9279,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 388,
@@ -7763,7 +9299,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 389,
@@ -7783,7 +9320,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 390,
@@ -7802,7 +9340,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 391,
@@ -7822,7 +9361,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 392,
@@ -7842,7 +9382,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 393,
@@ -7861,7 +9402,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 394,
@@ -7880,7 +9422,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 395,
@@ -7900,7 +9443,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 396,
@@ -7920,7 +9464,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 397,
@@ -7940,7 +9485,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 398,
@@ -7960,7 +9506,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 399,
@@ -7979,7 +9526,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 400,
@@ -7999,7 +9547,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 401,
@@ -8018,7 +9567,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 402,
@@ -8037,7 +9587,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 403,
@@ -8056,7 +9607,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 404,
@@ -8075,7 +9627,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 405,
@@ -8094,7 +9647,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 406,
@@ -8114,7 +9668,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 407,
@@ -8134,7 +9689,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 408,
@@ -8153,7 +9709,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 409,
@@ -8172,7 +9729,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 410,
@@ -8192,7 +9750,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 411,
@@ -8212,7 +9771,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 412,
@@ -8231,7 +9791,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 413,
@@ -8259,7 +9820,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10004,
+        "form_name": "wormadam-sandy",
+        "japanese_name": "ミノマダム",
+        "types": [
+          7,
+          5
+        ]
+      },
+      {
+        "form_id": 10005,
+        "form_name": "wormadam-trash",
+        "japanese_name": "ミノマダム",
+        "types": [
+          7,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 414,
@@ -8279,7 +9860,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 415,
@@ -8299,7 +9881,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 416,
@@ -8319,7 +9902,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 417,
@@ -8338,7 +9922,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 418,
@@ -8357,7 +9942,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 419,
@@ -8376,7 +9962,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 420,
@@ -8395,7 +9982,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 421,
@@ -8414,7 +10002,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 422,
@@ -8433,7 +10022,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 423,
@@ -8453,7 +10043,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 424,
@@ -8472,7 +10063,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 425,
@@ -8492,7 +10084,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 426,
@@ -8512,7 +10105,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 427,
@@ -8531,7 +10125,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 428,
@@ -8554,7 +10149,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10088,
+        "form_name": "lopunny-mega",
+        "japanese_name": "ミミロップ",
+        "types": [
+          1,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 429,
@@ -8573,7 +10179,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 430,
@@ -8593,7 +10200,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 431,
@@ -8612,7 +10220,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 432,
@@ -8631,7 +10240,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 433,
@@ -8650,7 +10260,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 434,
@@ -8670,7 +10281,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 435,
@@ -8690,7 +10302,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 436,
@@ -8710,7 +10323,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 437,
@@ -8730,7 +10344,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 438,
@@ -8749,7 +10364,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 439,
@@ -8769,7 +10385,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 440,
@@ -8788,7 +10405,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 441,
@@ -8808,7 +10426,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 442,
@@ -8828,7 +10447,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 443,
@@ -8848,7 +10468,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 444,
@@ -8868,7 +10489,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 445,
@@ -8888,7 +10510,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10058,
+        "form_name": "garchomp-mega",
+        "japanese_name": "ガブリアス",
+        "types": [
+          16,
+          5
+        ]
+      }
+    ]
   },
   {
     "id": 446,
@@ -8907,7 +10540,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 447,
@@ -8926,7 +10560,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 448,
@@ -8946,7 +10581,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10059,
+        "form_name": "lucario-mega",
+        "japanese_name": "ルカリオ",
+        "types": [
+          2,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 449,
@@ -8965,7 +10611,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 450,
@@ -8984,7 +10631,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 451,
@@ -9004,7 +10652,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 452,
@@ -9024,7 +10673,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 453,
@@ -9044,7 +10694,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 454,
@@ -9064,7 +10715,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 455,
@@ -9083,7 +10735,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 456,
@@ -9102,7 +10755,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 457,
@@ -9121,7 +10775,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 458,
@@ -9141,7 +10796,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 459,
@@ -9161,7 +10817,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 460,
@@ -9181,7 +10838,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10060,
+        "form_name": "abomasnow-mega",
+        "japanese_name": "ユキノオー",
+        "types": [
+          12,
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 461,
@@ -9201,7 +10869,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 462,
@@ -9221,7 +10890,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 463,
@@ -9240,7 +10910,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 464,
@@ -9260,7 +10931,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 465,
@@ -9279,7 +10951,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 466,
@@ -9298,7 +10971,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 467,
@@ -9317,7 +10991,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 468,
@@ -9337,7 +11012,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 469,
@@ -9357,7 +11033,8 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 470,
@@ -9376,7 +11053,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 471,
@@ -9395,7 +11073,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 472,
@@ -9415,7 +11094,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 473,
@@ -9435,7 +11115,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 474,
@@ -9454,7 +11135,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 475,
@@ -9474,7 +11156,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10068,
+        "form_name": "gallade-mega",
+        "japanese_name": "エルレイド",
+        "types": [
+          14,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 476,
@@ -9494,7 +11187,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 477,
@@ -9513,7 +11207,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 478,
@@ -9533,7 +11228,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 479,
@@ -9573,7 +11269,54 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10008,
+        "form_name": "rotom-heat",
+        "japanese_name": "ロトム",
+        "types": [
+          13,
+          10
+        ]
+      },
+      {
+        "form_id": 10009,
+        "form_name": "rotom-wash",
+        "japanese_name": "ロトム",
+        "types": [
+          13,
+          11
+        ]
+      },
+      {
+        "form_id": 10010,
+        "form_name": "rotom-frost",
+        "japanese_name": "ロトム",
+        "types": [
+          13,
+          15
+        ]
+      },
+      {
+        "form_id": 10011,
+        "form_name": "rotom-fan",
+        "japanese_name": "ロトム",
+        "types": [
+          13,
+          3
+        ]
+      },
+      {
+        "form_id": 10012,
+        "form_name": "rotom-mow",
+        "japanese_name": "ロトム",
+        "types": [
+          13,
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 480,
@@ -9592,7 +11335,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 481,
@@ -9611,7 +11355,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 482,
@@ -9630,7 +11375,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 483,
@@ -9650,7 +11396,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10245,
+        "form_name": "dialga-origin",
+        "japanese_name": "ディアルガ",
+        "types": [
+          9,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 484,
@@ -9670,7 +11427,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10246,
+        "form_name": "palkia-origin",
+        "japanese_name": "パルキア",
+        "types": [
+          11,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 485,
@@ -9690,7 +11458,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 486,
@@ -9709,7 +11478,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 487,
@@ -9729,7 +11499,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10007,
+        "form_name": "giratina-origin",
+        "japanese_name": "ギラティナ",
+        "types": [
+          8,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 488,
@@ -9748,7 +11529,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 489,
@@ -9767,7 +11549,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 490,
@@ -9786,7 +11569,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 491,
@@ -9805,7 +11589,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 492,
@@ -9828,7 +11613,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10006,
+        "form_name": "shaymin-sky",
+        "japanese_name": "シェイミ",
+        "types": [
+          12,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 493,
@@ -9847,7 +11643,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 494,
@@ -9867,7 +11664,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 495,
@@ -9886,7 +11684,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 496,
@@ -9905,7 +11704,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 497,
@@ -9924,7 +11724,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 498,
@@ -9943,7 +11744,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 499,
@@ -9963,7 +11765,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 500,
@@ -9983,7 +11786,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 501,
@@ -10002,7 +11806,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 502,
@@ -10021,7 +11826,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 503,
@@ -10044,7 +11850,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10236,
+        "form_name": "samurott-hisui",
+        "japanese_name": "ダイケンキ",
+        "types": [
+          11,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 504,
@@ -10063,7 +11880,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 505,
@@ -10082,7 +11900,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 506,
@@ -10101,7 +11920,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 507,
@@ -10120,7 +11940,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 508,
@@ -10139,7 +11960,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 509,
@@ -10158,7 +11980,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 510,
@@ -10177,7 +12000,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 511,
@@ -10196,7 +12020,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 512,
@@ -10215,7 +12040,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 513,
@@ -10234,7 +12060,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 514,
@@ -10253,7 +12080,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 515,
@@ -10272,7 +12100,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 516,
@@ -10291,7 +12120,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 517,
@@ -10310,7 +12140,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 518,
@@ -10329,7 +12160,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 519,
@@ -10349,7 +12181,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 520,
@@ -10369,7 +12202,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 521,
@@ -10389,7 +12223,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 522,
@@ -10408,7 +12243,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 523,
@@ -10427,7 +12263,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 524,
@@ -10446,7 +12283,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 525,
@@ -10465,7 +12303,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 526,
@@ -10484,7 +12323,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 527,
@@ -10504,7 +12344,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 528,
@@ -10524,7 +12365,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 529,
@@ -10543,7 +12385,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 530,
@@ -10563,7 +12406,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 531,
@@ -10586,7 +12430,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10069,
+        "form_name": "audino-mega",
+        "japanese_name": "タブンネ",
+        "types": [
+          1,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 532,
@@ -10605,7 +12460,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 533,
@@ -10624,7 +12480,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 534,
@@ -10643,7 +12500,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 535,
@@ -10662,7 +12520,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 536,
@@ -10682,7 +12541,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 537,
@@ -10702,7 +12562,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 538,
@@ -10721,7 +12582,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 539,
@@ -10740,7 +12602,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 540,
@@ -10760,7 +12623,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 541,
@@ -10780,7 +12644,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 542,
@@ -10800,7 +12665,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 543,
@@ -10820,7 +12686,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 544,
@@ -10840,7 +12707,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 545,
@@ -10860,7 +12728,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 546,
@@ -10880,7 +12749,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 547,
@@ -10900,7 +12770,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 548,
@@ -10919,7 +12790,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 549,
@@ -10942,7 +12814,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10237,
+        "form_name": "lilligant-hisui",
+        "japanese_name": "ドレディア",
+        "types": [
+          12,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 550,
@@ -10961,7 +12844,25 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10016,
+        "form_name": "basculin-blue-striped",
+        "japanese_name": "バスラオ",
+        "types": [
+          11
+        ]
+      },
+      {
+        "form_id": 10247,
+        "form_name": "basculin-white-striped",
+        "japanese_name": "バスラオ",
+        "types": [
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 551,
@@ -10981,7 +12882,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 552,
@@ -11001,7 +12903,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 553,
@@ -11021,7 +12924,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 554,
@@ -11043,7 +12947,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10176,
+        "form_name": "darumaka-galar",
+        "japanese_name": "ダルマッカ",
+        "types": [
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 555,
@@ -11073,7 +12987,35 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10017,
+        "form_name": "darmanitan-zen",
+        "japanese_name": "ヒヒダルマ",
+        "types": [
+          10,
+          14
+        ]
+      },
+      {
+        "form_id": 10177,
+        "form_name": "darmanitan-galar-standard",
+        "japanese_name": "ヒヒダルマ",
+        "types": [
+          15
+        ]
+      },
+      {
+        "form_id": 10178,
+        "form_name": "darmanitan-galar-zen",
+        "japanese_name": "ヒヒダルマ",
+        "types": [
+          15,
+          10
+        ]
+      }
+    ]
   },
   {
     "id": 556,
@@ -11092,7 +13034,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 557,
@@ -11112,7 +13055,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 558,
@@ -11132,7 +13076,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 559,
@@ -11152,7 +13097,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 560,
@@ -11172,7 +13118,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 561,
@@ -11192,7 +13139,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 562,
@@ -11215,7 +13163,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10179,
+        "form_name": "yamask-galar",
+        "japanese_name": "デスマス",
+        "types": [
+          5,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 563,
@@ -11234,7 +13193,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 564,
@@ -11254,7 +13214,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 565,
@@ -11274,7 +13235,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 566,
@@ -11294,7 +13256,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 567,
@@ -11314,7 +13277,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 568,
@@ -11333,7 +13297,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 569,
@@ -11352,7 +13317,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10207,
+        "form_name": "garbodor-gmax",
+        "japanese_name": "ダストダス",
+        "types": [
+          4
+        ]
+      }
+    ]
   },
   {
     "id": 570,
@@ -11375,7 +13350,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10238,
+        "form_name": "zorua-hisui",
+        "japanese_name": "ゾロア",
+        "types": [
+          1,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 571,
@@ -11398,7 +13384,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10239,
+        "form_name": "zoroark-hisui",
+        "japanese_name": "ゾロアーク",
+        "types": [
+          1,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 572,
@@ -11417,7 +13414,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 573,
@@ -11436,7 +13434,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 574,
@@ -11455,7 +13454,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 575,
@@ -11474,7 +13474,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 576,
@@ -11493,7 +13494,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 577,
@@ -11512,7 +13514,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 578,
@@ -11531,7 +13534,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 579,
@@ -11550,7 +13554,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 580,
@@ -11570,7 +13575,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 581,
@@ -11590,7 +13596,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 582,
@@ -11609,7 +13616,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 583,
@@ -11628,7 +13636,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 584,
@@ -11647,7 +13656,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 585,
@@ -11667,7 +13677,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 586,
@@ -11687,7 +13698,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 587,
@@ -11707,7 +13719,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 588,
@@ -11726,7 +13739,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 589,
@@ -11746,7 +13760,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 590,
@@ -11766,7 +13781,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 591,
@@ -11786,7 +13802,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 592,
@@ -11806,7 +13823,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 593,
@@ -11826,7 +13844,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 594,
@@ -11845,7 +13864,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 595,
@@ -11865,7 +13885,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 596,
@@ -11885,7 +13906,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 597,
@@ -11905,7 +13927,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 598,
@@ -11925,7 +13948,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 599,
@@ -11944,7 +13968,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 600,
@@ -11963,7 +13988,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 601,
@@ -11982,7 +14008,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 602,
@@ -12001,7 +14028,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 603,
@@ -12020,7 +14048,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 604,
@@ -12039,7 +14068,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 605,
@@ -12058,7 +14088,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 606,
@@ -12077,7 +14108,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 607,
@@ -12097,7 +14129,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 608,
@@ -12117,7 +14150,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 609,
@@ -12137,7 +14171,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 610,
@@ -12156,7 +14191,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 611,
@@ -12175,7 +14211,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 612,
@@ -12194,7 +14231,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 613,
@@ -12213,7 +14251,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 614,
@@ -12232,7 +14271,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 615,
@@ -12251,7 +14291,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 616,
@@ -12270,7 +14311,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 617,
@@ -12289,7 +14331,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 618,
@@ -12313,7 +14356,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10180,
+        "form_name": "stunfisk-galar",
+        "japanese_name": "マッギョ",
+        "types": [
+          5,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 619,
@@ -12332,7 +14386,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 620,
@@ -12351,7 +14406,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 621,
@@ -12370,7 +14426,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 622,
@@ -12390,7 +14447,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 623,
@@ -12410,7 +14468,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 624,
@@ -12430,7 +14489,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 625,
@@ -12450,7 +14510,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 626,
@@ -12469,7 +14530,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 627,
@@ -12489,7 +14551,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 628,
@@ -12513,7 +14576,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10240,
+        "form_name": "braviary-hisui",
+        "japanese_name": "ウォーグル",
+        "types": [
+          14,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 629,
@@ -12533,7 +14607,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 630,
@@ -12553,7 +14628,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 631,
@@ -12572,7 +14648,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 632,
@@ -12592,7 +14669,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 633,
@@ -12612,7 +14690,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 634,
@@ -12632,7 +14711,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 635,
@@ -12652,7 +14732,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 636,
@@ -12672,7 +14753,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 637,
@@ -12692,7 +14774,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 638,
@@ -12712,7 +14795,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 639,
@@ -12732,7 +14816,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 640,
@@ -12752,7 +14837,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 641,
@@ -12771,7 +14857,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10019,
+        "form_name": "tornadus-therian",
+        "japanese_name": "トルネロス",
+        "types": [
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 642,
@@ -12791,7 +14887,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10020,
+        "form_name": "thundurus-therian",
+        "japanese_name": "ボルトロス",
+        "types": [
+          13,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 643,
@@ -12811,7 +14918,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 644,
@@ -12831,7 +14939,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 645,
@@ -12851,7 +14960,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10021,
+        "form_name": "landorus-therian",
+        "japanese_name": "ランドロス",
+        "types": [
+          5,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 646,
@@ -12871,7 +14991,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10022,
+        "form_name": "kyurem-black",
+        "japanese_name": "キュレム",
+        "types": [
+          16,
+          15
+        ]
+      },
+      {
+        "form_id": 10023,
+        "form_name": "kyurem-white",
+        "japanese_name": "キュレム",
+        "types": [
+          16,
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 647,
@@ -12891,7 +15031,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10024,
+        "form_name": "keldeo-resolute",
+        "japanese_name": "ケルディオ",
+        "types": [
+          11,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 648,
@@ -12915,7 +15066,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10018,
+        "form_name": "meloetta-pirouette",
+        "japanese_name": "メロエッタ",
+        "types": [
+          1,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 649,
@@ -12935,7 +15097,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 650,
@@ -12954,7 +15117,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 651,
@@ -12973,7 +15137,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 652,
@@ -12993,7 +15158,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 653,
@@ -13012,7 +15178,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 654,
@@ -13031,7 +15198,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 655,
@@ -13051,7 +15219,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 656,
@@ -13070,7 +15239,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 657,
@@ -13089,7 +15259,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 658,
@@ -13109,7 +15280,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10116,
+        "form_name": "greninja-battle-bond",
+        "japanese_name": "ゲッコウガ",
+        "types": [
+          11,
+          17
+        ]
+      },
+      {
+        "form_id": 10117,
+        "form_name": "greninja-ash",
+        "japanese_name": "ゲッコウガ",
+        "types": [
+          11,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 659,
@@ -13128,7 +15319,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 660,
@@ -13148,7 +15340,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 661,
@@ -13168,7 +15361,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 662,
@@ -13188,7 +15382,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 663,
@@ -13208,7 +15403,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 664,
@@ -13227,7 +15423,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 665,
@@ -13246,7 +15443,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 666,
@@ -13266,7 +15464,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 667,
@@ -13286,7 +15485,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 668,
@@ -13306,7 +15506,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 669,
@@ -13325,7 +15526,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 670,
@@ -13344,7 +15546,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10061,
+        "form_name": "floette-eternal",
+        "japanese_name": "フラエッテ",
+        "types": [
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 671,
@@ -13363,7 +15575,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 672,
@@ -13382,7 +15595,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 673,
@@ -13401,7 +15615,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 674,
@@ -13420,7 +15635,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 675,
@@ -13440,7 +15656,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 676,
@@ -13459,7 +15676,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 677,
@@ -13478,7 +15696,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 678,
@@ -13497,7 +15716,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10025,
+        "form_name": "meowstic-female",
+        "japanese_name": "ニャオニクス",
+        "types": [
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 679,
@@ -13517,7 +15746,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 680,
@@ -13537,7 +15767,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 681,
@@ -13557,7 +15788,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10026,
+        "form_name": "aegislash-blade",
+        "japanese_name": "ギルガルド",
+        "types": [
+          9,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 682,
@@ -13576,7 +15818,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 683,
@@ -13595,7 +15838,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 684,
@@ -13614,7 +15858,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 685,
@@ -13633,7 +15878,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 686,
@@ -13653,7 +15899,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 687,
@@ -13673,7 +15920,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 688,
@@ -13693,7 +15941,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 689,
@@ -13713,7 +15962,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 690,
@@ -13733,7 +15983,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 691,
@@ -13753,7 +16004,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 692,
@@ -13772,7 +16024,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 693,
@@ -13791,7 +16044,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 694,
@@ -13811,7 +16065,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 695,
@@ -13831,7 +16086,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 696,
@@ -13851,7 +16107,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 697,
@@ -13871,7 +16128,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 698,
@@ -13891,7 +16149,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 699,
@@ -13911,7 +16170,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 700,
@@ -13930,7 +16190,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 701,
@@ -13950,7 +16211,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 702,
@@ -13970,7 +16232,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 703,
@@ -13990,7 +16253,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 704,
@@ -14009,7 +16273,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 705,
@@ -14032,7 +16297,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10241,
+        "form_name": "sliggoo-hisui",
+        "japanese_name": "ヌメイル",
+        "types": [
+          9,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 706,
@@ -14055,7 +16331,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10242,
+        "form_name": "goodra-hisui",
+        "japanese_name": "ヌメルゴン",
+        "types": [
+          9,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 707,
@@ -14075,7 +16362,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 708,
@@ -14095,7 +16383,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 709,
@@ -14115,7 +16404,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 710,
@@ -14135,7 +16425,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10027,
+        "form_name": "pumpkaboo-small",
+        "japanese_name": "バケッチャ",
+        "types": [
+          8,
+          12
+        ]
+      },
+      {
+        "form_id": 10028,
+        "form_name": "pumpkaboo-large",
+        "japanese_name": "バケッチャ",
+        "types": [
+          8,
+          12
+        ]
+      },
+      {
+        "form_id": 10029,
+        "form_name": "pumpkaboo-super",
+        "japanese_name": "バケッチャ",
+        "types": [
+          8,
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 711,
@@ -14155,7 +16474,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10030,
+        "form_name": "gourgeist-small",
+        "japanese_name": "パンプジン",
+        "types": [
+          8,
+          12
+        ]
+      },
+      {
+        "form_id": 10031,
+        "form_name": "gourgeist-large",
+        "japanese_name": "パンプジン",
+        "types": [
+          8,
+          12
+        ]
+      },
+      {
+        "form_id": 10032,
+        "form_name": "gourgeist-super",
+        "japanese_name": "パンプジン",
+        "types": [
+          8,
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 712,
@@ -14174,7 +16522,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 713,
@@ -14197,7 +16546,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10243,
+        "form_name": "avalugg-hisui",
+        "japanese_name": "クレベース",
+        "types": [
+          15,
+          6
+        ]
+      }
+    ]
   },
   {
     "id": 714,
@@ -14217,7 +16577,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 715,
@@ -14237,7 +16598,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 716,
@@ -14256,7 +16618,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 717,
@@ -14276,7 +16639,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 718,
@@ -14296,7 +16660,45 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10118,
+        "form_name": "zygarde-10-power-construct",
+        "japanese_name": "ジガルデ",
+        "types": [
+          16,
+          5
+        ]
+      },
+      {
+        "form_id": 10119,
+        "form_name": "zygarde-50-power-construct",
+        "japanese_name": "ジガルデ",
+        "types": [
+          16,
+          5
+        ]
+      },
+      {
+        "form_id": 10120,
+        "form_name": "zygarde-complete",
+        "japanese_name": "ジガルデ",
+        "types": [
+          16,
+          5
+        ]
+      },
+      {
+        "form_id": 10181,
+        "form_name": "zygarde-10",
+        "japanese_name": "ジガルデ",
+        "types": [
+          16,
+          5
+        ]
+      }
+    ]
   },
   {
     "id": 719,
@@ -14316,7 +16718,18 @@ export const pokemons =
       "is_mega": true,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10075,
+        "form_name": "diancie-mega",
+        "japanese_name": "ディアンシー",
+        "types": [
+          6,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 720,
@@ -14340,7 +16753,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10086,
+        "form_name": "hoopa-unbound",
+        "japanese_name": "フーパ",
+        "types": [
+          14,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 721,
@@ -14360,7 +16784,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 722,
@@ -14380,7 +16805,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 723,
@@ -14400,7 +16826,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 724,
@@ -14424,7 +16851,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10244,
+        "form_name": "decidueye-hisui",
+        "japanese_name": "ジュナイパー",
+        "types": [
+          12,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 725,
@@ -14443,7 +16881,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 726,
@@ -14462,7 +16901,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 727,
@@ -14482,7 +16922,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 728,
@@ -14501,7 +16942,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 729,
@@ -14520,7 +16962,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 730,
@@ -14540,7 +16983,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 731,
@@ -14560,7 +17004,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 732,
@@ -14580,7 +17025,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 733,
@@ -14600,7 +17046,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 734,
@@ -14619,7 +17066,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 735,
@@ -14638,7 +17086,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10121,
+        "form_name": "gumshoos-totem",
+        "japanese_name": "デカグース",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 736,
@@ -14657,7 +17115,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 737,
@@ -14677,7 +17136,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 738,
@@ -14697,7 +17157,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10122,
+        "form_name": "vikavolt-totem",
+        "japanese_name": "クワガノン",
+        "types": [
+          7,
+          13
+        ]
+      }
+    ]
   },
   {
     "id": 739,
@@ -14716,7 +17187,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 740,
@@ -14736,7 +17208,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 741,
@@ -14768,7 +17241,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10123,
+        "form_name": "oricorio-pom-pom",
+        "japanese_name": "オドリドリ",
+        "types": [
+          13,
+          3
+        ]
+      },
+      {
+        "form_id": 10124,
+        "form_name": "oricorio-pau",
+        "japanese_name": "オドリドリ",
+        "types": [
+          14,
+          3
+        ]
+      },
+      {
+        "form_id": 10125,
+        "form_name": "oricorio-sensu",
+        "japanese_name": "オドリドリ",
+        "types": [
+          8,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 742,
@@ -14788,7 +17290,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 743,
@@ -14808,7 +17311,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10150,
+        "form_name": "ribombee-totem",
+        "japanese_name": "アブリボン",
+        "types": [
+          7,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 744,
@@ -14827,7 +17341,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10151,
+        "form_name": "rockruff-own-tempo",
+        "japanese_name": "イワンコ",
+        "types": [
+          6
+        ]
+      }
+    ]
   },
   {
     "id": 745,
@@ -14846,7 +17370,25 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10126,
+        "form_name": "lycanroc-midnight",
+        "japanese_name": "ルガルガン",
+        "types": [
+          6
+        ]
+      },
+      {
+        "form_id": 10152,
+        "form_name": "lycanroc-dusk",
+        "japanese_name": "ルガルガン",
+        "types": [
+          6
+        ]
+      }
+    ]
   },
   {
     "id": 746,
@@ -14865,7 +17407,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10127,
+        "form_name": "wishiwashi-school",
+        "japanese_name": "ヨワシ",
+        "types": [
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 747,
@@ -14885,7 +17437,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 748,
@@ -14905,7 +17458,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 749,
@@ -14924,7 +17478,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 750,
@@ -14943,7 +17498,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 751,
@@ -14963,7 +17519,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 752,
@@ -14983,7 +17540,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10153,
+        "form_name": "araquanid-totem",
+        "japanese_name": "オニシズクモ",
+        "types": [
+          11,
+          7
+        ]
+      }
+    ]
   },
   {
     "id": 753,
@@ -15002,7 +17570,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 754,
@@ -15021,7 +17590,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10128,
+        "form_name": "lurantis-totem",
+        "japanese_name": "ラランテス",
+        "types": [
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 755,
@@ -15041,7 +17620,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 756,
@@ -15061,7 +17641,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 757,
@@ -15081,7 +17662,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 758,
@@ -15101,7 +17683,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10129,
+        "form_name": "salazzle-totem",
+        "japanese_name": "エンニュート",
+        "types": [
+          4,
+          10
+        ]
+      }
+    ]
   },
   {
     "id": 759,
@@ -15121,7 +17714,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 760,
@@ -15141,7 +17735,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 761,
@@ -15160,7 +17755,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 762,
@@ -15179,7 +17775,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 763,
@@ -15198,7 +17795,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 764,
@@ -15217,7 +17815,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 765,
@@ -15237,7 +17836,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 766,
@@ -15256,7 +17856,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 767,
@@ -15276,7 +17877,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 768,
@@ -15296,7 +17898,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 769,
@@ -15316,7 +17919,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 770,
@@ -15336,7 +17940,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 771,
@@ -15355,7 +17960,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 772,
@@ -15374,7 +17980,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 773,
@@ -15393,7 +18000,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 774,
@@ -15413,7 +18021,126 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10130,
+        "form_name": "minior-orange-meteor",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10131,
+        "form_name": "minior-yellow-meteor",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10132,
+        "form_name": "minior-green-meteor",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10133,
+        "form_name": "minior-blue-meteor",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10134,
+        "form_name": "minior-indigo-meteor",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10135,
+        "form_name": "minior-violet-meteor",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10136,
+        "form_name": "minior-red",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10137,
+        "form_name": "minior-orange",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10138,
+        "form_name": "minior-yellow",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10139,
+        "form_name": "minior-green",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10140,
+        "form_name": "minior-blue",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10141,
+        "form_name": "minior-indigo",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      },
+      {
+        "form_id": 10142,
+        "form_name": "minior-violet",
+        "japanese_name": "メテノ",
+        "types": [
+          6,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 775,
@@ -15432,7 +18159,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 776,
@@ -15452,7 +18180,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 777,
@@ -15472,7 +18201,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10154,
+        "form_name": "togedemaru-totem",
+        "japanese_name": "トゲデマル",
+        "types": [
+          13,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 778,
@@ -15492,7 +18232,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10143,
+        "form_name": "mimikyu-busted",
+        "japanese_name": "ミミッキュ",
+        "types": [
+          8,
+          18
+        ]
+      },
+      {
+        "form_id": 10144,
+        "form_name": "mimikyu-totem-disguised",
+        "japanese_name": "ミミッキュ",
+        "types": [
+          8,
+          18
+        ]
+      },
+      {
+        "form_id": 10145,
+        "form_name": "mimikyu-totem-busted",
+        "japanese_name": "ミミッキュ",
+        "types": [
+          8,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 779,
@@ -15512,7 +18281,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 780,
@@ -15532,7 +18302,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 781,
@@ -15552,7 +18323,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 782,
@@ -15571,7 +18343,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 783,
@@ -15591,7 +18364,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 784,
@@ -15611,7 +18385,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10146,
+        "form_name": "kommo-o-totem",
+        "japanese_name": "ジャラランガ",
+        "types": [
+          16,
+          2
+        ]
+      }
+    ]
   },
   {
     "id": 785,
@@ -15631,7 +18416,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 786,
@@ -15651,7 +18437,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 787,
@@ -15671,7 +18458,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 788,
@@ -15691,7 +18479,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 789,
@@ -15710,7 +18499,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 790,
@@ -15729,7 +18519,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 791,
@@ -15749,7 +18540,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 792,
@@ -15769,7 +18561,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 793,
@@ -15789,7 +18582,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 794,
@@ -15809,7 +18603,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 795,
@@ -15829,7 +18624,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 796,
@@ -15848,7 +18644,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 797,
@@ -15868,7 +18665,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 798,
@@ -15888,7 +18686,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 799,
@@ -15908,7 +18707,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 800,
@@ -15939,7 +18739,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10155,
+        "form_name": "necrozma-dusk",
+        "japanese_name": "ネクロズマ",
+        "types": [
+          14,
+          9
+        ]
+      },
+      {
+        "form_id": 10156,
+        "form_name": "necrozma-dawn",
+        "japanese_name": "ネクロズマ",
+        "types": [
+          14,
+          8
+        ]
+      },
+      {
+        "form_id": 10157,
+        "form_name": "necrozma-ultra",
+        "japanese_name": "ネクロズマ",
+        "types": [
+          14,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 801,
@@ -15959,7 +18788,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10147,
+        "form_name": "magearna-original",
+        "japanese_name": "マギアナ",
+        "types": [
+          9,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 802,
@@ -15979,7 +18819,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 803,
@@ -15998,7 +18839,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 804,
@@ -16018,7 +18860,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 805,
@@ -16038,7 +18881,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 806,
@@ -16058,7 +18902,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 807,
@@ -16077,7 +18922,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 808,
@@ -16096,7 +18942,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 809,
@@ -16115,7 +18962,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10208,
+        "form_name": "melmetal-gmax",
+        "japanese_name": "メルメタル",
+        "types": [
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 810,
@@ -16134,7 +18991,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 811,
@@ -16153,7 +19011,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 812,
@@ -16172,7 +19031,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10209,
+        "form_name": "rillaboom-gmax",
+        "japanese_name": "ゴリランダー",
+        "types": [
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 813,
@@ -16191,7 +19060,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 814,
@@ -16210,7 +19080,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 815,
@@ -16229,7 +19100,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10210,
+        "form_name": "cinderace-gmax",
+        "japanese_name": "エースバーン",
+        "types": [
+          10
+        ]
+      }
+    ]
   },
   {
     "id": 816,
@@ -16248,7 +19129,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 817,
@@ -16267,7 +19149,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 818,
@@ -16286,7 +19169,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10211,
+        "form_name": "inteleon-gmax",
+        "japanese_name": "インテレオン",
+        "types": [
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 819,
@@ -16305,7 +19198,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 820,
@@ -16324,7 +19218,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 821,
@@ -16343,7 +19238,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 822,
@@ -16362,7 +19258,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 823,
@@ -16382,7 +19279,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10212,
+        "form_name": "corviknight-gmax",
+        "japanese_name": "アーマーガア",
+        "types": [
+          3,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 824,
@@ -16401,7 +19309,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 825,
@@ -16421,7 +19330,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 826,
@@ -16441,7 +19351,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10213,
+        "form_name": "orbeetle-gmax",
+        "japanese_name": "イオルブ",
+        "types": [
+          7,
+          14
+        ]
+      }
+    ]
   },
   {
     "id": 827,
@@ -16460,7 +19381,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 828,
@@ -16479,7 +19401,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 829,
@@ -16498,7 +19421,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 830,
@@ -16517,7 +19441,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 831,
@@ -16536,7 +19461,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 832,
@@ -16555,7 +19481,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 833,
@@ -16574,7 +19501,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 834,
@@ -16594,7 +19522,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10214,
+        "form_name": "drednaw-gmax",
+        "japanese_name": "カジリガメ",
+        "types": [
+          11,
+          6
+        ]
+      }
+    ]
   },
   {
     "id": 835,
@@ -16613,7 +19552,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 836,
@@ -16632,7 +19572,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 837,
@@ -16651,7 +19592,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 838,
@@ -16671,7 +19613,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 839,
@@ -16691,7 +19634,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10215,
+        "form_name": "coalossal-gmax",
+        "japanese_name": "セキタンザン",
+        "types": [
+          6,
+          10
+        ]
+      }
+    ]
   },
   {
     "id": 840,
@@ -16711,7 +19665,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 841,
@@ -16731,7 +19686,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10216,
+        "form_name": "flapple-gmax",
+        "japanese_name": "アップリュー",
+        "types": [
+          12,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 842,
@@ -16751,7 +19717,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10217,
+        "form_name": "appletun-gmax",
+        "japanese_name": "タルップル",
+        "types": [
+          12,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 843,
@@ -16770,7 +19747,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 844,
@@ -16789,7 +19767,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10218,
+        "form_name": "sandaconda-gmax",
+        "japanese_name": "サダイジャ",
+        "types": [
+          5
+        ]
+      }
+    ]
   },
   {
     "id": 845,
@@ -16809,7 +19797,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10182,
+        "form_name": "cramorant-gulping",
+        "japanese_name": "ウッウ",
+        "types": [
+          3,
+          11
+        ]
+      },
+      {
+        "form_id": 10183,
+        "form_name": "cramorant-gorging",
+        "japanese_name": "ウッウ",
+        "types": [
+          3,
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 846,
@@ -16828,7 +19836,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 847,
@@ -16847,7 +19856,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 848,
@@ -16867,7 +19877,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": true
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 849,
@@ -16887,7 +19898,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10184,
+        "form_name": "toxtricity-low-key",
+        "japanese_name": "ストリンダー",
+        "types": [
+          13,
+          4
+        ]
+      },
+      {
+        "form_id": 10219,
+        "form_name": "toxtricity-amped-gmax",
+        "japanese_name": "ストリンダー",
+        "types": [
+          13,
+          4
+        ]
+      },
+      {
+        "form_id": 10228,
+        "form_name": "toxtricity-low-key-gmax",
+        "japanese_name": "ストリンダー",
+        "types": [
+          13,
+          4
+        ]
+      }
+    ]
   },
   {
     "id": 850,
@@ -16907,7 +19947,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 851,
@@ -16927,7 +19968,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10220,
+        "form_name": "centiskorch-gmax",
+        "japanese_name": "マルヤクデ",
+        "types": [
+          10,
+          7
+        ]
+      }
+    ]
   },
   {
     "id": 852,
@@ -16946,7 +19998,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 853,
@@ -16965,7 +20018,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 854,
@@ -16984,7 +20038,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 855,
@@ -17003,7 +20058,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 856,
@@ -17022,7 +20078,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 857,
@@ -17041,7 +20098,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 858,
@@ -17061,7 +20119,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10221,
+        "form_name": "hatterene-gmax",
+        "japanese_name": "ブリムオン",
+        "types": [
+          14,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 859,
@@ -17081,7 +20150,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 860,
@@ -17101,7 +20171,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 861,
@@ -17121,7 +20192,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10222,
+        "form_name": "grimmsnarl-gmax",
+        "japanese_name": "オーロンゲ",
+        "types": [
+          17,
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 862,
@@ -17141,7 +20223,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 863,
@@ -17160,7 +20243,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 864,
@@ -17179,7 +20263,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 865,
@@ -17198,7 +20283,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 866,
@@ -17218,7 +20304,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 867,
@@ -17238,7 +20325,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 868,
@@ -17257,7 +20345,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 869,
@@ -17276,7 +20365,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10223,
+        "form_name": "alcremie-gmax",
+        "japanese_name": "マホイップ",
+        "types": [
+          18
+        ]
+      }
+    ]
   },
   {
     "id": 870,
@@ -17295,7 +20394,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 871,
@@ -17314,7 +20414,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 872,
@@ -17334,7 +20435,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 873,
@@ -17354,7 +20456,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 874,
@@ -17373,7 +20476,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 875,
@@ -17392,7 +20496,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10185,
+        "form_name": "eiscue-noice",
+        "japanese_name": "コオリッポ",
+        "types": [
+          15
+        ]
+      }
+    ]
   },
   {
     "id": 876,
@@ -17412,7 +20526,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10186,
+        "form_name": "indeedee-female",
+        "japanese_name": "イエッサン",
+        "types": [
+          14,
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 877,
@@ -17432,7 +20557,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10187,
+        "form_name": "morpeko-hangry",
+        "japanese_name": "モルペコ",
+        "types": [
+          13,
+          17
+        ]
+      }
+    ]
   },
   {
     "id": 878,
@@ -17451,7 +20587,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 879,
@@ -17470,7 +20607,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10224,
+        "form_name": "copperajah-gmax",
+        "japanese_name": "ダイオウドウ",
+        "types": [
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 880,
@@ -17490,7 +20637,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 881,
@@ -17510,7 +20658,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 882,
@@ -17530,7 +20679,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 883,
@@ -17550,7 +20700,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 884,
@@ -17570,7 +20721,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10225,
+        "form_name": "duraludon-gmax",
+        "japanese_name": "ジュラルドン",
+        "types": [
+          9,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 885,
@@ -17590,7 +20752,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 886,
@@ -17610,7 +20773,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 887,
@@ -17630,7 +20794,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 888,
@@ -17653,7 +20818,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10188,
+        "form_name": "zacian-crowned",
+        "japanese_name": "ザシアン",
+        "types": [
+          18,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 889,
@@ -17676,7 +20852,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10189,
+        "form_name": "zamazenta-crowned",
+        "japanese_name": "ザマゼンタ",
+        "types": [
+          2,
+          9
+        ]
+      }
+    ]
   },
   {
     "id": 890,
@@ -17696,7 +20883,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10190,
+        "form_name": "eternatus-eternamax",
+        "japanese_name": "ムゲンダイナ",
+        "types": [
+          4,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 891,
@@ -17715,7 +20913,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 892,
@@ -17739,7 +20938,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": true,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10191,
+        "form_name": "urshifu-rapid-strike",
+        "japanese_name": "ウーラオス",
+        "types": [
+          2,
+          11
+        ]
+      },
+      {
+        "form_id": 10226,
+        "form_name": "urshifu-single-strike-gmax",
+        "japanese_name": "ウーラオス",
+        "types": [
+          2,
+          17
+        ]
+      },
+      {
+        "form_id": 10227,
+        "form_name": "urshifu-rapid-strike-gmax",
+        "japanese_name": "ウーラオス",
+        "types": [
+          2,
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 893,
@@ -17759,7 +20987,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10192,
+        "form_name": "zarude-dada",
+        "japanese_name": "ザルード",
+        "types": [
+          17,
+          12
+        ]
+      }
+    ]
   },
   {
     "id": 894,
@@ -17778,7 +21017,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 895,
@@ -17797,7 +21037,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 896,
@@ -17816,7 +21057,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 897,
@@ -17835,7 +21077,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 898,
@@ -17863,7 +21106,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10193,
+        "form_name": "calyrex-ice",
+        "japanese_name": "バドレックス",
+        "types": [
+          14,
+          15
+        ]
+      },
+      {
+        "form_id": 10194,
+        "form_name": "calyrex-shadow",
+        "japanese_name": "バドレックス",
+        "types": [
+          14,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 899,
@@ -17883,7 +21146,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 900,
@@ -17903,7 +21167,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 901,
@@ -17923,7 +21188,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 902,
@@ -17943,7 +21209,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10248,
+        "form_name": "basculegion-female",
+        "japanese_name": "イダイトウ",
+        "types": [
+          11,
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 903,
@@ -17963,7 +21240,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 904,
@@ -17983,7 +21261,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 905,
@@ -18003,7 +21282,18 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10249,
+        "form_name": "enamorus-therian",
+        "japanese_name": "ラブトロス",
+        "types": [
+          18,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 906,
@@ -18022,7 +21312,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 907,
@@ -18041,7 +21332,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 908,
@@ -18061,7 +21353,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 909,
@@ -18080,7 +21373,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 910,
@@ -18099,7 +21393,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 911,
@@ -18119,7 +21414,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 912,
@@ -18138,7 +21434,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 913,
@@ -18157,7 +21454,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 914,
@@ -18177,7 +21475,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 915,
@@ -18196,7 +21495,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 916,
@@ -18215,7 +21515,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10254,
+        "form_name": "oinkologne-female",
+        "japanese_name": "パフュートン",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 917,
@@ -18234,7 +21544,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 918,
@@ -18253,7 +21564,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 919,
@@ -18272,7 +21584,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 920,
@@ -18292,7 +21605,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 921,
@@ -18311,7 +21625,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 922,
@@ -18331,7 +21646,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 923,
@@ -18351,7 +21667,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 924,
@@ -18370,7 +21687,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 925,
@@ -18389,7 +21707,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10257,
+        "form_name": "maushold-family-of-three",
+        "japanese_name": "イッカネズミ",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 926,
@@ -18408,7 +21736,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 927,
@@ -18427,7 +21756,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 928,
@@ -18447,7 +21777,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 929,
@@ -18467,7 +21798,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 930,
@@ -18487,7 +21819,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 931,
@@ -18507,7 +21840,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10260,
+        "form_name": "squawkabilly-blue-plumage",
+        "japanese_name": "イキリンコ",
+        "types": [
+          1,
+          3
+        ]
+      },
+      {
+        "form_id": 10261,
+        "form_name": "squawkabilly-yellow-plumage",
+        "japanese_name": "イキリンコ",
+        "types": [
+          1,
+          3
+        ]
+      },
+      {
+        "form_id": 10262,
+        "form_name": "squawkabilly-white-plumage",
+        "japanese_name": "イキリンコ",
+        "types": [
+          1,
+          3
+        ]
+      }
+    ]
   },
   {
     "id": 932,
@@ -18526,7 +21888,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 933,
@@ -18545,7 +21908,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 934,
@@ -18564,7 +21928,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 935,
@@ -18583,7 +21948,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 936,
@@ -18603,7 +21969,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 937,
@@ -18623,7 +21990,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 938,
@@ -18642,7 +22010,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 939,
@@ -18661,7 +22030,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 940,
@@ -18681,7 +22051,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 941,
@@ -18701,7 +22072,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 942,
@@ -18720,7 +22092,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 943,
@@ -18739,7 +22112,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 944,
@@ -18759,7 +22133,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 945,
@@ -18779,7 +22154,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 946,
@@ -18799,7 +22175,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 947,
@@ -18819,7 +22196,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 948,
@@ -18839,7 +22217,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 949,
@@ -18859,7 +22238,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 950,
@@ -18878,7 +22258,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 951,
@@ -18897,7 +22278,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 952,
@@ -18917,7 +22299,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 953,
@@ -18936,7 +22319,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 954,
@@ -18956,7 +22340,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 955,
@@ -18975,7 +22360,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 956,
@@ -18994,7 +22380,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 957,
@@ -19014,7 +22401,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 958,
@@ -19034,7 +22422,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 959,
@@ -19054,7 +22443,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 960,
@@ -19073,7 +22463,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 961,
@@ -19092,7 +22483,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 962,
@@ -19112,7 +22504,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 963,
@@ -19131,7 +22524,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 964,
@@ -19150,7 +22544,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10256,
+        "form_name": "palafin-hero",
+        "japanese_name": "イルカマン",
+        "types": [
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 965,
@@ -19170,7 +22574,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 966,
@@ -19190,7 +22595,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 967,
@@ -19210,7 +22616,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 968,
@@ -19229,7 +22636,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 969,
@@ -19249,7 +22657,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 970,
@@ -19269,7 +22678,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 971,
@@ -19288,7 +22698,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 972,
@@ -19307,7 +22718,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 973,
@@ -19327,7 +22739,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 974,
@@ -19346,7 +22759,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 975,
@@ -19365,7 +22779,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 976,
@@ -19385,7 +22800,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 977,
@@ -19404,7 +22820,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 978,
@@ -19424,7 +22841,27 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10258,
+        "form_name": "tatsugiri-droopy",
+        "japanese_name": "シャリタツ",
+        "types": [
+          16,
+          11
+        ]
+      },
+      {
+        "form_id": 10259,
+        "form_name": "tatsugiri-stretchy",
+        "japanese_name": "シャリタツ",
+        "types": [
+          16,
+          11
+        ]
+      }
+    ]
   },
   {
     "id": 979,
@@ -19444,7 +22881,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 980,
@@ -19464,7 +22902,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 981,
@@ -19484,7 +22923,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 982,
@@ -19503,7 +22943,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10255,
+        "form_name": "dudunsparce-three-segment",
+        "japanese_name": "ノココッチ",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 983,
@@ -19523,7 +22973,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 984,
@@ -19543,7 +22994,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 985,
@@ -19563,7 +23015,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 986,
@@ -19583,7 +23036,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 987,
@@ -19603,7 +23057,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 988,
@@ -19623,7 +23078,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 989,
@@ -19643,7 +23099,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 990,
@@ -19663,7 +23120,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 991,
@@ -19683,7 +23141,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 992,
@@ -19703,7 +23162,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 993,
@@ -19723,7 +23183,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 994,
@@ -19743,7 +23204,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 995,
@@ -19763,7 +23225,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 996,
@@ -19783,7 +23246,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 997,
@@ -19803,7 +23267,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 998,
@@ -19823,7 +23288,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 999,
@@ -19842,7 +23308,17 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10263,
+        "form_name": "gimmighoul-roaming",
+        "japanese_name": "コレクレー",
+        "types": [
+          8
+        ]
+      }
+    ]
   },
   {
     "id": 1000,
@@ -19862,7 +23338,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1001,
@@ -19882,7 +23359,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1002,
@@ -19902,7 +23380,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1003,
@@ -19922,7 +23401,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1004,
@@ -19942,7 +23422,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1005,
@@ -19962,7 +23443,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1006,
@@ -19982,7 +23464,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1007,
@@ -20002,7 +23485,45 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10264,
+        "form_name": "koraidon-limited-build",
+        "japanese_name": "コライドン",
+        "types": [
+          2,
+          16
+        ]
+      },
+      {
+        "form_id": 10265,
+        "form_name": "koraidon-sprinting-build",
+        "japanese_name": "コライドン",
+        "types": [
+          2,
+          16
+        ]
+      },
+      {
+        "form_id": 10266,
+        "form_name": "koraidon-swimming-build",
+        "japanese_name": "コライドン",
+        "types": [
+          2,
+          16
+        ]
+      },
+      {
+        "form_id": 10267,
+        "form_name": "koraidon-gliding-build",
+        "japanese_name": "コライドン",
+        "types": [
+          2,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 1008,
@@ -20022,7 +23543,45 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10268,
+        "form_name": "miraidon-low-power-mode",
+        "japanese_name": "ミライドン",
+        "types": [
+          13,
+          16
+        ]
+      },
+      {
+        "form_id": 10269,
+        "form_name": "miraidon-drive-mode",
+        "japanese_name": "ミライドン",
+        "types": [
+          13,
+          16
+        ]
+      },
+      {
+        "form_id": 10270,
+        "form_name": "miraidon-aquatic-mode",
+        "japanese_name": "ミライドン",
+        "types": [
+          13,
+          16
+        ]
+      },
+      {
+        "form_id": 10271,
+        "form_name": "miraidon-glide-mode",
+        "japanese_name": "ミライドン",
+        "types": [
+          13,
+          16
+        ]
+      }
+    ]
   },
   {
     "id": 1009,
@@ -20042,7 +23601,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1010,
@@ -20062,7 +23622,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1011,
@@ -20082,7 +23643,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1012,
@@ -20102,7 +23664,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1013,
@@ -20122,7 +23685,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1014,
@@ -20142,7 +23706,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1015,
@@ -20162,7 +23727,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1016,
@@ -20182,7 +23748,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1017,
@@ -20213,7 +23780,36 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10273,
+        "form_name": "ogerpon-wellspring-mask",
+        "japanese_name": "オーガポン",
+        "types": [
+          12,
+          11
+        ]
+      },
+      {
+        "form_id": 10274,
+        "form_name": "ogerpon-hearthflame-mask",
+        "japanese_name": "オーガポン",
+        "types": [
+          12,
+          10
+        ]
+      },
+      {
+        "form_id": 10275,
+        "form_name": "ogerpon-cornerstone-mask",
+        "japanese_name": "オーガポン",
+        "types": [
+          12,
+          6
+        ]
+      }
+    ]
   },
   {
     "id": 1018,
@@ -20233,7 +23829,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1019,
@@ -20253,7 +23850,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1020,
@@ -20273,7 +23871,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1021,
@@ -20293,7 +23892,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1022,
@@ -20313,7 +23913,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1023,
@@ -20333,7 +23934,8 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   },
   {
     "id": 1024,
@@ -20352,7 +23954,25 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": [
+      {
+        "form_id": 10276,
+        "form_name": "terapagos-terastal",
+        "japanese_name": "テラパゴス",
+        "types": [
+          1
+        ]
+      },
+      {
+        "form_id": 10277,
+        "form_name": "terapagos-stellar",
+        "japanese_name": "テラパゴス",
+        "types": [
+          1
+        ]
+      }
+    ]
   },
   {
     "id": 1025,
@@ -20372,6 +23992,7 @@ export const pokemons =
       "is_mega": false,
       "is_gmax": false,
       "is_baby": false
-    }
+    },
+    "form_variants": []
   }
 ]
