@@ -6,3 +6,22 @@
 body {
   @apply bg-zinc-50;
 }
+
+.bg-skill-normal-10   { @apply hover:bg-skill-normal/10; }
+.bg-skill-fire-10     { @apply hover:bg-skill-fire/10; }
+.bg-skill-water-10    { @apply hover:bg-skill-water/10; }
+.bg-skill-electric-10 { @apply hover:bg-skill-electric/10; }
+.bg-skill-grass-10    { @apply hover:bg-skill-grass/10; }
+.bg-skill-ice-10      { @apply hover:bg-skill-ice/10; }
+.bg-skill-fighting-10 { @apply hover:bg-skill-fighting/10; }
+.bg-skill-poison-10   { @apply hover:bg-skill-poison/10; }
+.bg-skill-ground-10   { @apply hover:bg-skill-ground/10; }
+.bg-skill-flying-10   { @apply hover:bg-skill-flying/10; }
+.bg-skill-psychic-10  { @apply hover:bg-skill-psychic/10; }
+.bg-skill-bug-10      { @apply hover:bg-skill-bug/10; }
+.bg-skill-rock-10     { @apply hover:bg-skill-rock/10; }
+.bg-skill-ghost-10    { @apply hover:bg-skill-ghost/10; }
+.bg-skill-dragon-10   { @apply hover:bg-skill-dragon/10; }
+.bg-skill-dark-10     { @apply hover:bg-skill-dark/10; }
+.bg-skill-steel-10    { @apply hover:bg-skill-steel/10; }
+.bg-skill-fairy-10    { @apply hover:bg-skill-fairy/10; }
