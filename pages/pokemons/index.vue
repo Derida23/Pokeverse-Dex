@@ -159,13 +159,15 @@ function handleReset(value: string | null = null) {
 
     <!-- Content Section -->
     <section>
-      <div class="pokemon">
+      <div v-if="pokemons.length > 0" class="pokemon">
         <Card :pokemons />
       </div>
+
+      <Base404 v-else />
     </section>
 
     <div v-if="isLoading">
-      <LoadingSkeleton />
+      <BaseSkeleton />
     </div>
     
     <div ref="infiniteScrollTrigger" class="h-6 -mt-10"/>
