@@ -1,3 +1,3 @@
 <template>
-  <h1>Compare</h1>
+  <BaseConstruction />
 </template>

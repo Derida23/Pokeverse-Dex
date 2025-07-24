@@ -1,3 +1,3 @@
 <template>
-  <h1>Evolutions</h1>
+  <BaseConstruction />
 </template>
