@@ -1,8 +1,36 @@
-import { pokemon_types } from '@/constants/types'
+import { types } from '@/constants/types'
+import { pokemonTransform } from '@/utils/pokemonTransform';
+
+function getTypeStats() {
+  return types.map((typeObj) => {
+    const typeId = typeObj.id;
+    const typeName = typeObj.name;
+
+    let singleCount = 0;
+    let totalTypeCount = 0;
+
+    for (const pokemon of pokemonTransform) {
+      if (pokemon.type.includes(typeId)) {
+        totalTypeCount++;
+        if (pokemon.type.length === 1 && pokemon.type[0] === typeId) {
+          singleCount++;
+        }
+      }
+    }
+
+    return {
+      id: typeId,
+      name: typeName,
+      single_pokemon: singleCount,
+      total_pokemon: totalTypeCount,
+    };
+  });
+}
 
 export default defineEventHandler(async (event) => {
   try {
-    const response = [...pokemon_types]
+    const response = getTypeStats()
+
 
     return {
       success: true,
