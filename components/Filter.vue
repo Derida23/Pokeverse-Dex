@@ -39,8 +39,8 @@ function selectedAttrLabel (value: string) {
 </script>
 
 <template>
-  <div class="grid grid-cols-4 mb-4 gap-x-2">
-    <div class="relative">
+  <div class="grid grid-cols-8 md:grid-cols-4 mb-4 gap-y-2 gap-4 md:gap-2">
+    <div class="relative col-span-8 md:col-span-1">
       <UInput
         v-model="filter.q as string"
         icon="i-lucide-search"
@@ -63,7 +63,7 @@ function selectedAttrLabel (value: string) {
       </div>
     </div>
 
-    <div class="relative">
+    <div class="relative col-span-3 md:col-span-1">
       <UDropdown 
         v-model:open="open.generations" 
         :items="generations" 
@@ -77,13 +77,13 @@ function selectedAttrLabel (value: string) {
       >
         <template #item="{ item }">
           <div class="w-full px-3 py-2 text-left" @click="handleFilter('gen', item.id)">
-            <p :class="{  'text-sky-500 font-medium': selectedGenLabel === item.label}">
+            <p :class="{ 'text-sky-500 font-medium': selectedGenLabel === item.label }">
               {{ item.label }}
             </p>
           </div>
         </template>
 
-        <UButton block color="white" class="w-[202px] h-9">
+        <UButton color="white" class="w-[150px] md:w-[174px] lg:w-[178px] xl:w-[202px] h-9">
           <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
             <div>
               <p v-if="!filter.gen">Any generations</p>
@@ -109,8 +109,7 @@ function selectedAttrLabel (value: string) {
       </div>
     </div>
 
-
-    <div class="relative">
+    <div class="relative col-span-3 md:col-span-1">
       <UDropdown 
         v-model:open="open.types" 
         :items="types" 
@@ -136,7 +135,7 @@ function selectedAttrLabel (value: string) {
           </div>
         </template>
 
-        <UButton block color="white" class="w-[202px] h-9" >
+        <UButton block color="white" class="w-[150px] md:w-[174px] lg:w-[178px] xl:w-[202px] h-9" >
           <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
             <div>
               <p v-if="!filter.type">Any types</p>
@@ -162,8 +161,7 @@ function selectedAttrLabel (value: string) {
       </div>
     </div>
     
-    <div class="flex items-center justify-between gap-x-2">
-
+    <div class="flex items-center justify-between md:gap-2">
       <UPopover v-model:open="open.attr" :ui="{ placement: 'bottom-start' }">
         <UChip :show="filter.attr !== null" class="w-full" size="lg">
           <UButton color="white" size="lg" class="w-10 h-9 w- p-0">
