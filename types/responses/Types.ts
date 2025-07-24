@@ -8,7 +8,7 @@ export interface Types {
   name: string
   names?: Name[]
   past_damage_relations?: string[]
-  pokemon?: Pokemon[]
+  pokemon: Pokemon[]
   total_pokemon: number
   single_pokemon: number
   sprites?: Sprites
