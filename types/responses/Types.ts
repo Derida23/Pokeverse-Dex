@@ -1,21 +1,45 @@
 export interface Types {
-  damage_relations: DamageRelations
-  game_indices: Index[]
-  generation: Generation2
+  damage_relations?: DamageRelations
+  game_indices?: Index[]
+  generation?: Generation2
   id: number
-  move_damage_class: MoveDamageClass
-  moves: Mfe[]
+  move_damage_class?: MoveDamageClass
+  moves?: Mfe[]
   name: string
-  names: Name[]
+  names?: Name[]
   past_damage_relations?: string[]
-  pokemon: Pokemon[]
-  sprites: Sprites
+  pokemon?: Pokemon[]
+  total_pokemon: number
+  single_pokemon: number
+  sprites?: Sprites
+  offense: Offense
+  defense: Defense
 }
 
+export interface Offense {
+  double_damage: TypeUrl[]
+  half_damage: TypeUrl[]
+  no_damage: TypeUrl[]
+  single_damage: TypeUrl[]
+}
+
+export interface Defense {
+  double_damage: TypeUrl[]
+  quarter_damage: TypeUrl[]
+  half_damage: TypeUrl[]
+  no_damage: TypeUrl[]
+  single_damage: TypeUrl[]
+  fourth_damage: TypeUrl[]
+}
+
+export interface TypeUrl {
+  name: string
+  id: string
+}
 export interface DamageRelations {
   double_damage_from: DoubleDamageFrom[]
-  double_damage_to?: string[]
-  half_damage_from?: string[]
+  double_damage_to: HalfDamageTo[]
+  half_damage_from: HalfDamageTo[]
   half_damage_to: HalfDamageTo[]
   no_damage_from: NoDamageFrom[]
   no_damage_to: NoDamageTo[]
