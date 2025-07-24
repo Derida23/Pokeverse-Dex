@@ -6,7 +6,7 @@ const { data: pokemons } = await getGigantamax()
 </script>
 <template>
   <div>
-    <h1 class="mb-6 text-2xl font-bold">Pokémon Gigantamax</h1>
+    <BaseTitle>Pokémon Gigantamax</BaseTitle>
     <div class="pokemon">
       <Card :pokemons="pokemons" :variants="'gmax'" />
     </div>

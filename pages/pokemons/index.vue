@@ -145,8 +145,8 @@ function handleReset(value: string | null = null) {
 </script>
 
 <template>
-  <div class="m-auto ">
-    <h1 class="mb-6 text-2xl font-bold">Pokémon Species</h1>
+  <div class="w-full m-auto">
+    <BaseTitle >Pokémon Species</BaseTitle>
 
     <!-- Filter Section -->
     <section>
@@ -163,7 +163,7 @@ function handleReset(value: string | null = null) {
         <Card :pokemons />
       </div>
 
-      <Base404 v-else />
+      <Base404 v-else-if="pokemons.length === 0 && !isLoading" />
     </section>
 
     <div v-if="isLoading">
@@ -177,7 +177,7 @@ function handleReset(value: string | null = null) {
 
 <style scoped lang="postcss">
 .pokemon {
-  @apply grid w-full grid-cols-3 gap-2;
+  @apply grid w-full md:grid-cols-3 gap-4 lg:gap-2;
   
   &-card {
     @apply py-3 pl-3 border shadow-sm;
@@ -195,12 +195,12 @@ function handleReset(value: string | null = null) {
     @apply font-semibold first-letter:uppercase;
 
     &-alternative {
-      @apply absolute z-0 text-4xl font-black right-2 top-14 text-slate-800/10;
+      @apply absolute z-0 text-4xl font-black right-2 top-14 text-stone-800/10;
     }
   }
 
   &-id {
-    @apply text-xs text-slate-600;
+    @apply text-xs text-stone-600;
   }
 
   &-types {

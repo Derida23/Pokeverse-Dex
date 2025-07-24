@@ -7,7 +7,8 @@ const { data:pokemons } = await getMega()
 </script>
 <template>
   <div>
-    <h1 class="mb-6 text-2xl font-bold">Pokémon Mega Forms</h1>
+
+    <BaseTitle>Pokémon Mega Forms</BaseTitle>
     <div class="pokemon">
       <Card :pokemons="pokemons" />
     </div>
