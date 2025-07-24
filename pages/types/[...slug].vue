@@ -1,5 +1,24 @@
 <script setup lang="ts">
-import { columnsDefense, columnsOffense, types, typesPokemon } from '@/constants/filter'
+import { columnsDefense,
+  columnsOffense,
+  types,
+  typesPokemon,
+  generations } from '@/constants/filter'
+import type { Pokemon } from '@/types/responses/Types'
+
+interface Pokemons {
+  main: Pokemon[],
+  pair: Pokemon[],
+  default: PokemonType[]
+}
+
+interface PokemonType {
+  name: string
+  id: number
+  type: number[]
+  generation: number
+}
+
 const route = useRoute()
 const router = useRouter()
 
@@ -7,14 +26,14 @@ const pairType = computed(() => {
   return route.query.pair
 })
 
-const type = computed(() => {
+const mainType = computed(() => {
   return route.params.slug[0]
 })
 
-const pokemon_type = ref()
-const pair_type = ref()
+const mainPokemonType = ref()
+const pairPokemonType = ref()
 const defense = ref()
-const pokemons = ref()
+const pokemons = ref<Pokemons>({ main: [], pair: [], default: [] })
 
 const { getType } = useApiTypes()
 
@@ -23,19 +42,21 @@ async function fetchType(name: string, target: 'main' | 'pair') {
   if (!res) return
 
   if (target === 'main') {
-    pokemon_type.value = res
+    mainPokemonType.value = res
     defense.value = res.defense
-    pokemons.value = res?.pokemon ?? []
   } else {
-    pair_type.value = res
+    pairPokemonType.value = res
     handleDefense()
   }
+  
+  pokemons.value[target] = res.pokemon
+  defaultPokemon()
 }
 
 onMounted(async () => {
-  if (type.value === pairType.value) router.push(`/types/${type.value}`)
+  if (mainType.value === pairType.value) router.push(`/types/${mainType.value}`)
 
-  await fetchType(type.value, 'main')
+  await fetchType(mainType.value, 'main')
 
   if (pairType.value) {
     const name = pairType.value.toString()
@@ -49,15 +70,17 @@ async function handlePokemon(name: string, filter: string) {
   const normalize = name.toLowerCase()
 
   if (normalize === 'none'){
-    router.push(`/types/${type.value}`)
-    defense.value = pokemon_type.value.defense
-    pokemons.value = pokemon_type.value?.pokemon ?? []
+    router.push(`/types/${mainType.value}`)
+    pokemons.value.pair = []
+    defaultPokemon()
+    await fetchType(mainType.value, "main")
+
     return
   }
 
   const { pair } = route.query
 
-  if (normalize === type.value) return
+  if (normalize === mainType.value) return
 
   if (filter === 'pokemon') {
     const path = pair && pair !== normalize
@@ -68,13 +91,13 @@ async function handlePokemon(name: string, filter: string) {
   }
 
   if (filter === 'pair') {
-    router.push(`/types/${type.value}?pair=${normalize}`)
+    router.push(`/types/${mainType.value}?pair=${normalize}`)
     await fetchType(normalize, 'pair')
   }
 }
 
 function handleDefense () {
-  const defensed = calculateDefense(pokemon_type.value.defense, pair_type.value.defense);
+  const defensed = calculateDefense(mainPokemonType.value.defense, pairPokemonType.value.defense);
   const grouped = groupByEffectiveness(defensed);
   
   const normalize = {
@@ -89,6 +112,39 @@ function handleDefense () {
   defense.value = normalize
 }
 
+function defaultPokemon() {
+  const all = [
+    ...toRaw(pokemons.value.main ?? []),
+    ...toRaw(pokemons.value.pair ?? [])
+  ];
+
+  const ids = all.map(item => Number(getID(item.pokemon.url)));
+
+  const filtered: PokemonType[] = pokemonTransform.filter(p =>
+    ids.includes(p.id)
+  );
+
+  const mainId = types[0].find(t => t.name === mainType.value)?.id;
+  const pairId = types[0].find(t => t.name === pairType.value)?.id;
+
+  const typeId = mainId ? [mainId] : [];
+  if (pairId && pairId !== mainId) typeId.push(pairId);
+
+  pokemons.value.default= filterByFlexibleType(filtered, typeId);
+}
+
+function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
+  return pokemons.filter(p => {
+    const t = p.type;
+
+    return filterType.length === 1
+      ? t.length === 1 && t[0] === filterType[0]
+      : filterType.length === 2 &&
+          t.length === 2 &&
+          filterType.every(val => t.includes(val));
+  });
+}
+
 </script>
 
 <template>
@@ -100,14 +156,15 @@ function handleDefense () {
     
     <div class="flex items-center justify-between">
       <BaseTitle class="!mb-0 first-letter:uppercase">
-        {{ type }} <span v-if="pairType"> - {{ getName(pairType?.toString() ?? '') }}</span> Type
+        {{ mainType }} 
+        <span v-if="pairType"> - {{ getName(pairType?.toString() ?? '') }}</span> Type
       </BaseTitle>
 
       <div class="flex gap-x-2">
         <!-- Pokemon Filter -->
          <RoundedFilter 
           v-model:open="open.pokemon"
-          :type 
+          :type="mainType" 
           :items="types"
           @handle-pokemon="handlePokemon"/>
 
@@ -146,15 +203,15 @@ function handleDefense () {
         Offense 
       </template>
 
-      <p v-if="pairType" class="mb-3 text-sm first-letter:uppercase">{{ type }}</p>
+      <p v-if="pairType" class="mb-3 text-sm first-letter:uppercase">{{ mainType }}</p>
       <div class="table-offense">
         <TypeHeader :column="columnsOffense" />
         
         <div 
-          v-for="poke, id in pokemon_type?.offense" 
+          v-for="poke, id in mainPokemonType?.offense" 
           :key="id"
           :class="[{'bg-green-300/20': id === 0}, 
-          {'bg-red-300/20': (id + 1 ) === Object.keys(pokemon_type?.offense).length}]"
+          {'bg-red-300/20': (id + 1 ) === Object.keys(mainPokemonType?.offense).length}]"
         >
           <TypeBody :damages="poke" />
         </div>
@@ -165,10 +222,10 @@ function handleDefense () {
         <div class="table-offense">
           <TypeHeader :column="columnsOffense" />
           <div 
-            v-for="poke, id in pair_type?.offense" 
+            v-for="poke, id in pairPokemonType?.offense" 
             :key="id"
             :class="[{'bg-green-300/20': id === 0}, 
-            {'bg-red-300/20': (id + 1 ) === Object.keys(pair_type?.offense).length}]"
+            {'bg-red-300/20': (id + 1 ) === Object.keys(pairPokemonType?.offense).length}]"
           >
             <TypeBody :damages="poke" />
           </div>
@@ -179,15 +236,31 @@ function handleDefense () {
 
     <TypeCard>
       <template #title>
-        Pokemons <span class="text-sm font-light text-stone-500">({{ pokemons?.length }})</span>
+        Pokemons <span class="text-sm font-light text-stone-500">
+          ({{ pokemons.default.length }})
+        </span>
       </template>
 
-      <div class="grid grid-cols-5 gap-5">
+      <div class="grid grid-cols-5 gap-5 ">
         <div 
-          v-for="pokemon, id in pokemons" 
+          v-for="pokemon, id in pokemons.default" 
           :key="id" 
-          class="border rounded-lg">
-          {{ pokemon.pokemon.name }}
+          class="border rounded-lg p-2 flex justify-center relative">
+          <div>
+            <img 
+              :src="`https://pokemon-img.pages.dev/128x128/${pokemon.id}.webp`" 
+              class="w-24 mx-auto">
+            <p class="text-stone-800 text-center first-letter:uppercase text-xs mt-2">
+              {{ pokemon.name.split("-").join(" ") }}
+            </p>
+            <p
+              class="absolute top-0 right-0 text-xs
+             bg-gray-300/20 px-2 py-1 rounded-tr rounded-bl-lg">
+              <!-- {{ generations[0][pokemon.generation].label.split(" ")[1] }} -->
+                {{ generations[0].find((item) => 
+                item.id === pokemon.generation)?.label.split(" ")[1] }}
+            </p>
+          </div>
         </div>
       </div>
       
