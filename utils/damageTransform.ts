@@ -5,7 +5,7 @@ import type {
    MultiplierGroup, 
    TypeData, 
    TypeEffectiveness 
-  } from '~/types/components/Types'
+  } from '@/types/components/DamageTypes'
 
 const multiplierMap: Record<DamageCategory, number> = {
   no_damage: 0,
