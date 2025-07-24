@@ -21,7 +21,7 @@ function handleMenuClick(slug: string) {
 const getMenuItemClass = computed (() => {
   return (slug: string) => [
     'menu-content',
-    router.currentRoute.value.path === `/${slug}` && 'menu-content__active' 
+    router.currentRoute.value.path.includes(`/${slug}`) && 'menu-content__active' 
   ];
 })
 </script>
