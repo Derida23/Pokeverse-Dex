@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { FilterKey, FilterValue } from '~/types/components/Pokemons';
+import type { FilterKey, FilterValue } from '@/types/components/Pokemons';
 import { generations, types, forms } from '@/constants/filter'
 
 const props = defineProps({
@@ -39,7 +39,7 @@ function selectedAttrLabel (value: string) {
 </script>
 
 <template>
-  <div class="grid grid-cols-8 md:grid-cols-4 mb-4 gap-y-2 gap-4 md:gap-2">
+  <div class="grid grid-cols-8 md:grid-cols-4 mb-4 gap-y-2 gap-2 md:gap-2">
     <div class="relative col-span-8 md:col-span-1">
       <UInput
         v-model="filter.q as string"
@@ -68,6 +68,7 @@ function selectedAttrLabel (value: string) {
         v-model:open="open.generations" 
         :items="generations" 
         :popper="{ placement: 'bottom-start' }"
+        class="w-full"
         :ui="{
           base: 'max-h-96 overflow-auto',
           item: {
@@ -83,10 +84,10 @@ function selectedAttrLabel (value: string) {
           </div>
         </template>
 
-        <UButton color="white" class="w-[150px] md:w-[174px] lg:w-[178px] xl:w-[202px] h-9">
+        <UButton block color="white" class="h-9">
           <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
             <div>
-              <p v-if="!filter.gen">Any generations</p>
+              <p v-if="!filter.gen" class="truncate">Any generations</p>
               <p v-else class="font-medium">{{ selectedGenLabel }}</p>
             </div>
             <div class="flex items-center">
@@ -114,6 +115,7 @@ function selectedAttrLabel (value: string) {
         v-model:open="open.types" 
         :items="types" 
         :popper="{ placement: 'bottom-start' }"
+        class="w-full"
         :ui="{
           base: 'max-h-96 overflow-auto',
           item: {
@@ -135,7 +137,7 @@ function selectedAttrLabel (value: string) {
           </div>
         </template>
 
-        <UButton block color="white" class="w-[150px] md:w-[174px] lg:w-[178px] xl:w-[202px] h-9" >
+        <UButton block color="white" class="h-9" >
           <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
             <div>
               <p v-if="!filter.type">Any types</p>

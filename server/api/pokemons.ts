@@ -1,5 +1,5 @@
 import { pokemons } from '@/constants/pokemons'
-import { types } from '~/constants/types'
+import { types } from '@/constants/types'
 
 export default defineEventHandler(async (event) => {
   try {
