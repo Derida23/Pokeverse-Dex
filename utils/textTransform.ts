@@ -9,3 +9,7 @@ export const getNameTypes = (id: number) => {
 
   return type?.name ?? ''
 }
+
+export const getID = (url: string) => {
+  return url.split('/')[6]
+}
