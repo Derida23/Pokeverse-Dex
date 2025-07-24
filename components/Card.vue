@@ -96,7 +96,7 @@ const props = defineProps({
     @apply font-semibold first-letter:uppercase truncate;
 
     &-alternative {
-      @apply absolute z-0 text-4xl font-black right-2 top-14 text-slate-800/10;
+      @apply absolute z-0 text-4xl font-black right-2 top-14 text-stone-800/10;
     }
   }
 
@@ -105,7 +105,7 @@ const props = defineProps({
       @apply flex items-center mt-1 mb-3 gap-x-1;
     }
 
-    @apply text-xs text-slate-600;
+    @apply text-xs text-stone-600;
   }
 
   &-types {
@@ -120,7 +120,7 @@ const props = defineProps({
     }
 
     &-icons {
-      @apply pt-0.5 text-xs text-slate-600;
+      @apply pt-0.5 text-xs text-stone-600;
     }
 
     &-color {
@@ -133,7 +133,7 @@ const props = defineProps({
   }
 
   &-text-forms {
-    @apply text-xs font-medium text-slate-500;
+    @apply text-xs font-medium text-stone-500;
   }
 }
 </style>
