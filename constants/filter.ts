@@ -144,7 +144,6 @@ export const forms =
   { label: 'GMax Form', value: 'is_gmax', id: 5 },
 ]
 
-
 export const columnsDefense = [
   { key: 'immune', label: '0x' },
   { key: 'very_resist', label: '0.25x' },
@@ -160,7 +159,6 @@ export const columnsOffense = [
   { key: 'resist', label: '0.5x' },
   { key: 'immune', label: '0x' },
 ];
-
 
 export const typesPokemon = [
   [ {
