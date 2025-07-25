@@ -13,3 +13,22 @@ export const getNameTypes = (id: number) => {
 export const getID = (url: string) => {
   return url.split('/')[6]
 }
+
+export const getEggName = (name: string): string => {
+  if (name === 'no-eggs') {
+    return "Undiscovered"
+  }
+
+  if (name === 'water1') {
+    return "water 1"
+  }
+
+  if (name === 'water2') {
+    return "water 2"
+  }
+
+  if (name === 'water3') {
+    return "water 3"
+  }
+  return name
+}
