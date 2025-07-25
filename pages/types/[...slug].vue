@@ -287,14 +287,14 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
 }
 
 .navigation {
-  @apply flex items-center mb-3 cursor-pointer gap-x-2 w-fit;
+  @apply flex items-center mb-3 cursor-pointer gap-x-2 w-fit hover:underline;
 
   &-icon {
     @apply text-xl font-light text-stone-500;
   }
 
   &-title {
-    @apply text-base font-light text-stone-500;
+    @apply text-sm font-light text-stone-500;
   }
 }
 
