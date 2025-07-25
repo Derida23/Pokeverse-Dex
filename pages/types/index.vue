@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { getTypes } = useApiTypes()
+const { getTypes } = useApiType()
 const { data: types } = await getTypes()
 
 const router = useRouter()

@@ -8,7 +8,7 @@ interface Types {
   single_pokemon: number
 }
 
-export function useApiTypes(){
+export function useApiType(){
   const getTypes = async () => {
     const { data } = await $fetch<ApiResponse<Types[]>>('/api/types', {
       method: 'GET'

@@ -35,7 +35,7 @@ const pairPokemonType = ref()
 const defense = ref()
 const pokemons = ref<Pokemons>({ main: [], pair: [], default: [] })
 
-const { getType } = useApiTypes()
+const { getType } = useApiType()
 
 async function fetchType(name: string, target: 'main' | 'pair') {
   const res = await getType(name.toLowerCase())
