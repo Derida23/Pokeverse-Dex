@@ -17,6 +17,6 @@ const { data:pokemons } = await getMega()
 
 <style scoped lang="postcss">
 .pokemon {
-  @apply grid w-full grid-cols-3 gap-2;
+  @apply grid w-full md:grid-cols-3 gap-4 lg:gap-2;
 }
 </style>

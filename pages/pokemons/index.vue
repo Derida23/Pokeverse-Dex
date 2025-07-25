@@ -178,45 +178,5 @@ function handleReset(value: string | null = null) {
 <style scoped lang="postcss">
 .pokemon {
   @apply grid w-full md:grid-cols-3 gap-4 lg:gap-2;
-  
-  &-card {
-    @apply py-3 pl-3 border shadow-sm;
-    @apply cursor-pointer;
-    @apply border-slate-200 hover:border-slate-300 h-36 rounded-xl;
-    @apply relative overflow-hidden ;
-  }
-
-  &-content {
-    @apply z-10 h-full;
-    @apply flex items-center justify-between ;
-  }
-
-  &-name {
-    @apply font-semibold first-letter:uppercase;
-
-    &-alternative {
-      @apply absolute z-0 text-4xl font-black right-2 top-14 text-stone-800/10;
-    }
-  }
-
-  &-id {
-    @apply text-xs text-stone-600;
-  }
-
-  &-types {
-    @apply flex items-center text-xs gap-x-1;
-
-    &-circle {
-      @apply w-4 h-4 border rounded-full border-black/20;
-    }
-
-    &-circle-option {
-      @apply w-3.5 h-3.5 ml-[-4px] rounded-full border border-black/20;
-    }
-  }
-
-  &-artwork {
-    @apply absolute right-0 z-10 w-32 top-2;
-  }
 }
 </style>
