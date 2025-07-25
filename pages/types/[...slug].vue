@@ -148,13 +148,13 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
 </script>
 
 <template>
-  <section>
-    <div class="flex items-center mb-3 cursor-pointer gap-x-2 w-fit" @click="router.push('/types')">
-      <UIcon name="i-lucide-arrow-left" class="text-xl font-light text-stone-500"/>
-      <p class="text-base font-light text-stone-500">Back to type list</p>
-    </div>
+  <div>
+    <section class="navigation" @click="router.push('/types')">
+      <UIcon name="i-lucide-arrow-left" class="navigation-icon"/>
+      <p class="navigation-title">Back to type list</p>
+    </section>
     
-    <div class="flex items-center justify-between">
+    <section class="filter">
       <BaseTitle class="!mb-0 first-letter:uppercase">
         {{ mainType }} 
         <span v-if="pairType"> - {{ getName(pairType?.toString() ?? '') }}</span> Type
@@ -177,7 +177,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
           :pair="true"
           @handle-pokemon="handlePokemon"/>
       </div>
-    </div>
+    </section>
 
     <!-- Defense Pokemon -->
     <TypeCard >
@@ -233,7 +233,6 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
       </div>
     </TypeCard>
 
-
     <TypeCard>
       <template #title>
         Pokemons <span class="text-sm font-light text-stone-500">
@@ -241,22 +240,20 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
         </span>
       </template>
 
-      <div class="grid grid-cols-5 gap-5 ">
+      <div class="pokemons">
         <div 
           v-for="pokemon, id in pokemons.default" 
           :key="id" 
-          class="border rounded-lg p-2 flex justify-center relative">
+          class="pokemons-card">
           <div>
             <img 
               :src="`https://pokemon-img.pages.dev/128x128/${pokemon.id}.webp`" 
               class="w-24 mx-auto">
-            <p class="text-stone-800 text-center first-letter:uppercase text-xs mt-2">
+            <p class="pokemons-title">
               {{ pokemon.name.split("-").join(" ") }}
             </p>
             <p
-              class="absolute top-0 right-0 text-xs
-             bg-gray-300/20 px-2 py-1 rounded-tr rounded-bl-lg">
-              <!-- {{ generations[0][pokemon.generation].label.split(" ")[1] }} -->
+              class="pokemons-generation">
                 {{ generations[0].find((item) => 
                 item.id === pokemon.generation)?.label.split(" ")[1] }}
             </p>
@@ -265,7 +262,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
       </div>
       
     </TypeCard>
-  </section>
+  </div>
 </template>
 
 <style scoped lang="postcss">
@@ -286,6 +283,39 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
 
   &-content {
     @apply first-letter:uppercase py-0.5 px-2 rounded-xl text-xs;
+  }
+}
+
+.navigation {
+  @apply flex items-center mb-3 cursor-pointer gap-x-2 w-fit;
+
+  &-icon {
+    @apply text-xl font-light text-stone-500;
+  }
+
+  &-title {
+    @apply text-base font-light text-stone-500;
+  }
+}
+
+.filter {
+  @apply flex items-center justify-between;
+}
+
+.pokemons {
+  @apply grid grid-cols-5 gap-5;
+
+  &-card {
+    @apply border rounded-lg p-2 flex justify-center relative;
+  }
+
+  &-title {
+    @apply text-stone-800 text-center first-letter:uppercase text-xs mt-2;
+  }
+
+  &-generation {
+    @apply absolute top-0 right-0 text-xs;
+    @apply bg-gray-300/20 px-2 py-1 rounded-tr rounded-bl-lg
   }
 }
 </style>
