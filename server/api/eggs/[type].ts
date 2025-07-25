@@ -8,8 +8,9 @@ export default defineEventHandler(async (event) => {
   try {
     const type = event.context.params?.type;
     const typeId = eggs.find((item) => item.name === type) as { name: string, id: number }
-
+    
     const { apiUrl } = useRuntimeConfig()
+    console.log("CHECK TYPE PARAMS", apiUrl)
     const response = await $fetch<Eggs>(`${apiUrl}/egg-group/${typeId.id}`, {
       method: 'GET'
     })
