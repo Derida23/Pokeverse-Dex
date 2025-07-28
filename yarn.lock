@@ -7319,6 +7319,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keen-slider@npm:^6.8.6":
+  version: 6.8.6
+  resolution: "keen-slider@npm:6.8.6"
+  checksum: 10c0/612553f15c5af61bf23f5defe414e7d314406a109e2d944c4253f7862e3666f2ab9bae0e43bf84f41678878ca1d90d38831845bb496dfd747ed84efc7d34efdd
+  languageName: node
+  linkType: hard
+
 "keygrip@npm:~1.1.0":
   version: 1.1.0
   resolution: "keygrip@npm:1.1.0"
@@ -8550,6 +8557,7 @@ __metadata:
     date-fns: "npm:^4.1.0"
     eslint: "npm:^9.28.0"
     husky: "npm:^9.1.7"
+    keen-slider: "npm:^6.8.6"
     lint-staged: "npm:^16.1.0"
     node-fetch: "npm:^3.3.2"
     nuxt: "npm:^3.17.5"
