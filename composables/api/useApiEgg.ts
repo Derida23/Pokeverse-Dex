@@ -1,4 +1,4 @@
-import type { ApiResponse } from "@/types/responses/ApiResponse"
+import type { ApiResponse } from "~/types/api/ApiResponse"
 import type { Eggs } from "~/types/responses/Eggs"
 
 interface EggsList {

@@ -1,4 +1,4 @@
-import type { Generations } from "@/types/responses/Generations"
+import type { Generations } from "~/types/api/Generations"
 
 export default defineEventHandler(async (event) => {
   try {

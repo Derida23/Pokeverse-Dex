@@ -1,5 +1,5 @@
 import type { FilterEvo, FilterValue } from "@/types/components/Pokemons"
-import type { ApiResponse } from "@/types/responses/ApiResponse"
+import type { ApiResponse } from "~/types/api/ApiResponse"
 import type { Evolution } from "~/types/responses/Evolution"
 
 export function useApiEvolution(){

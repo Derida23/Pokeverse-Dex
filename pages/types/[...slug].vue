@@ -4,7 +4,7 @@ import { columnsDefense,
   types,
   typesPokemon,
   generations } from '@/constants/filter'
-import type { Pokemon } from '@/types/responses/Types'
+import type { Pokemon } from '~/types/api/Types'
 
 interface Pokemons {
   main: Pokemon[],

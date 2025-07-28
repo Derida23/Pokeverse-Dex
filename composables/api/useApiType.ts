@@ -1,12 +1,5 @@
-import type { ApiResponse } from "@/types/responses/ApiResponse"
-import type { Type } from "@/types/responses/Type"
-
-interface Types {
-  id: number
-  name: string
-  total_pokemon: number
-  single_pokemon: number
-}
+import type { ApiResponse } from "~/types/api/ApiResponse"
+import type { Types, Type } from "~/types/responses/Types"
 
 export function useApiType(){
   const getTypes = async () => {
