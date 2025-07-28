@@ -19,17 +19,12 @@ const { data } = await getEgg(params.value)
     <BaseTitle class="first-letter:uppercase">
       {{ getEggName(params) }}
     </BaseTitle>
-    <div class="pokemon">
-      <Card :pokemons= data.pokemons />
-    </div>
+    
+    <CardList :pokemons= data.pokemons />
   </div>
 </template>
 
 <style scoped lang="postcss">
-.pokemon {
-  @apply grid w-full md:grid-cols-3 gap-4 lg:gap-2;
-}
-
 .navigation {
   @apply flex items-center mb-3 cursor-pointer gap-x-2 w-fit hover:underline;
 

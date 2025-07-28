@@ -7,14 +7,6 @@ const { data: pokemons } = await getGigantamax()
 <template>
   <div>
     <BaseTitle>Pokémon Gigantamax</BaseTitle>
-    <div class="pokemon">
-      <Card :pokemons="pokemons" :variants="'gmax'" />
-    </div>
+    <CardList :pokemons="pokemons" :variants="'gmax'" />
   </div>
 </template>
-
-<style scoped lang="postcss">
-.pokemon {
-  @apply grid w-full md:grid-cols-3 gap-4 lg:gap-2;
-}
-</style>

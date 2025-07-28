@@ -159,10 +159,7 @@ function handleReset(value: string | null = null) {
 
     <!-- Content Section -->
     <section>
-      <div v-if="pokemons.length > 0" class="pokemon">
-        <Card :pokemons />
-      </div>
-
+      <CardList v-if="pokemons.length > 0" :pokemons />
       <Base404 v-else-if="pokemons.length === 0 && !isLoading" />
     </section>
 
@@ -174,9 +171,3 @@ function handleReset(value: string | null = null) {
 
   </div>
 </template>
-
-<style scoped lang="postcss">
-.pokemon {
-  @apply grid w-full md:grid-cols-3 gap-4 lg:gap-2;
-}
-</style>
