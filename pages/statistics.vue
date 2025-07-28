@@ -1,3 +1,5 @@
 <template>
-  <BaseConstruction />
+  <div>
+    <BaseConstruction />
+  </div>
 </template>

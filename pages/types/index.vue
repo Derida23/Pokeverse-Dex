@@ -16,7 +16,7 @@ function getColor (skill: string): string {
       <div 
         v-for="(type, id) in types" 
         :key="id"
-        class="border rounded-2xl"
+        class="border rounded-lg"
         :class="getColor(type.name)"
         @click="router.push(`/types/${type.name}`)"
       >

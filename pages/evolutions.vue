@@ -119,7 +119,8 @@ function handleReset(value: string | null = null) {
     <div class="min-h-screen">
       <BaseTitle>Pokémon Evolutions</BaseTitle>
   
-      <div class="grid grid-cols-2 gap-2 mb-4 md:grid-cols-4 gap-y-2 md:gap-2">
+      <!-- Filter section -->
+      <section class="grid grid-cols-2 gap-2 mb-4 md:grid-cols-4 gap-y-2 md:gap-2">
         <div class="relative">
           <UDropdown 
             v-model:open="open.generations" 
@@ -220,7 +221,7 @@ function handleReset(value: string | null = null) {
         </div>
       </div>
   
-      </div>
+      </section>
   
       <UDivider  class="mb-4"/>
   
