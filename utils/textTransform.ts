@@ -1,4 +1,5 @@
 import { types } from "@/constants/types"
+import { generations } from "~/constants/filter"
 
 export const getName = (name: string): string => {
   return name.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
@@ -32,3 +33,16 @@ export const getEggName = (name: string): string => {
   }
   return name
 }
+
+export const getSize = (size: number) => {
+  return size/10
+}
+
+export const getGenName = (id: number) => {
+  const gen = generations[0].find(item => item.id === id)?.label.split(" ")[1]
+
+  return gen
+}
+
+export const capitalize = (str: string) =>
+  str.charAt(0).toUpperCase() + str.slice(1);
