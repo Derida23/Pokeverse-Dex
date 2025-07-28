@@ -2,8 +2,7 @@
 import { columnsDefense,
   columnsOffense,
   types,
-  typesPokemon,
-  generations } from '@/constants/filter'
+  typesPokemon } from '@/constants/filter'
 import type { Pokemon } from '~/types/api/Types'
 
 interface Pokemons {
@@ -183,7 +182,6 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
       <template #title>
         Defense <span class="text-xs font-light text-stone-500">(damage taken)</span>
       </template>
-      
       <div class="table-defense">
         <TypeHeader :column="columnsDefense" />
         <div 
@@ -197,11 +195,11 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
       </div>
     </TypeWrapper>
 
+    <!-- Offense Pokemons -->
     <TypeWrapper>
       <template #title>
         Offense 
       </template>
-
       <p v-if="pairType" class="mb-3 text-sm first-letter:uppercase">{{ mainType }}</p>
       <div class="table-offense">
         <TypeHeader :column="columnsOffense" />
@@ -216,6 +214,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
         </div>
       </div>
 
+      <!-- Pair Offense Pokemons -->
       <div v-if="pairType">
         <p class="mt-4 mb-2 text-sm first-letter:uppercase">{{ pairType }}</p>
         <div class="table-offense">
@@ -232,6 +231,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
       </div>
     </TypeWrapper>
 
+    <!-- Pokemons List -->
     <TypeWrapper>
       <template #title>
         Pokemons <span class="text-sm font-light text-stone-500">
@@ -239,27 +239,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
         </span>
       </template>
 
-      <div class="pokemons">
-        <div 
-          v-for="pokemon, id in pokemons.default" 
-          :key="id" 
-          class="pokemons-card">
-          <div>
-            <img 
-              :src="`https://pokemon-img.pages.dev/128x128/${pokemon.id}.webp`" 
-              class="w-24 mx-auto">
-            <p class="pokemons-title">
-              {{ pokemon.name.split("-").join(" ") }}
-            </p>
-            <p
-              class="pokemons-generation">
-                {{ generations[0].find((item) => 
-                item.id === pokemon.generation)?.label.split(" ")[1] }}
-            </p>
-          </div>
-        </div>
-      </div>
-      
+      <CardSimple :pokemons="pokemons.default" />
     </TypeWrapper>
   </div>
 </template>

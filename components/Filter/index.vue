@@ -39,7 +39,7 @@ function selectedAttrLabel (value: string) {
 </script>
 
 <template>
-  <div class="grid grid-cols-8 md:grid-cols-4 mb-4 gap-y-2 gap-2 md:gap-2">
+  <div class="grid grid-cols-8 gap-2 mb-4 md:grid-cols-4 gap-y-2 md:gap-2">
     <div class="relative col-span-8 md:col-span-1">
       <UInput
         v-model="filter.q as string"
@@ -51,7 +51,7 @@ function selectedAttrLabel (value: string) {
         maxlength="10"
         @update:model-value="handleFilter('q', $event)"
       />
-      <div v-if="filter.q" class="absolute top-0 right-0 pr-2 h-9 flex items-center">
+      <div v-if="filter.q" class="absolute top-0 right-0 flex items-center pr-2 h-9">
         <UButton
           icon="i-lucide-circle-x"
           size="xs"
@@ -98,7 +98,7 @@ function selectedAttrLabel (value: string) {
         </UButton>
       </UDropdown>
 
-      <div v-if="filter.gen" class="absolute top-0 right-0 pr-2 h-9 flex items-center">
+      <div v-if="filter.gen" class="absolute top-0 right-0 flex items-center pr-2 h-9">
         <UButton
           icon="i-lucide-circle-x"
           size="xs"
@@ -151,7 +151,7 @@ function selectedAttrLabel (value: string) {
         </UButton>
       </UDropdown>
 
-      <div v-if="filter.type" class="absolute top-0 right-0 pr-2 h-9 flex items-center">
+      <div v-if="filter.type" class="absolute top-0 right-0 flex items-center pr-2 h-9">
         <UButton
           icon="i-lucide-circle-x"
           size="xs"
@@ -166,7 +166,7 @@ function selectedAttrLabel (value: string) {
     <div class="flex items-center justify-between md:gap-2">
       <UPopover v-model:open="open.attr" :ui="{ placement: 'bottom-start' }">
         <UChip :show="filter.attr !== null" class="w-full" size="lg">
-          <UButton color="white" size="lg" class="w-10 h-9 w- p-0">
+          <UButton color="white" size="lg" class="w-10 p-0 h-9 w-">
             <div class="flex items-center justify-center w-full">
               <UIcon name="i-lucide-filter" class="text-lg text-gray-500 " />
             </div>

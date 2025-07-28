@@ -17,7 +17,7 @@ const route = useRoute()
 const router = useRouter()
 
 function getGen (gen: number): string {
-  return generations[0].find((item) => item.id === gen)?.label ?? '' 
+  return generations[0].find((item) => item.id === gen)?.label ?? 'Unknown' 
 }
 const itemMap: Record<string, string> = {
   'black-augurite': 'blackaugurite',
