@@ -11,6 +11,8 @@ const props = defineProps({
     default: ''
   }
 })
+
+const router = useRouter()
 </script>
 
 <template>
@@ -18,7 +20,8 @@ const props = defineProps({
     v-for="(data, index) in props.pokemons" 
     :key="index" 
     class="pokemon-card"
-    :class="`bg-type-${getNameTypes(data.types[0][0])}`">
+    :class="`bg-type-${getNameTypes(data.types[0][0])}`"
+    @click="router.push(`/pokemons/${data.name}`)">
 
     <div class="pokemon-content">
       <section>
@@ -79,7 +82,7 @@ const props = defineProps({
   &-card {
     @apply py-3 pl-3 border shadow-sm;
     @apply cursor-pointer;
-    @apply border-slate-200 hover:border-slate-300 h-36 rounded-xl;
+    @apply border-slate-200 hover:border-slate-300 h-36 rounded-lg;
     @apply relative overflow-hidden;
   }
 

@@ -13,6 +13,9 @@ const props = defineProps({
   }
 })
 
+const route = useRoute()
+const router = useRouter()
+
 function getGen (gen: number): string {
   return generations[0].find((item) => item.id === gen)?.label ?? '' 
 }
@@ -36,67 +39,74 @@ const imgUrl = computed(() => {
 });
 
 const borderClass = computed(() => {
-  return !props.item ? `border-${getNameTypes(props.evo.detail.type[0])} border` : 'border';
-});
+  const type = props.evo?.detail?.type?.[0]
+  return route.name && type ? `border-${getNameTypes(type)} border` : 'border'
+})
 </script>
 
 <template>
-  <div class="flex items-center gap-x-2 mr-2">
-      <div v-if="item" class="z-10">
-        <div 
-          v-if="evo.detail.level"
-          class="arrow-wrapper">
-            Lv<br>
-            {{ evo.detail.level }}
-        </div>
-  
-        <div 
-          v-if="evo.detail.item"
-          class="arrow-wrapper">
-          <img 
-            :src="imgUrl" 
-            :alt="evo.detail.item">
-        </div>
-  
-        <div 
-          v-if="!evo.detail.item && !evo.detail.level"
-          class="arrow-dashed">
-            <UIcon name="i-lucide-arrow-right" class="font-bold text-lg text-stone-700"/>
-        </div>
+  <div class="flex items-center mr-2 gap-x-2">
+    <div v-if="item" class="z-10">
+      <div 
+        v-if="evo.detail.level"
+        class="arrow-wrapper">
+          Lv<br>
+          {{ evo.detail.level }}
       </div>
 
-      <div v-if="item" class="w-10 h-0.5 bg-stone-700 mx-[-1rem]" />
+      <div 
+        v-if="evo.detail.item"
+        class="arrow-wrapper">
+        <img 
+          :src="imgUrl" 
+          :alt="evo.detail.item">
+      </div>
 
-      <section 
-        class="pokemon-wrapper" 
-        :class="borderClass">
-       <img 
-         :src="`https://pokemon-img.pages.dev/192x192/${props.evo.detail.id}.webp`" 
-         class="w-14">
-       <div>
-         <p class="text-sm font-semibold first-letter:uppercase">
-           {{ evo.detail.name }}
-         </p>
-   
-         <div class="flex items-center gap-2 mt-1 text-xs">
-           <div class="flex">
-             <div class="flex items-end mr-1">
-               <div 
-                 class="pokemon-types-circle" 
-                 :class="`bg-skill-${getNameTypes(evo.detail.type[0])}`" />
-               <div
-                 v-if="evo.detail.type.length > 1"
-                 class="pokemon-types-circle-option"
-                 :class="`bg-skill-${getNameTypes(evo.detail.type[1])}`" />
-             </div>
-           </div>
-           <div>
-             {{  getGen(evo.detail.generation) }}
-           </div>
-         </div>
-       </div>
-     </section>
+      <div 
+        v-if="!evo.detail.item && !evo.detail.level"
+        class="arrow-dashed">
+          <UIcon name="i-lucide-arrow-right" class="text-lg font-bold text-stone-700"/>
+      </div>
+    </div>
 
+    <div v-else-if="!item && route.name !== 'evolutions'" class="z-10">
+      <div class="arrow-dashed">
+        <UIcon name="i-gg-pokemon" class="text-lg font-bold text-stone-700 animate-bounce"/>
+      </div>
+    </div>
+
+    <div v-if="item" class="w-10 h-0.5 bg-stone-700 mx-[-1rem]" />
+
+    <section 
+      class="cursor-pointer pokemon-wrapper" 
+      :class="borderClass"
+      @click="router.push(`/pokemons/${evo.detail.name}`)">
+      <img 
+        :src="`https://pokemon-img.pages.dev/192x192/${props.evo.detail.id}.webp`" 
+        class="w-14">
+      <div>
+        <p class="text-sm font-semibold first-letter:uppercase">
+          {{ evo.detail.name }}
+        </p>
+  
+        <div class="flex items-center gap-2 mt-1 text-xs">
+          <div class="flex">
+            <div class="flex items-end mr-1">
+              <div 
+                class="pokemon-types-circle" 
+                :class="`bg-skill-${getNameTypes(evo.detail.type[0])}`" />
+              <div
+                v-if="evo.detail.type.length > 1"
+                class="pokemon-types-circle-option"
+                :class="`bg-skill-${getNameTypes(evo.detail.type[1])}`" />
+            </div>
+          </div>
+          <div>
+            {{  getGen(evo.detail.generation) }}
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

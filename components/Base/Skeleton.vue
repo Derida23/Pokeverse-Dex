@@ -1,8 +1,8 @@
 <template>
   <div class="grid grid-cols-3 mt-2 gap-x-2">
-    <div class="shadow-sm shimmer border-slate-200 hover:border-slate-300 h-36 rounded-xl"/>
-    <div class="shadow-sm shimmer border-slate-200 hover:border-slate-300 h-36 rounded-xl"/>
-    <div class="shadow-sm shimmer border-slate-200 hover:border-slate-300 h-36 rounded-xl"/>
+    <div class="rounded-lg shadow-sm shimmer border-slate-200 hover:border-slate-300 h-36"/>
+    <div class="rounded-lg shadow-sm shimmer border-slate-200 hover:border-slate-300 h-36"/>
+    <div class="rounded-lg shadow-sm shimmer border-slate-200 hover:border-slate-300 h-36"/>
 
   </div>
 </template>
