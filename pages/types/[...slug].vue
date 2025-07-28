@@ -180,7 +180,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
     </section>
 
     <!-- Defense Pokemon -->
-    <TypeCard >
+    <TypeWrapper >
       <template #title>
         Defense <span class="text-xs font-light text-stone-500">(damage taken)</span>
       </template>
@@ -196,9 +196,9 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
           <TypeBody :damages="poke" />
         </div>
       </div>
-    </TypeCard>
+    </TypeWrapper>
 
-    <TypeCard>
+    <TypeWrapper>
       <template #title>
         Offense 
       </template>
@@ -231,9 +231,9 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
           </div>
         </div>
       </div>
-    </TypeCard>
+    </TypeWrapper>
 
-    <TypeCard>
+    <TypeWrapper>
       <template #title>
         Pokemons <span class="text-sm font-light text-stone-500">
           ({{ pokemons.default.length }})
@@ -261,7 +261,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
         </div>
       </div>
       
-    </TypeCard>
+    </TypeWrapper>
   </div>
 </template>
 

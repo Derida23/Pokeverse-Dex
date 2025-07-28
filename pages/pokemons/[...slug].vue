@@ -129,7 +129,7 @@ const typeList = computed(() => {
       </section>
       
       <!-- Evolution Chain -->
-      <TypeCard >
+      <TypeWrapper >
         <template #title>
           Evolution Chain <UDivider />
         </template>
@@ -160,15 +160,15 @@ const typeList = computed(() => {
             </div>
           </div>
         </section>
-      </TypeCard>
+      </TypeWrapper>
 
       <section class="grid mt-3 md:grid-cols-2 gap-x-4">
         <div class="h-fit">
-          <TypeCard class="w-full">
+          <TypeWrapper class="w-full">
             <BaseSlider :text="data.text"/>
-          </TypeCard>
+          </TypeWrapper>
 
-          <TypeCard>
+          <TypeWrapper>
             <template #title>
               Status<UDivider />
             </template>
@@ -202,9 +202,9 @@ const typeList = computed(() => {
               </div>
 
             </div>
-          </TypeCard>
+          </TypeWrapper>
 
-          <TypeCard>
+          <TypeWrapper>
             <template #title>
               Abilities<UDivider />
             </template>
@@ -223,11 +223,11 @@ const typeList = computed(() => {
               </li>
             </ul>
 
-          </TypeCard>
+          </TypeWrapper>
           
         </div>
         <div>
-          <TypeCard>
+          <TypeWrapper>
             <div class="flex mb-4 text-sm">
               <h1 class="w-32 font-medium">Generation:</h1>
               <p>{{getGenName(data.dex.generation) }}</p>
@@ -257,9 +257,9 @@ const typeList = computed(() => {
               <h1 class="w-32 font-medium">Base Happiness:</h1>
               <p>{{data.dex.base_happiness }}</p>
             </div>
-          </TypeCard>
+          </TypeWrapper>
   
-          <TypeCard>
+          <TypeWrapper>
             <template #title>
               <div class="flex items-center justify-between">
                 <div class="w-1/2">
@@ -317,9 +317,9 @@ const typeList = computed(() => {
                 <p class="mb-2">Takes 1⁄4× damage from</p>
                 <TypeBody :damages="data.type.defense.quarter_damage" />
             </section>
-          </TypeCard>
+          </TypeWrapper>
   
-          <TypeCard>
+          <TypeWrapper>
             <template #title>
               Breeding<UDivider />
             </template>
@@ -340,7 +340,7 @@ const typeList = computed(() => {
               <h1 class="w-32 font-medium">Egg Cycle:</h1>
               <p>{{ data.breeding.egg_cycle }} Cycles</p>
             </div>
-          </TypeCard>
+          </TypeWrapper>
         </div>
       </section>
     </section>
