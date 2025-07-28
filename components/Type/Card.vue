@@ -3,6 +3,7 @@
     <h1 class="mb-3 text-lg font-semibold gap-x-2">
       <slot name="title" />
     </h1>
+    
     <slot />
    </div>
 </template>

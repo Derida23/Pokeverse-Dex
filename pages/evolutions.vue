@@ -230,14 +230,14 @@ function handleReset(value: string | null = null) {
   
           <!-- Card 1 -->
           <section v-for="stage, idx in evo.evolves_to" :key="idx">
-            <EvoCard :evo="stage" :item="false"/>
+            <CardEvolution :evo="stage" :item="false"/>
           </section>
   
           <div class="flex flex-col gap-y-3">
             <section 
               v-for="stage, idx in evo.evolves_to[0].evolves_to" 
               :key="idx">
-              <EvoCard :evo="stage" />
+              <CardEvolution :evo="stage" />
             </section>
           </div>
   
@@ -245,7 +245,7 @@ function handleReset(value: string | null = null) {
             <section 
               v-for="stage, idx in evo?.evolves_to[0]?.evolves_to[0]?.evolves_to ?? []" 
               :key="idx" class="pl-16 md:pl-0">
-              <EvoCard :evo="stage" />
+              <CardEvolution :evo="stage" />
             </section>
           </div>
   

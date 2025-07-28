@@ -139,14 +139,14 @@ const typeList = computed(() => {
     
             <!-- Card 1 -->
             <section v-for="stage, idx in data.evolution?.evolves_to" :key="idx">
-              <EvoCard :evo="stage" :item="false" />
+              <CardEvolution :evo="stage" :item="false" />
             </section>
     
             <div class="flex flex-col gap-y-3">
               <section 
                 v-for="stage, idx in data.evolution?.evolves_to[0].evolves_to" 
                 :key="idx">
-                <EvoCard :evo="stage" />
+                <CardEvolution :evo="stage" />
               </section>
             </div>
     
@@ -155,7 +155,7 @@ const typeList = computed(() => {
                 v-for="stage, idx in data.evolution?.evolves_to[0]?.evolves_to[0]?.evolves_to 
                 ?? []" 
                 :key="idx" class="pl-16 md:pl-0">
-                <EvoCard :evo="stage" />
+                <CardEvolution :evo="stage" />
               </section>
             </div>
           </div>
