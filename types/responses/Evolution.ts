@@ -10,7 +10,7 @@ export interface EvolvesTo {
 
 export interface Detail {
   item: string
-  level: string
+  level: number | string
   name: string
   type: number[]
   id: number
@@ -24,5 +24,5 @@ export interface EvolvesTo2 {
 
 export interface EvolvesTo3 {
   detail: Detail
-  evolves_to: []
+  evolves_to: [] | EvolvesTo2[]
 }
