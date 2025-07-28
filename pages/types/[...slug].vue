@@ -162,15 +162,14 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
 
       <div class="flex gap-x-2">
         <!-- Pokemon Filter -->
-         <RoundedFilter 
+         <FilterType 
           v-model:open="open.pokemon"
           :type="mainType" 
           :items="types"
           @handle-pokemon="handlePokemon"/>
 
         <!-- Pair pokemon filter -->
-
-         <RoundedFilter
+         <FilterType
           v-model:open="open.pair"
           :type="pairType?.toString() ?? ''"
           :items="typesPokemon"
