@@ -1,6 +1,6 @@
 
 import { types } from "@/constants/types";
-import type { DamageRelations, Types } from '@/types/responses/Types';
+import type { DamageRelations, Types } from '~/types/api/Types';
 
 interface typeUrl {
   name: string
