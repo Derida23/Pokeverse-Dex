@@ -16,9 +16,9 @@ export function useApiPokemon(){
     return { data, pagination }
   }
 
-  const getPokemon = async (pokemon: string) => {
+  const getPokemon = async (pokemon: string, form?: string) => {
     return await $fetch<ApiResponse<PokemonDetail>>(`/api/pokemons/${pokemon}`, 
-      { method: 'GET' }
+      { method: 'GET', query: { form } }
     )
   }
 
