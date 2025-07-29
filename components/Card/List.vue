@@ -13,6 +13,14 @@ const props = defineProps({
 })
 
 const router = useRouter()
+
+function handleRouter(name: string) {
+  if (props.variants) {
+    router.push(`/pokemons/${name.split("-")[0]}/${name}`)
+  } else {
+    router.push(`/pokemons/${name}`)
+  }
+}
 </script>
 
 <template>
@@ -22,7 +30,7 @@ const router = useRouter()
       :key="index" 
       class="pokemon-card"
       :class="`bg-type-${getNameTypes(data.types[0][0])}`"
-      @click="router.push(`/pokemons/${data.name}`)">
+      @click="handleRouter(data.name)">
   
       <div class="pokemon-content">
         <section>
