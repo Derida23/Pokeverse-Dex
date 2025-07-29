@@ -8,6 +8,6 @@ const { data:pokemons } = await getMega()
 <template>
   <div>
     <BaseTitle>Pokémon Mega Forms</BaseTitle>
-    <CardList :pokemons="pokemons" />
+    <CardList :pokemons="pokemons" variants="mega"/>
   </div>
 </template>
