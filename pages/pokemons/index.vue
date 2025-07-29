@@ -149,13 +149,15 @@ function handleReset(value: string | null = null) {
     <BaseTitle >Pokémon Species</BaseTitle>
 
     <!-- Filter Section -->
-    <section>
+    <section class="sticky top-3 z-[61]">
       <FilterList
         :filter="filter"
         @handle-filter="handleFilter"
         @handle-reset="handleReset"
       />
     </section>
+
+    <UDivider class="mb-6"/>
 
     <!-- Content Section -->
     <section>

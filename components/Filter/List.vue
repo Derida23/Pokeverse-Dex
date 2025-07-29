@@ -9,8 +9,8 @@ const props = defineProps({
   },
 })
 
-const emits = defineEmits(['handle-filter', 'handle-reset'])
 
+const emits = defineEmits(['handle-filter', 'handle-reset'])
 const open = reactive({ generations: false, types: false, attr: false })
 
 function handleFilter(key: FilterKey, value: FilterValue) {
@@ -36,6 +36,10 @@ function selectedAttrLabel (value: string) {
   
   return isAttr
 }
+
+const filterFilled = computed(() => {
+  return Object.values(props.filter).some(value => value !== null)
+})
 </script>
 
 <template>
@@ -163,7 +167,7 @@ function selectedAttrLabel (value: string) {
       </div>
     </div>
     
-    <div class="flex items-center justify-between md:gap-2">
+    <div class="flex items-center gap-2">
       <UPopover v-model:open="open.attr" :ui="{ placement: 'bottom-start' }">
         <UChip :show="filter.attr !== null" class="w-full" size="lg">
           <UButton color="white" size="lg" class="w-10 p-0 h-9 w-">
@@ -195,10 +199,15 @@ function selectedAttrLabel (value: string) {
         
       </UPopover>
 
-      <UButton variant="link" @click="handleReset()">Reset</UButton>
+      <UButton 
+        block
+        icon="i-hugeicons-search-remove" 
+        color="white" 
+        class="w-10 h-9 text-gray-500"
+        :class="[{'!text-red-400': filterFilled}]"
+        @click="handleReset()"/>
     </div>
   </div>
-  <UDivider class="mb-6"/>
 </template>
 
 <style lang="postcss" scoped>
