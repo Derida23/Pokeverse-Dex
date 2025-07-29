@@ -68,7 +68,7 @@ const dotHelper = computed(() =>
 }
 
 .navigation-wrapper {
-  @apply relative;
+  @apply relative !h-fit; 
 }
 
 .dots {
@@ -96,5 +96,4 @@ const dotHelper = computed(() =>
   @apply text-sm text-stone-800 first-letter:uppercase;
   @apply !min-w-full;
 }
-
 </style>

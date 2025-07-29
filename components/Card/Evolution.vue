@@ -85,8 +85,8 @@ const borderClass = computed(() => {
         :src="`https://pokemon-img.pages.dev/192x192/${props.evo.detail.id}.webp`" 
         class="w-14">
       <div>
-        <p class="text-sm font-semibold first-letter:uppercase">
-          {{ evo.detail.name }}
+        <p class="text-sm font-semibold">
+          {{ getName(evo.detail.name) }}
         </p>
   
         <div class="flex items-center gap-2 mt-1 text-xs">

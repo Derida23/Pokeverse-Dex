@@ -39,7 +39,7 @@ onMounted(() => {
 <template>
   <div>
     <div class="relative flex items-center justify-end w-full">
-      <svg class="absolute w-[300px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] -top-20 right-0 lg:-top-24 lg:right-16" viewBox="0 0 100 100">
+      <svg class="absolute w-[320px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] -top-12 right-0 md:-top-24 md:right-16" viewBox="0 0 100 100">
         <!-- Dashed Tracks (background rings) -->
         <circle
           cx="50"
@@ -114,14 +114,16 @@ onMounted(() => {
         </defs>
       </svg>
       <transition name="slide-in">
-        <img 
-          v-if="show"
-          :src="`https://pokemon-img.pages.dev/600x600/${props.pokemon}.webp`" 
-          class="absolute top-0 w-52 md:w-80 md:top-10 md:right-52">
+        <div v-if="show" class="absolute w-full top-0 md:left-12">
+          <img 
+            :src="`https://pokemon-img.pages.dev/600x600/${props.pokemon}.webp`" 
+            class="w-96">
+        </div>
       </transition>
     </div>
   </div>
 </template>
+<!-- top-0 right-16 w-52 md:w-80 md:top-0 md:right-52 -->
 
 <style scoped>
 .slide-in-enter-from {
