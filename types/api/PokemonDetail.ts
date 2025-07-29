@@ -1,4 +1,5 @@
 import type { Evolution } from "../responses/Evolution"
+import type { Variants } from "../responses/Pokemons"
 
 export interface PokemonDetail {
   detail: Detail
@@ -9,6 +10,7 @@ export interface PokemonDetail {
   abilities: Ability[]
   breeding: Breeding
   type: Type
+  form: Variants[]
 }
 
 export interface Detail {
