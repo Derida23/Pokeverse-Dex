@@ -150,7 +150,7 @@ function handleReset(value: string | null = null) {
 
     <!-- Filter Section -->
     <section>
-      <Filter
+      <FilterList
         :filter="filter"
         @handle-filter="handleFilter"
         @handle-reset="handleReset"
