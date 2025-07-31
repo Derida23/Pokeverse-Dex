@@ -2,6 +2,7 @@ import type { FilterKey, FilterValue } from "@/types/components/Pokemons"
 import type { ApiResponse } from "~/types/api/ApiResponse"
 import type { Pokemons } from "@/types/responses/Pokemons"
 import type { PokemonDetail } from "~/types/api/PokemonDetail"
+import type { PokemonId } from "~/types/api/Pokemons"
 
 export function useApiPokemon(){
   const getPokemons = async (offset=0, limit=21, filter: Record<FilterKey, FilterValue>)
@@ -22,9 +23,17 @@ export function useApiPokemon(){
     )
   }
 
+  const getCompare = async (offset=0, limit=21, filter: Record<'q', string>)
+  : Promise<ApiResponse<PokemonId[]>> => {
+    return await $fetch(`/api/pokemon-variants?offset=${offset}&limit=${limit}`, 
+      { method: 'GET', query: filter }
+    )
+  }
+
   return {
     getAll,
     getPokemons,
-    getPokemon
+    getPokemon,
+    getCompare
   }
 }
