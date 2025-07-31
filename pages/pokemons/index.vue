@@ -149,7 +149,9 @@ function handleReset(value: string | null = null) {
     <BaseTitle >Pokémon Species</BaseTitle>
 
     <!-- Filter Section -->
-    <section class="sticky top-3 z-[61]">
+    <section
+      class="sticky top-[66.5px] lg:top-3 z-[59] lg:z-[61]
+     bg-zinc-50 lg:bg-transparent pt-2 pb-0.5 lg:pt-0 lg:pb-0">
       <FilterList
         :filter="filter"
         @handle-filter="handleFilter"
