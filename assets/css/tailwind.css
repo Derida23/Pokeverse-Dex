@@ -7,6 +7,8 @@ body {
   @apply bg-zinc-50;
 }
 
+.flex-center { @apply flex items-center justify-center }
+
 .bg-skill-normal-10   { @apply hover:bg-skill-normal/10; }
 .bg-skill-fire-10     { @apply hover:bg-skill-fire/10; }
 .bg-skill-water-10    { @apply hover:bg-skill-water/10; }
