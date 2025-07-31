@@ -1,6 +1,10 @@
 import { types } from "@/constants/types"
 import { generations } from "~/constants/filter"
 
+export const getPokemonId = (id: number) => {
+  return String(id).padStart(4, '0')
+}
+
 export const getName = (name: string): string => {
   return name.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
 }

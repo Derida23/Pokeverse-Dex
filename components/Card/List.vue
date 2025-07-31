@@ -39,7 +39,7 @@ function handleRouter(name: string) {
           </div>
   
           <div class="pokemon-id-wrapper">
-            <p class="pokemon-id">{{ String(data.id).padStart(4, '0') }}</p>
+            <p class="pokemon-id">{{ getPokemonId(data.id) }}</p>
             <div class="pokemon-types-icons">
               <UIcon v-if="data.attr.is_baby" name="i-lucide-egg" class="animate-bounce" />
               <UIcon v-if="data.attr.is_legendary" name="i-lucide-star" class="animate-spin" />
