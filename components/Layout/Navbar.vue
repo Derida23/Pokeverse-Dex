@@ -30,7 +30,7 @@
     </div>
   </header>
 
-  <USlideover v-model="isMenuOpen" :ui="{ width: 'w-screen max-w-64' }">
+  <USlideover v-model="isMenuOpen" :ui="{ width: 'w-screen max-w-64', wrapper: 'z-[59] '}">
     <div class="px-6 pt-24">
       <NavigationMenu v-model="isMenuOpen" />
     </div>

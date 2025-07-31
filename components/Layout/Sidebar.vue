@@ -16,11 +16,11 @@
   @apply mx-auto lg:pl-16 xl:pr-14 max-w-7xl;
 }
 .navbar {
-  @apply fixed bottom-12 top-24 lg:pt-2 z-50;
+  @apply fixed bottom-12 top-24 lg:pt-2 z-[64];
   @apply w-64;
   @apply overflow-y-auto;
   @apply transition-[right];
-  @apply md:top-16 md:z-40;
+  @apply md:top-16 md:z-[63];
   @apply lg:left-[max(0px,calc(50%-35rem))] lg:w-[14.75rem];
   @apply lg:py-9 lg:pl-8 lg:pr-5 lg:shadow-none -right-64;
   @apply border-r-[1.5px] border-r-zinc-200;
