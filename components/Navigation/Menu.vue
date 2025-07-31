@@ -3,6 +3,7 @@ import { useVModel } from '@vueuse/core'
 import { menus } from '@/constants/menus'
 
 const router = useRouter();
+const route = useRoute()
 const props = defineProps({
   modelValue: {
     type: Boolean,
@@ -21,7 +22,7 @@ function handleMenuClick(slug: string) {
 const getMenuItemClass = computed (() => {
   return (slug: string) => [
     'menu-content',
-    router.currentRoute.value.path.includes(`/${slug}`) && 'menu-content__active' 
+    route?.path.includes(`/${slug}`) && 'menu-content__active' 
   ];
 })
 </script>
