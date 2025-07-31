@@ -23,7 +23,7 @@ function getColor (skill: string): string {
         <div class="types-wrapper">
           <div class="types-icons">
             <div 
-              class="icons"
+              class="icons flex-center"
               :class="`bg-skill-${type.name}`"
             >
               <component 
@@ -60,7 +60,6 @@ function getColor (skill: string): string {
 }
 
 .icons {
-  @apply flex items-center justify-center;
   @apply w-10 h-10 rounded-full;
 
   &-title {
