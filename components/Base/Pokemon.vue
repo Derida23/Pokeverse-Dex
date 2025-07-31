@@ -114,7 +114,7 @@ onMounted(() => {
         </defs>
       </svg>
       <transition name="slide-in">
-        <div v-if="show" class="absolute w-full top-0 md:left-12">
+        <div v-if="show" class="absolute w-full top-0 left-0 xl:left-14">
           <img 
             :src="`https://pokemon-img.pages.dev/600x600/${props.pokemon}.webp`" 
             class="w-96">

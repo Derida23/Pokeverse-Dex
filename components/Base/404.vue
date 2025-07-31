@@ -10,7 +10,7 @@
     </div>
     <p class="text-not-found">Pokémon not found</p>
     <p class="text-explore">Let’s explore further and catch one!</p>
-    <div class="flex items-center justify-center mt-8">
+    <div class="mx-auto mt-8">
       <UButton 
         color="white" 
         variant="solid" 
@@ -36,7 +36,7 @@
   }
 
   &-wrapper {
-    @apply flex items-center justify-center md:-mt-[2rem];
+    @apply mx-auto md:-mt-[2rem];
   }
 
   &-not-found {

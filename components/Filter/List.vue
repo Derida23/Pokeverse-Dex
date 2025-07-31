@@ -171,7 +171,7 @@ const filterFilled = computed(() => {
       <UPopover v-model:open="open.attr" :ui="{ placement: 'bottom-start' }">
         <UChip :show="filter.attr !== null" class="w-full" size="lg">
           <UButton color="white" size="lg" class="w-10 p-0 h-9 w-">
-            <div class="flex items-center justify-center w-full">
+            <div class="flex-center w-full">
               <UIcon name="i-lucide-filter" class="text-lg text-gray-500 " />
             </div>
           </UButton>

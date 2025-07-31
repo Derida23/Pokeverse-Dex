@@ -47,16 +47,12 @@ const borderClass = computed(() => {
 <template>
   <div class="flex items-center mr-2 gap-x-2">
     <div v-if="item" class="z-10">
-      <div 
-        v-if="evo.detail.level"
-        class="arrow-wrapper">
+      <div v-if="evo.detail.level" class="arrow-wrapper flex-center">
           Lv<br>
           {{ evo.detail.level }}
       </div>
 
-      <div 
-        v-if="evo.detail.item"
-        class="arrow-wrapper">
+      <div v-if="evo.detail.item" class="arrow-wrapper flex-center">
         <img 
           :src="imgUrl" 
           :alt="evo.detail.item">
@@ -64,13 +60,13 @@ const borderClass = computed(() => {
 
       <div 
         v-if="!evo.detail.item && !evo.detail.level"
-        class="arrow-dashed">
+        class="arrow-dashed flex-center">
           <UIcon name="i-lucide-arrow-right" class="text-lg font-bold text-stone-700"/>
       </div>
     </div>
 
     <div v-else-if="!item && route.name !== 'evolutions'" class="z-10">
-      <div class="arrow-dashed">
+      <div class="arrow-dashed flex-center">
         <UIcon name="i-gg-pokemon" class="text-lg font-bold text-stone-700 animate-bounce"/>
       </div>
     </div>
@@ -139,13 +135,13 @@ const borderClass = computed(() => {
   }
 }
 
-.arrow-wrapper {
+.arrow-wrapper{
   @apply bg-stone-700 text-white w-9 h-9;
-  @apply flex justify-center items-center rounded-lg text-xs text-center
+  @apply rounded-lg text-xs text-center
 }
 
 .arrow-dashed {
   @apply border-dashed border-stone-600 bg-zinc-50 border text-white w-9 h-9;
-  @apply flex justify-center items-center rounded-lg text-xs text-center
+  @apply rounded-lg text-xs text-center
 }
 </style>
