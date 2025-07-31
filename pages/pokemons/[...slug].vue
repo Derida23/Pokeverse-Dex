@@ -1,8 +1,5 @@
 <!-- eslint-disable max-len -->
 <script setup lang="ts">
-// import { pokemonDetail } from '~/constants/filter'
-// const { data } = pokemonDetail
-
 const route = useRoute()
 const pokemonName = computed(() => {
   return route.params.slug[0]
@@ -97,28 +94,26 @@ const forms = computed(() => {
       <section class="justify-between md:flex">
         <!-- Name and type section -->
         <div class="pokemon">
-          <div>
+          <section>
             <h1 class="pokemon-name">
               {{ getName(data.detail.name) }}
             </h1>
             <p class="pokemon-id">
-              {{ String(data.detail.id).padStart(4, '0') }}
+              {{ getPokemonId(data.detail.id) }}
             </p>
-            <div>
-              <div 
-                v-for="item, id in data.detail.type"
-                :key="id">
-                <div
-                  class="pokemon-skill" 
-                  :class="`bg-skill-${getNameTypes(item)}`">
-                  <component 
-                    :is="`svgo-types-${getNameTypes(item)}`" 
-                    class="text-white"
-                  />
-                </div>
+            <div 
+              v-for="item, id in data.detail.type"
+              :key="id">
+              <div
+                class="pokemon-skill flex-center" 
+                :class="`bg-skill-${getNameTypes(item)}`">
+                <component 
+                  :is="`svgo-types-${getNameTypes(item)}`" 
+                  class="text-white"
+                />
               </div>
             </div>
-          </div>
+          </section>
       
           <div v-if="forms[0].length > 1" class="h-fit">
             <UDropdown 
@@ -156,27 +151,14 @@ const forms = computed(() => {
         <!-- Cols information section -->
         <div class="information">
           <PokemonInformation
-            icon="i-ph-ruler" 
+            icon="i-solar-mirror-right-broken" 
             :title="`${getSize(data.detail.height)} m`" />
 
           <PokemonInformation
             icon="i-hugeicons-weight-scale" 
             :title="`${getSize(data.detail.weight)} kg`" />
 
-          <div class="information-wrapper">
-            <div>
-              <div class="information-gender">
-                <SvgoSymbolsMan class="text-xl text-sky-500"/> 
-                <p class="text-center">:</p> 
-                <SvgoSymbolsFemale class="text-xl text-pink-500"/>
-              </div>
-              <div class="information-title text-sm information-gender">
-                <p>{{ data.detail.gender.male }}</p>
-                <p>:</p>
-                <p>{{ data.detail.gender.female }}</p>
-              </div>
-            </div>
-          </div>
+          <PokemonInformationGender :gender="data.detail.gender"/>
 
           <PokemonInformation
             icon="i-ph-egg-crack" 
@@ -196,7 +178,8 @@ const forms = computed(() => {
           <UButton 
             block 
             color="black" 
-            class="w-[49%] md:w-44"> 
+            class="w-[49%] md:w-44"
+            @click="router.push(`/compares?pokemon=${data.detail.name}&source=detail`)"> 
             Compare With...
           </UButton>
         </div>
@@ -302,7 +285,6 @@ const forms = computed(() => {
                 <p class="pr-1.5 ">Total: </p>
                 <p class="w-10 text-right">{{ totalStatus }}</p>
               </div>
-
             </div>
           </TypeWrapper>
 
@@ -329,7 +311,6 @@ const forms = computed(() => {
                 </div>
               </li>
             </ul>
-
           </TypeWrapper>
           
         </div>
@@ -341,62 +322,16 @@ const forms = computed(() => {
   
           <TypeWrapper>
             <template #title>
-              <div class="type">
+              <div class="flex">
                 <div class="w-[80%]">
-                  <p>Type</p>
-                  <UDivider />
+                  <p>Type</p><UDivider />
                 </div>
                 
-                <div class="type-category">
-                  <div 
-                    v-for="item in typeList" 
-                    :key="item.id" 
-                    class="px-2 py-1 border rounded-full"
-                    :class="`bg-skill-${item.name}-20 border-${item.name} border` " >
-                    <div class="flex items-center gap-x-2">
-                      <component 
-                        :is="`svgo-types-${item.name}`" 
-                        class="w-4 h-4"
-                      />
-                      <p class="text-sm font-normal">{{ capitalize(item.name) }}</p>
-                    </div>
-                  </div>
-                </div>
+                <PokemonType :list="typeList"/>
               </div>
             </template>
 
-            <PokemonDamage
-              :damages="data.type.defense.fourth_damage"
-              label="Takes 4× damage from"
-              border-color="border-l-red-600"
-              bg-color="bg-red-100/30"
-/>
-
-            <PokemonDamage
-              :damages="data.type.defense.double_damage"
-              label="Takes 2× damage from"
-              border-color="border-l-red-600"
-              bg-color="bg-red-100/30"
-            />
-
-            <PokemonDamage
-              :damages="data.type.defense.single_damage"
-              label="Takes 1× damage from"
-            />
-
-            <PokemonDamage
-              :damages="data.type.defense.half_damage"
-              label="Takes 1⁄2× damage from"
-              border-color="border-l-green-600"
-              bg-color="bg-green-100/30"
-            />
-
-            <PokemonDamage
-              :damages="data.type.defense.quarter_damage"
-              label="Takes 1⁄4× damage from"
-              border-color="border-l-green-600"
-              bg-color="bg-green-100/30"
-            />
+            <PokemonDefense :defense="data.type.defense"/>
           </TypeWrapper>
   
           <TypeWrapper>
@@ -404,25 +339,7 @@ const forms = computed(() => {
               Breeding<UDivider />
             </template>
   
-            <div class="flex mb-4 text-sm">
-              <h1 class="w-32 font-medium">Egg Groups:</h1>
-              <span 
-                v-for="(item, id) in data.breeding.egg_groups" 
-                :key="id"
-                @click="router.push(`/egg-groups/${item}`)">
-                <span
-                  class="text-blue-600 cursor-pointer hover:underline"
-                >
-                  {{ capitalize(item) }}
-                </span>
-                <span v-if="id < data.breeding.egg_groups.length - 1" class="mr-1">, </span>
-              </span>
-            </div>
-
-            <div class="flex mb-4 text-sm">
-              <h1 class="w-32 font-medium">Egg Cycle:</h1>
-              <p>{{ data.breeding.egg_cycle }} Cycles</p>
-            </div>
+            <PokemonEgg :breeding="data.breeding"/>
           </TypeWrapper>
         </div>
       </section>
@@ -443,21 +360,13 @@ const forms = computed(() => {
   }
 
   &-skill {
-    @apply flex items-center justify-center w-10 h-10 mt-3 rounded-full;
+    @apply flex-col w-10 h-10 mt-3 rounded-full;
   }
 }
 
 .information {
   @apply flex gap-1 p-1 border; 
   @apply rounded-lg  md:flex-col md:gap-1 bg-stone-100;
-
-  &-wrapper {
-    @apply flex items-center justify-center w-[108px] h-[82px] bg-white rounded-md;
-  }
-
-  &-gender {
-    @apply flex items-center justify-center gap-x-2;
-  }
 }
 
 .action {
@@ -505,14 +414,6 @@ const forms = computed(() => {
 
   &-title {
     @apply mb-1 font-semibold first-letter:uppercase;
-  }
-}
-
-.type {
-  @apply flex items-center justify-between;
-
-  &-category {
-    @apply flex items-center justify-end w-fit gap-x-2;
   }
 }
 </style>
