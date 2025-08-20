@@ -17,7 +17,7 @@
 }
 .navbar {
   @apply fixed bottom-12 top-24 lg:pt-2 mt-4 z-[60];
-  @apply bg-zinc-50 dark:bg-gray-700;
+  @apply bg-zinc-50 dark:bg-zinc-700;
   @apply w-64;
   @apply overflow-y-auto;
   @apply transition-[right];

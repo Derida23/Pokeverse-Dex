@@ -53,12 +53,12 @@ const getMenuItemClass = computed (() => {
 
   &-content {
     @apply h-10 flex items-center text-sm pl-2;
-    @apply text-zinc-500 dark:text-zinc-300 hover:text-zinc-600 cursor-pointer;
-    @apply border-l-[1.5px];
+    @apply text-zinc-500 dark:text-zinc-400 hover:text-zinc-600 cursor-pointer;
+    @apply border-l-[1.5px] dark:border-l-zinc-400;
 
     &__active {
-      @apply !text-zinc-700 dark:!text-zinc-200 font-semibold;
-      @apply border-l-[1.9px] border-l-zinc-500 dark:border-l-zinc-200;
+      @apply !text-zinc-700 dark:!text-zinc-100 font-semibold;
+      @apply border-l-[1.9px] border-l-zinc-500 dark:border-l-zinc-100;
     }
   }
 }

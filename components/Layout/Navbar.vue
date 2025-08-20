@@ -2,16 +2,6 @@
 const isMenuOpen = ref(false);
 const colorMode = useColorMode()
 
-// const isDarkMode = ref(colorMode.value === 'dark')
-
-// watch(isDarkMode, (val) => {
-//   colorMode.preference = val ? 'dark' : 'light'
-// })
-
-// watch(() => colorMode.value, (val) => {
-//   isDarkMode.value = val === 'dark'
-// })
-
 const isDark = computed({
   get () {
     return colorMode.value === 'dark'
