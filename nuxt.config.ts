@@ -36,7 +36,12 @@ export default defineNuxtConfig({
     dirs: ['composables/api'],
   },
   colorMode: {
-    preference: 'light',
+    preference: 'system', // or 'light'
+    fallback: 'light',
+    classSuffix: '',
+    // ↓ this helps delay initial render until color mode is determined
+    storageKey: 'nuxt-color-mode',
+    dataValue: 'lazy',
   },
   css: ['@/assets/css/tailwind.css'],
   postcss: {
