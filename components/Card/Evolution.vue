@@ -61,17 +61,21 @@ const borderClass = computed(() => {
       <div 
         v-if="!evo.detail.item && !evo.detail.level"
         class="arrow-dashed flex-center">
-          <UIcon name="i-lucide-arrow-right" class="text-lg font-bold text-stone-700"/>
+          <UIcon
+            name="i-lucide-arrow-right" class="text-lg font-bold
+           text-stone-700 dark:text-stone-200"/>
       </div>
     </div>
 
     <div v-else-if="!item && route.name !== 'evolutions'" class="z-10">
       <div class="arrow-dashed flex-center">
-        <UIcon name="i-gg-pokemon" class="text-lg font-bold text-stone-700 animate-bounce"/>
+        <UIcon
+          name="i-gg-pokemon" 
+          class="text-lg font-bold text-stone-700 dark:text-stone-200 animate-bounce"/>
       </div>
     </div>
 
-    <div v-if="item" class="w-10 h-0.5 bg-stone-700 mx-[-1rem]" />
+    <div v-if="item" class="w-10 h-0.5 bg-stone-700 dark:bg-stone-300 mx-[-1rem]" />
 
     <section 
       class="cursor-pointer pokemon-wrapper" 
@@ -111,22 +115,22 @@ const borderClass = computed(() => {
 .pokemon {
 
   &-wrapper {
-    @apply flex items-center w-full gap-2 p-3 bg-white rounded-lg h-fit;
+    @apply flex items-center w-full gap-2 p-3 bg-zinc-50 dark:bg-zinc-600 rounded-lg h-fit;
   }
 
   &-types {
     @apply flex items-center text-xs gap-x-1;
 
     &-circle {
-      @apply w-4 h-4 border rounded-full border-black/20;
+      @apply w-4 h-4 border rounded-full border-black/20 dark:border-black/80;
     }
 
     &-circle-option {
-      @apply w-3.5 h-3.5 ml-[-4px] rounded-full border border-black/20;
+      @apply w-3.5 h-3.5 ml-[-4px] rounded-full border border-black/20 dark:border-black/80;
     }
 
     &-icons {
-      @apply pt-0.5 text-xs text-stone-600;
+      @apply pt-0.5 text-xs text-stone-600 dark:text-stone-200;
     }
 
     &-color {
@@ -136,12 +140,13 @@ const borderClass = computed(() => {
 }
 
 .arrow-wrapper{
-  @apply bg-stone-700 text-white w-9 h-9;
+  @apply bg-stone-700 dark:bg-stone-300 text-zinc-50 dark:text-zinc-700 w-9 h-9;
   @apply rounded-lg text-xs text-center
 }
 
 .arrow-dashed {
-  @apply border-dashed border-stone-600 bg-zinc-50 border text-white w-9 h-9;
+  @apply border-dashed border-stone-600 dark:border-stone-200;
+  @apply bg-zinc-50 dark:bg-zinc-600 border text-zinc-50 dark:text-zinc-700 w-9 h-9;
   @apply rounded-lg text-xs text-center
 }
 </style>

@@ -51,7 +51,7 @@ const router = useRouter()
   }
 
   &-title {
-    @apply text-stone-800 text-center first-letter:uppercase text-xs mt-2;
+    @apply text-stone-800 dark:text-stone-200 text-center first-letter:uppercase text-xs mt-2;
   }
 
   &-generation {

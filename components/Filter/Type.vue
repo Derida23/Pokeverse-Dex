@@ -64,7 +64,7 @@ function handlePokemon (label: string) {
     <div class="flex items-center p-2 border rounded-full cursor-pointer gap-x-2">
       <div 
         class="flex items-center justify-center w-8 h-8 rounded-full"
-        :class="!type ? 'bg-stone-300' : `bg-skill-${type}`"
+        :class="!type ? 'bg-stone-300 dark:bg-stone-900' : `bg-skill-${type}`"
       >
         <component 
           :is="`svgo-types-${type}`" 

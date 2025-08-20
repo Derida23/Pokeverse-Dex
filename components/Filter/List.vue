@@ -53,6 +53,9 @@ const filterFilled = computed(() => {
         :trailing="false"
         placeholder="Search..."
         maxlength="10"
+        :ui="{
+          placeholder: 'placeholder-gray-400 dark:placeholder-gray-400',
+        }"
         @update:model-value="handleFilter('q', $event)"
       />
       <div v-if="filter.q" class="absolute top-0 right-0 flex items-center pr-2 h-9">
@@ -89,9 +92,11 @@ const filterFilled = computed(() => {
         </template>
 
         <UButton block color="white" class="h-9">
-          <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
+          <div 
+          class="flex items-center justify-between w-full px-1 
+          font-light text-gray-400 dark:text-gray-400">
             <div>
-              <p v-if="!filter.gen" class="truncate">Any generations</p>
+              <p v-if="!filter.gen" class="truncate font-normal">Any generations</p>
               <p v-else class="font-medium">{{ selectedGenLabel }}</p>
             </div>
             <div class="flex items-center">
@@ -142,9 +147,11 @@ const filterFilled = computed(() => {
         </template>
 
         <UButton block color="white" class="h-9" >
-          <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
+          <div 
+          class="flex items-center justify-between w-full px-1 
+          font-light text-gray-400 dark:text-gray-400">
             <div>
-              <p v-if="!filter.type">Any types</p>
+              <p v-if="!filter.type" class="font-normal">Any types</p>
               <p v-else class="font-medium">{{ selectedTypeLabel }}</p>
             </div>
             <div class="flex items-center">
@@ -172,7 +179,7 @@ const filterFilled = computed(() => {
         <UChip :show="filter.attr !== null" class="w-full" size="lg">
           <UButton color="white" size="lg" class="w-10 p-0 h-9 w-">
             <div class="flex-center w-full">
-              <UIcon name="i-lucide-filter" class="text-lg text-gray-500 " />
+              <UIcon name="i-lucide-filter" class="text-lg text-gray-400 dark:text-gray-400" />
             </div>
           </UButton>
         </UChip>
@@ -203,7 +210,7 @@ const filterFilled = computed(() => {
         block
         icon="i-hugeicons-search-remove" 
         color="white" 
-        class="w-10 h-9 text-gray-500"
+        class="w-10 h-9 text-gray-400 dark:text-gray-400"
         :class="[{'!text-red-400': filterFilled}]"
         @click="handleReset()"/>
     </div>
@@ -213,7 +220,7 @@ const filterFilled = computed(() => {
 <style lang="postcss" scoped>
 .button-attr {
   @apply flex items-center justify-between w-full px-3 py-2 text-sm;
-  @apply text-gray-600 dark:text-gray-200;
+  @apply text-gray-600 dark:text-gray-400;
   @apply rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-700;
 }
 </style>

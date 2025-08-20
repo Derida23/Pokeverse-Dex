@@ -87,13 +87,13 @@ const dotHelper = computed(() =>
   outline: none;
 }
 .dot.active {
-  @apply bg-stone-700;
+  @apply bg-stone-700 dark:bg-stone-200;
   @apply w-6 rounded-xl;
   @apply transition-transform;
 }
 
 .text-detail {
-  @apply text-sm text-stone-800 first-letter:uppercase;
+  @apply text-sm text-stone-800 dark:text-stone-200 first-letter:uppercase;
   @apply !min-w-full;
 }
 </style>
