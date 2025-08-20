@@ -47,18 +47,18 @@ const getMenuItemClass = computed (() => {
 .menu {
   &-title {
     @apply pb-2 text-[0.7rem] font-medium;
-    @apply tracking-widest text-stone-500;
+    @apply tracking-widest text-stone-500 dark:text-stone-200;
     @apply uppercase;
   }
 
   &-content {
     @apply h-10 flex items-center text-sm pl-2;
-    @apply text-zinc-500 hover:text-zinc-600 cursor-pointer;
+    @apply text-zinc-500 dark:text-zinc-300 hover:text-zinc-600 cursor-pointer;
     @apply border-l-[1.5px];
 
     &__active {
-      @apply !text-zinc-700 font-semibold;
-      @apply border-l-[1.9px] border-l-zinc-500;
+      @apply !text-zinc-700 dark:!text-zinc-200 font-semibold;
+      @apply border-l-[1.9px] border-l-zinc-500 dark:border-l-zinc-200;
     }
   }
 }

@@ -52,9 +52,9 @@ const getMenuItemClass = computed (() => {
 
 <style lang="postcss" scoped>
 .footer {
-  @apply md:hidden fixed bottom-0 z-[60] bg-white;
+  @apply md:hidden fixed bottom-0 z-[60] bg-white dark:bg-gray-800;
   @apply px-4 h-16 w-full;
-  @apply border border-t-[1.5px] border-t-slate-200;
+  @apply border-t-[1.5px] border-t-slate-200 dark:border-t-slate-700;
 
   &-wrapper {
     @apply grid grid-cols-5 gap-x-2;
@@ -70,19 +70,20 @@ const getMenuItemClass = computed (() => {
 
   &-title {
     @apply text-[0.7rem] font-medium;
-    @apply tracking-widest text-stone-500;
+    @apply tracking-widest text-stone-500 dark:text-stone-200;
     @apply uppercase;
   }
 
   &-content {
     @apply text-xs;
-    @apply text-zinc-500 hover:text-zinc-600 cursor-pointer;
+    @apply text-zinc-500 dark:text-zinc-200 hover:text-zinc-600 cursor-pointer;
     @apply flex flex-col items-center justify-center;
     @apply w-full h-full;
 
     &__active {
-      @apply !text-zinc-700 font-semibold;
-      @apply bg-slate-100 border-t-[1.9px] border-t-zinc-500;
+      @apply !text-zinc-700 dark:!text-zinc-200 font-semibold;
+      @apply bg-slate-100 dark:bg-slate-500/20; 
+      @apply border-t-[1.9px] border-t-zinc-500 dark:border-t-zinc-200;
     }
   }
 }
