@@ -1,6 +1,25 @@
 <script setup lang="ts">
-  const isDarkMode = ref(false);
-  const isMenuOpen = ref(false);
+const isMenuOpen = ref(false);
+const colorMode = useColorMode()
+
+// const isDarkMode = ref(colorMode.value === 'dark')
+
+// watch(isDarkMode, (val) => {
+//   colorMode.preference = val ? 'dark' : 'light'
+// })
+
+// watch(() => colorMode.value, (val) => {
+//   isDarkMode.value = val === 'dark'
+// })
+
+const isDark = computed({
+  get () {
+    return colorMode.value === 'dark'
+  },
+  set () {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  }
+})
 </script>
 
 <template>
@@ -14,13 +33,15 @@
         </div>
       </div>
       <div class="flex items-center gap-x-4">
-        <UToggle
-          v-model="isDarkMode"
-          on-icon="i-lucide-moon-star"
-          off-icon="i-lucide-sun"
-          size="lg"
-          color="amber"
-        />
+        <ClientOnly>
+          <UToggle
+            v-model="isDark"
+            on-icon="i-lucide-moon-star"
+            off-icon="i-lucide-sun"
+            size="lg"
+            color="amber"
+          />
+        </ClientOnly>
         <UIcon
           name="i-lucide-sliders-horizontal"
           class="header-navigation" 
@@ -42,8 +63,8 @@
 <style scoped lang="postcss">
 .header {
   @apply sticky top-0 z-[60];
-  @apply bg-white;
-  @apply border border-b-[1.5px] border-b-slate-200;
+  @apply bg-white dark:bg-gray-800;
+  @apply border-b-[1.5px] border-b-slate-200 dark:border-b-gray-800;
 
   &-wrapper {
     @apply mx-auto px-5 md:px-10 xl:px-20 h-16 max-w-7xl;
@@ -63,7 +84,7 @@
   }
 
   &-navigation {
-    @apply cursor-pointer text-lg text-zinc-800;
+    @apply cursor-pointer text-lg text-zinc-800 dark:text-zinc-100;
     @apply hidden md:block lg:hidden;
   }
 }
