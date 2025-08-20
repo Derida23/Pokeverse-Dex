@@ -17,7 +17,7 @@ const props = defineProps({
       :key="id"
       @click="router.push(`/egg-groups/${item}`)">
       <span
-        class="text-blue-600 cursor-pointer hover:underline"
+        class="text-blue-600 dark:text-blue-400 cursor-pointer hover:underline"
       >
         {{ capitalize(item) }}
       </span>

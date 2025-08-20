@@ -26,10 +26,10 @@ const props = defineProps({
 
 .information {
   @apply flex gap-1 p-1 border; 
-  @apply rounded-lg  md:flex-col md:gap-1 bg-stone-100;
+  @apply rounded-lg  md:flex-col md:gap-1 bg-stone-100 dark:bg-stone-600;
 
   &-wrapper {
-    @apply flex-col w-[108px] h-[82px] bg-white rounded-md;
+    @apply flex-col w-[108px] h-[82px] bg-zinc-50 dark:bg-zinc-600 rounded-md;
   }
 
   &-gender {

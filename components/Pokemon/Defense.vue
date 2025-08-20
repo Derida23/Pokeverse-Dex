@@ -5,6 +5,17 @@ const props = defineProps({
     required: true
   }
 })
+
+const colorMode = useColorMode()
+
+const isDark = computed({
+  get () {
+    return colorMode.value === 'dark'
+  },
+  set () {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  }
+})
 </script>
 
 <template>
@@ -12,14 +23,14 @@ const props = defineProps({
     :damages="props.defense.fourth_damage"
     label="Takes 4× damage from"
     border-color="border-l-red-600"
-    bg-color="bg-red-100/30"
+    :bg-color="isDark ? 'bg-red-100/10' : 'bg-red-100/30'"
   />
 
   <PokemonDamage
     :damages="defense.double_damage"
     label="Takes 2× damage from"
     border-color="border-l-red-600"
-    bg-color="bg-red-100/30"
+    :bg-color="isDark ? 'bg-red-100/10' : 'bg-red-100/30'"
   />
 
   <PokemonDamage
@@ -31,13 +42,13 @@ const props = defineProps({
     :damages="defense.half_damage"
     label="Takes 1⁄2× damage from"
     border-color="border-l-green-600"
-    bg-color="bg-green-100/30"
+    :bg-color="isDark ? 'bg-green-100/10' : 'bg-green-100/30'"
   />
 
   <PokemonDamage
     :damages="defense.quarter_damage"
     label="Takes 1⁄4× damage from"
     border-color="border-l-green-600"
-    bg-color="bg-green-100/30"
+    :bg-color="isDark ? 'bg-green-100/10' : 'bg-green-100/30'"
   />
 </template>

@@ -23,14 +23,15 @@ const props = defineProps({
 <style scoped lang="postcss">
 .information {
   @apply flex gap-1 p-1 border; 
-  @apply rounded-lg  md:flex-col md:gap-1 bg-stone-100;
+  @apply rounded-lg  md:flex-col md:gap-1 bg-stone-100 dark:bg-stone-600;
 
   &-wrapper {
-    @apply flex items-center justify-center w-[108px] h-[82px] bg-white rounded-md;
+    @apply flex items-center justify-center w-[108px] h-[82px];
+    @apply bg-zinc-50 dark:bg-zinc-600 rounded-md;
   }
 
   &-icon {
-    @apply w-full mx-auto text-2xl font-light text-stone-600/80;
+    @apply w-full mx-auto text-2xl font-light text-stone-600/80 dark:text-stone-200/80 ;
   }
 
   &-title {
