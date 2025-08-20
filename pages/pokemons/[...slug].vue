@@ -109,7 +109,7 @@ const forms = computed(() => {
                 :class="`bg-skill-${getNameTypes(item)}`">
                 <component 
                   :is="`svgo-types-${getNameTypes(item)}`" 
-                  class="text-white"
+                  class="text-zinc-50 dark:text-zinc-700"
                 />
               </div>
             </div>
@@ -127,7 +127,7 @@ const forms = computed(() => {
                 <div class="px-2 py-1">
                   <div class="flex items-center gap-x-2 text-sm">
                     <p class="font-semibold">{{ item.label }}</p>
-                    <div class="text-stone-500">
+                    <div class="text-stone-500 dark:text-stone-200">
                       (
                       <span v-for="type, id in item.types" :key="id">{{ type }}
                         <span v-if="id < item.types.length - 1" class="mr-0.5 -ml-0.5">, </span>
@@ -196,7 +196,7 @@ const forms = computed(() => {
             <div class="px-2 py-1">
               <div class="flex items-center gap-x-2 text-sm">
                 <p class="font-semibold">{{ item.label }}</p>
-                <div class="text-stone-500">
+                <div class="text-stone-500 dark:text-stone-200">
                   (
                   <span v-for="type, id in item.types" :key="id">{{ type }}
                     <span v-if="id < item.types.length - 1" class="mr-0.5 -ml-0.5">, </span>
@@ -307,7 +307,7 @@ const forms = computed(() => {
                       <UBadge color="black">Hidden</UBadge>
                     </p>
                   </div>
-                  <p class="text-sm text-stone-500">{{ item.short_effect }}</p>
+                  <p class="text-sm text-stone-500 dark:text-stone-200">{{ item.short_effect }}</p>
                 </div>
               </li>
             </ul>
@@ -356,7 +356,7 @@ const forms = computed(() => {
   }
 
   &-id {
-    @apply mb-10 text-lg text-stone-700;
+    @apply mb-10 text-lg text-stone-700 dark:text-stone-200;
   }
 
   &-skill {
@@ -366,7 +366,7 @@ const forms = computed(() => {
 
 .information {
   @apply flex gap-1 p-1 border; 
-  @apply rounded-lg  md:flex-col md:gap-1 bg-stone-100;
+  @apply rounded-lg  md:flex-col md:gap-1 bg-stone-100 dark:bg-stone-700;
 }
 
 .action {
@@ -401,7 +401,7 @@ const forms = computed(() => {
   }
 
   &-base {
-    @apply w-full h-full rounded-full bg-stone-200/50;
+    @apply w-full h-full rounded-full bg-stone-200/50 dark:bg-stone-600/50;
   }
 
   &-total {

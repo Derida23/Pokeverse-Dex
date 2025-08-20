@@ -158,7 +158,7 @@ function handleRemove (id: number) {
           <div
             ref="buttonclick"
             class="px-3.5 py-2.5 w-full" 
-            :class="selected.includes(option.id) && 'text-sky-500/50'"
+            :class="selected.includes(option.id) && 'text-sky-500/50 dark:text-sky-300'"
             @click.stop="handleCompare(option)"
             @mousedown.stop>
             {{ getName(option.name) }}
@@ -195,7 +195,7 @@ function handleRemove (id: number) {
            <img 
             :src="`https://pokemon-img.pages.dev/600x600/${item.detail.id}.webp`"
             class="w-24" >
-            <p class="text-stone-600 mb-1">{{ getPokemonId(item.detail.id) }}</p>
+            <p class="text-stone-600 dark:text-stone-200 mb-1">{{ getPokemonId(item.detail.id) }}</p>
             <p class="font-semibold text-lg mb-2">{{ getName(item.detail.name) }}</p>
             <PokemonType :list="typeList(item.detail.type)" class="!text-xs"/>
         </div>
@@ -203,12 +203,12 @@ function handleRemove (id: number) {
         <!-- Section divider -->
         <div class="title">
           <div class="flex-center flex-col gap-4 border-bottom">
-            <UIcon name="i-solar-mirror-right-broken" class="text-xl text-stone-500" />
-            <UIcon name="i-hugeicons-weight-scale" class="text-xl text-stone-500" />
+            <UIcon name="i-solar-mirror-right-broken" class="text-xl text-stone-500 dark:text-stone-200" />
+            <UIcon name="i-hugeicons-weight-scale" class="text-xl text-stone-500 dark:text-stone-200" />
             <div class="flex items-center">
-              <SvgoSymbolsMan class=" text-stone-500" />
+              <SvgoSymbolsMan class=" text-stone-500 dark:text-stone-200" />
               <p class="text-center mx-1">:</p>
-              <SvgoSymbolsFemale class=" text-stone-500" />
+              <SvgoSymbolsFemale class=" text-stone-500 dark:text-stone-200" />
             </div>
           </div>
         </div>
@@ -229,7 +229,7 @@ function handleRemove (id: number) {
         <!-- Section divider -->
         <div class="title">
           <div class="flex-center h-full border-bottom">
-            <UIcon name="i-ph-egg-crack" class="text-xl text-stone-500"/>
+            <UIcon name="i-ph-egg-crack" class="text-xl text-stone-500 dark:text-stone-200"/>
           </div>
         </div>
         <div
@@ -242,7 +242,7 @@ function handleRemove (id: number) {
               :key="index"
               @click="router.push(`/egg-groups/${egg}`)">
               <span
-                class="text-blue-600 cursor-pointer hover:underline"
+                class="text-blue-600 dark:text-blue-300 cursor-pointer hover:underline"
               >
                 {{ capitalize(egg) }}
               </span>
@@ -255,7 +255,7 @@ function handleRemove (id: number) {
         <!-- Section divider -->
         <div class="title">
           <div class="flex h-full justify-center border-bottom">
-            <UIcon name="i-solar-info-circle-broken" class="text-xl text-stone-500"/>
+            <UIcon name="i-solar-info-circle-broken" class="text-xl text-stone-500 dark:text-stone-200"/>
           </div>
         </div>
 
@@ -263,7 +263,7 @@ function handleRemove (id: number) {
           v-for="item, id in pokemons" 
           :key="id" 
           class="flex-center flex-col p-2 border-bottom border-r">
-          <div class="bg-white rounded-lg px-3 pt-4">
+          <div class="bg-zinc-50 dark:bg-zinc-600 rounded-lg px-3 pt-4">
             <PokemonDex :data="information(item)" />
           </div>
         </div>
@@ -272,7 +272,7 @@ function handleRemove (id: number) {
         <div class="title">
           <div
             class="flex-center h-full border-bottom
-             text-sm text-stone-700 text-center">
+             text-sm text-stone-700 dark:text-stone-200 text-center">
             Base <br>Stats
           </div>
         </div>
@@ -314,7 +314,7 @@ function handleRemove (id: number) {
         <div class="title">
           <div
             class="flex-center h-full border-bottom 
-              text-sm text-stone-700 text-center">
+              text-sm text-stone-700 dark:text-stone-200 text-center">
             Abilities
           </div>
         </div>
@@ -326,7 +326,7 @@ function handleRemove (id: number) {
             <ul 
               v-for="ability in item.abilities" 
               :key="ability.id" 
-              class="bg-white p-2 rounded-lg w-full max-w-64 cursor-pointer "
+              class="bg-zinc-50 dark:bg-zinc-500 p-2 rounded-lg w-full max-w-64 cursor-pointer "
               @click="readMore = !readMore">
               <li>
                 <div 
@@ -338,7 +338,7 @@ function handleRemove (id: number) {
                     <UBadge color="black" size="sm">H</UBadge>
                   </p>
                 </div>
-                <p v-if="readMore" class="text-xs mt-1 text-stone-500">{{ ability.short_effect }}</p>
+                <p v-if="readMore" class="text-xs mt-1 text-stone-500 dark:text-stone-200">{{ ability.short_effect }}</p>
               </li>
             </ul>
         </div>
@@ -347,7 +347,7 @@ function handleRemove (id: number) {
         <div class="title">
           <div
             class="flex-center h-full border-bottom 
-              text-sm text-stone-700 text-center">
+              text-sm text-stone-700 dark:text-stone-200 text-center">
             Type <br > Def.
           </div>
         </div>
@@ -374,7 +374,7 @@ function handleRemove (id: number) {
 }
 
 .title {
-  @apply sticky left-0 z-10 w-full border-r bg-zinc-50;
+  @apply sticky left-0 z-10 w-full border-r bg-zinc-50 dark:bg-zinc-600;
 }
 
 .card {
@@ -397,7 +397,7 @@ function handleRemove (id: number) {
   }
 
   &-base {
-    @apply w-full h-full rounded-full bg-stone-200/50;
+    @apply w-full h-full rounded-full bg-stone-200/50 dark:bg-stone-500/20;
   }
 
   &-total {

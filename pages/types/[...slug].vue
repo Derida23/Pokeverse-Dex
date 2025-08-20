@@ -180,7 +180,8 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
     <!-- Defense Pokemon -->
     <TypeWrapper >
       <template #title>
-        Defense <span class="text-xs font-light text-stone-500">(damage taken)</span>
+        Defense 
+        <span class="text-xs font-light text-stone-500 dark:text-stone-200">(damage taken)</span>
       </template>
       <div class="table-defense">
         <TypeHeader :column="columnsDefense" />
@@ -234,7 +235,7 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
     <!-- Pokemons List -->
     <TypeWrapper>
       <template #title>
-        Pokemons <span class="text-sm font-light text-stone-500">
+        Pokemons <span class="text-sm font-light text-stone-500 dark:text-stone-200">
           ({{ pokemons.default.length }})
         </span>
       </template>
@@ -269,11 +270,11 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
   @apply flex items-center mb-3 cursor-pointer gap-x-2 w-fit hover:underline;
 
   &-icon {
-    @apply text-xl font-light text-stone-500;
+    @apply text-xl font-light text-stone-500 dark:text-stone-200;
   }
 
   &-title {
-    @apply text-sm font-light text-stone-500;
+    @apply text-sm font-light text-stone-500 dark:text-stone-200;
   }
 }
 
@@ -289,12 +290,12 @@ function filterByFlexibleType(pokemons: PokemonType[], filterType: number[]) {
   }
 
   &-title {
-    @apply text-stone-800 text-center first-letter:uppercase text-xs mt-2;
+    @apply text-stone-800 dark:text-stone-200 text-center first-letter:uppercase text-xs mt-2;
   }
 
   &-generation {
     @apply absolute top-0 right-0 text-xs;
-    @apply bg-gray-300/20 px-2 py-1 rounded-tr rounded-bl-lg
+    @apply bg-gray-300/20 dark:bg-gray-300/80 px-2 py-1 rounded-tr rounded-bl-lg
   }
 }
 </style>

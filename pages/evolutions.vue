@@ -143,9 +143,11 @@ function handleReset(value: string | null = null) {
             </template>
   
             <UButton block color="white" class="h-9">
-              <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
+              <div
+                class="flex items-center justify-between w-full px-1 
+              font-light text-gray-400 dark:text-gray-400">
                 <div>
-                  <p v-if="!filter.gen" class="truncate">Any generations</p>
+                  <p v-if="!filter.gen" class="truncate font-normal">Any generations</p>
                   <p v-else class="font-medium">{{ selectedGenLabel }}</p>
                 </div>
                 <div class="flex items-center">
@@ -196,9 +198,11 @@ function handleReset(value: string | null = null) {
           </template>
   
           <UButton block color="white" class="h-9" >
-            <div class="flex items-center justify-between w-full px-1 font-light text-gray-500">
+            <div
+              class="flex items-center justify-between w-full px-1
+            font-light text-gray-400 dark:text-gray-400">
               <div>
-                <p v-if="!filter.type">Any types</p>
+                <p v-if="!filter.type" class="font-normal">Any types</p>
                 <p v-else class="font-medium">{{ selectedTypeLabel }}</p>
               </div>
               <div class="flex items-center">

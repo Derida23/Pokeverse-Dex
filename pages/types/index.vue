@@ -28,7 +28,7 @@ function getColor (skill: string): string {
             >
               <component 
                 :is="`svgo-types-${type.name}`" 
-                class="text-white"
+                class="text-zinc-50 dark:text-zinc-200"
               />
             </div>
             <div class="icons-title"> {{ type.name }}</div>
@@ -68,10 +68,10 @@ function getColor (skill: string): string {
 }
 
 .titles {
-  @apply text-sm text-right text-stone-600;
+  @apply text-sm text-right text-stone-600 dark:text-stone-200;
 
   &-text {
-    @apply mt-1 text-xs italic text-right text-stone-600;
+    @apply mt-1 text-xs italic text-right text-stone-600 dark:text-stone-200;
   }
 }
 </style>
