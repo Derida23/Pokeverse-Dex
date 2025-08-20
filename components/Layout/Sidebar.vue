@@ -16,8 +16,8 @@
   @apply mx-auto lg:pl-16 xl:pr-14 max-w-7xl;
 }
 .navbar {
-  @apply fixed bottom-12 top-24 lg:pt-2 z-[64];
-  @apply bg-white dark:bg-gray-700;
+  @apply fixed bottom-12 top-24 lg:pt-2 mt-4 z-[60];
+  @apply bg-zinc-50 dark:bg-gray-700;
   @apply w-64;
   @apply overflow-y-auto;
   @apply transition-[right];

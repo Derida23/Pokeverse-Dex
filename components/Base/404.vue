@@ -3,14 +3,14 @@
 
 <template>
   <div class="homepage">
-    <div class="text-wrapper">
-      <h1 class="font-bold text-stone-800 text-[10rem] md:text-[14rem]">4</h1>
+    <div class="text-wrapper flex-center">
+      <h1 class="font-bold text-stone-800 dark:text-stone-300 text-[10rem] md:text-[14rem]">4</h1>
       <img src="/assets/images/pokeball.webp" class="w-40 md:w-48" >
-      <h1 class="font-bold text-stone-800 text-[10rem] md:text-[14rem]">4</h1>
+      <h1 class="font-bold text-stone-800 dark:text-stone-300 text-[10rem] md:text-[14rem]">4</h1>
     </div>
     <p class="text-not-found">Pokémon not found</p>
     <p class="text-explore">Let’s explore further and catch one!</p>
-    <div class="mx-auto mt-8">
+    <div class="flex-center mt-8">
       <UButton 
         color="white" 
         variant="solid" 
@@ -40,11 +40,12 @@
   }
 
   &-not-found {
-    @apply font-semibold tracking-widest text-stone-800 md:-mt-[1rem] text-center text-xl;
+    @apply font-semibold tracking-widest text-stone-800 dark:text-stone-300;
+    @apply md:-mt-[1rem] text-center text-xl;
   }
 
   &-explore {
-    @apply text-center text-stone-500 font-mono text-xs mt-2;
+    @apply text-center text-stone-500 dark:text-stone-200 font-mono text-xs mt-2;
   }
 }
 

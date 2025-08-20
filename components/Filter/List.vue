@@ -213,6 +213,7 @@ const filterFilled = computed(() => {
 <style lang="postcss" scoped>
 .button-attr {
   @apply flex items-center justify-between w-full px-3 py-2 text-sm;
-  @apply text-gray-600 rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-700;
+  @apply text-gray-600 dark:text-gray-200;
+  @apply rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-700;
 }
 </style>

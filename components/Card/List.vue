@@ -94,7 +94,7 @@ function handleRouter(name: string) {
   &-card {
     @apply py-3 pl-3 border shadow-sm;
     @apply cursor-pointer;
-    @apply border-slate-200 hover:border-slate-300 h-36 rounded-lg;
+    @apply border-slate-200 dark:border-slate-700 hover:border-slate-300 h-36 rounded-lg;
     @apply relative overflow-hidden;
   }
 
@@ -104,6 +104,8 @@ function handleRouter(name: string) {
   }
 
   &-name {
+    @apply dark:text-stone-700;
+
     &-wrapper {
       @apply w-[150px];
     }
@@ -125,6 +127,7 @@ function handleRouter(name: string) {
 
   &-types {
     @apply flex items-center text-xs gap-x-1;
+    @apply dark:text-stone-700;
 
     &-circle {
       @apply w-4 h-4 border rounded-full border-black/20;
