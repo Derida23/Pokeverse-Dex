@@ -37,6 +37,7 @@
     "keen-slider": "^6.8.6",
     "lint-staged": "^16.1.0",
     "node-fetch": "^3.3.2",
+    "nuxt-charts": "^0.2.3",
     "nuxt-svgo": "^4.2.2",
     "pinia": "^3.0.3",
     "postcss": "^8.5.5",

@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/eslint',
     '@nuxtjs/google-fonts',
-    'nuxt-svgo'
+    'nuxt-svgo',
+    'nuxt-charts'
   ],
   imports: {
     dirs: ['composables/api'],
