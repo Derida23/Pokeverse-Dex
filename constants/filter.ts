@@ -260,3 +260,27 @@ export const typesPokemon = [
     },
   ]
 ]
+
+export const status = [
+  [
+    {
+      label: 'Attack',
+      name: 'attack'
+    }, {
+      label: 'HP',
+      name: 'hp'
+    }, {
+      label: 'Defense',
+      name: 'defense'
+    }, {
+      label: 'Speed',
+      name: 'speed'
+    }, {
+      label: 'Special Attack',
+      name: 'special-attack'
+    }, {
+      label: 'Special Defense',
+      name: 'special-defense'
+    },
+  ]
+]
