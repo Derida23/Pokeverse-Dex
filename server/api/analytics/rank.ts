@@ -22,9 +22,9 @@ export default defineEventHandler(async (event) => {
   
   try {
     const analyticsData = analytics.filter(a => pokemons.some(p => p.id === a.id))
-    
+
     const sorted = sortByStat(analyticsData, status.toString(), order.toString())
-    const pokemonRank = !generation ? sorted : sorted.filter((item) => item.generation === Number(generation))
+    const pokemonRank = (!generation || generation == 0 ) ? sorted : sorted.filter((item) => item.generation === Number(generation))
 
     const response = pokemonRank.splice(0, 3)
 
