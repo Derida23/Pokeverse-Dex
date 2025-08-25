@@ -91,7 +91,7 @@ const filterFilled = computed(() => {
           </div>
         </template>
 
-        <UButton block color="white" class="h-9">
+        <UButton block color="white" class="h-9 hover:!bg-white dark:hover:!bg-gray-800">
           <div 
           class="flex items-center justify-between w-full px-1 
           font-light text-gray-400 dark:text-gray-400">
@@ -146,7 +146,7 @@ const filterFilled = computed(() => {
           </div>
         </template>
 
-        <UButton block color="white" class="h-9" >
+        <UButton block color="white" class="h-9 hover:!bg-white dark:hover:!bg-gray-800" >
           <div 
           class="flex items-center justify-between w-full px-1 
           font-light text-gray-400 dark:text-gray-400">
@@ -177,7 +177,7 @@ const filterFilled = computed(() => {
     <div class="flex items-center gap-2">
       <UPopover v-model:open="open.attr" :ui="{ placement: 'bottom-start' }">
         <UChip :show="filter.attr !== null" class="w-full" size="lg">
-          <UButton color="white" size="lg" class="w-10 p-0 h-9 w-">
+          <UButton color="white" size="lg" class="w-10 p-0 h-9 ">
             <div class="flex-center w-full">
               <UIcon name="i-lucide-filter" class="text-lg text-gray-400 dark:text-gray-400" />
             </div>
