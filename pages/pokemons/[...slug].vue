@@ -142,7 +142,8 @@ const forms = computed(() => {
                 size="lg" 
                 color="white" 
                 label="Forms" 
-                trailing-icon="i-heroicons-chevron-down-20-solid" />
+                trailing-icon="i-heroicons-chevron-down-20-solid"
+                class="hover:!bg-white dark:hover:!bg-stone-800" />
             </UDropdown>
           </div>
 
@@ -211,8 +212,9 @@ const forms = computed(() => {
             size="xl" 
             color="white" 
             label="Forms" 
-            class="min-w-[118px]" 
-            trailing-icon="i-heroicons-chevron-down-20-solid" />
+            class="min-w-[118px] hover:!bg-white dark:hover:!bg-stone-800" 
+            :trailing-icon="open ? 'i-heroicons-chevron-up-20-solid' 
+            : 'i-heroicons-chevron-down-20-solid'" />
         </UDropdown>
       </section>
       
