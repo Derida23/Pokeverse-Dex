@@ -1,9 +1,13 @@
+import type { ApiResponse } from "~/types/api/ApiResponse"
+import type { Analytics } from "~/types/responses/Analytics"
+import type { Ranks } from "~/types/responses/Ranks"
+
 type FilterKey = 'gen' | 'status' | 'order'
 
 export function useApiAnalytic() {
 
   const getRank = async (filter: Record<FilterKey, string | number>) => {
-    const { data } = await $fetch(`/api/analytics/rank`, {
+    const { data } = await $fetch<ApiResponse<Ranks[]>>(`/api/analytics/rank`, {
       method: 'GET',
       query: filter
     })
@@ -11,8 +15,8 @@ export function useApiAnalytic() {
     return { data }
   }
 
-  const getAnalylic = async () => {
-    const { data } = await $fetch(`/api/analytics/pokemon`, {
+  const getAnalytic = async () => {
+    const { data } = await $fetch<ApiResponse<Analytics>>(`/api/analytics/pokemon`, {
       method: 'GET',
     })
 
@@ -21,6 +25,6 @@ export function useApiAnalytic() {
 
   return {
     getRank,
-    getAnalylic
+    getAnalytic
   }
 }
