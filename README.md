@@ -41,6 +41,7 @@
 ---
 
 ## 🗂️ Project Structure
+```
 Pokeverse-Dex/
 ├─ assets/ # Images, styles, icons
 ├─ components/ # Vue components
@@ -54,6 +55,7 @@ Pokeverse-Dex/
 ├─ tests/ # Unit and integration tests
 ├─ nuxt.config.ts # Nuxt configuration
 └─ package.json
+```
 
 ---
 
@@ -79,11 +81,11 @@ The app will be available at http://localhost:3000.
 npm run test      # or yarn test
 ```
 
-📄 Contributing
+## 📄 Contributing
 
-Fork the repository
-1. Create a feature branch (git checkout -b your-feature)
-2. Make changes and commit (git commit -am 'Add new feature')
-3. Push to your branch (git push origin your-feature)
-4. Open a Pull Request
+1. Fork the repository
+2. Create a feature branch (git checkout -b your-feature)
+3. Make changes and commit (git commit -am 'Add new feature')
+4. Push to your branch (git push origin your-feature)
+5. Open a Pull Request
 
